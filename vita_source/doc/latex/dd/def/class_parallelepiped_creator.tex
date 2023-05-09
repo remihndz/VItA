@@ -1,0 +1,92 @@
+\hypertarget{class_parallelepiped_creator}{}\doxysection{Parallelepiped\+Creator Class Reference}
+\label{class_parallelepiped_creator}\index{ParallelepipedCreator@{ParallelepipedCreator}}
+
+
+{\ttfamily \#include $<$Parallelepiped\+Creator.\+h$>$}
+
+Inheritance diagram for Parallelepiped\+Creator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/def/class_parallelepiped_creator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_parallelepiped_creator_a90c756a533fe6590d1ea2cd236c4762f}{Parallelepiped\+Creator}} (double $\ast$\mbox{\hyperlink{class_parallelepiped_creator_afbbe8ed8aca059a07b2198e4e6ced522}{lb}}, double $\ast$\mbox{\hyperlink{class_parallelepiped_creator_a2120f519681200f2b431439b2e022e1b}{ub}})
+\item 
+virtual \mbox{\hyperlink{class_parallelepiped_creator_a1e41ac467a6423c499401dd2e7663be7}{$\sim$\+Parallelepiped\+Creator}} ()
+\item 
+void \mbox{\hyperlink{class_parallelepiped_creator_a12a54b7a1d66ac413c30327751d8ad47}{create}} (string filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \mbox{\hyperlink{class_parallelepiped_creator_afbbe8ed8aca059a07b2198e4e6ced522}{lb}}
+\item 
+double $\ast$ \mbox{\hyperlink{class_parallelepiped_creator_a2120f519681200f2b431439b2e022e1b}{ub}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a VTP file containing a parallelepiped. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_parallelepiped_creator_a90c756a533fe6590d1ea2cd236c4762f}\label{class_parallelepiped_creator_a90c756a533fe6590d1ea2cd236c4762f}} 
+\index{ParallelepipedCreator@{ParallelepipedCreator}!ParallelepipedCreator@{ParallelepipedCreator}}
+\index{ParallelepipedCreator@{ParallelepipedCreator}!ParallelepipedCreator@{ParallelepipedCreator}}
+\doxysubsubsection{\texorpdfstring{ParallelepipedCreator()}{ParallelepipedCreator()}}
+{\footnotesize\ttfamily Parallelepiped\+Creator\+::\+Parallelepiped\+Creator (\begin{DoxyParamCaption}\item[{double $\ast$}]{lb,  }\item[{double $\ast$}]{ub }\end{DoxyParamCaption})}
+
+Initialize the inner variables of the object. Vertexes {\ttfamily lb} and {\ttfamily ub} must be opposite vertexes of the parallelepiped. 
+\begin{DoxyParams}{Parameters}
+{\em lb} & Vertex v1. \\
+\hline
+{\em ub} & Vertex v2. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_parallelepiped_creator_a1e41ac467a6423c499401dd2e7663be7}\label{class_parallelepiped_creator_a1e41ac467a6423c499401dd2e7663be7}} 
+\index{ParallelepipedCreator@{ParallelepipedCreator}!````~ParallelepipedCreator@{$\sim$ParallelepipedCreator}}
+\index{````~ParallelepipedCreator@{$\sim$ParallelepipedCreator}!ParallelepipedCreator@{ParallelepipedCreator}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParallelepipedCreator()}{~ParallelepipedCreator()}}
+{\footnotesize\ttfamily Parallelepiped\+Creator\+::$\sim$\+Parallelepiped\+Creator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Standard destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_parallelepiped_creator_a12a54b7a1d66ac413c30327751d8ad47}\label{class_parallelepiped_creator_a12a54b7a1d66ac413c30327751d8ad47}} 
+\index{ParallelepipedCreator@{ParallelepipedCreator}!create@{create}}
+\index{create@{create}!ParallelepipedCreator@{ParallelepipedCreator}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void Parallelepiped\+Creator\+::create (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Persist the object in a file with VTP format. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Save file for the current object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_creator_a1991e446444ffea2b85216b64f2dcf9e}{Abstract\+Creator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_parallelepiped_creator_afbbe8ed8aca059a07b2198e4e6ced522}\label{class_parallelepiped_creator_afbbe8ed8aca059a07b2198e4e6ced522}} 
+\index{ParallelepipedCreator@{ParallelepipedCreator}!lb@{lb}}
+\index{lb@{lb}!ParallelepipedCreator@{ParallelepipedCreator}}
+\doxysubsubsection{\texorpdfstring{lb}{lb}}
+{\footnotesize\ttfamily double$\ast$ Parallelepiped\+Creator\+::lb\hspace{0.3cm}{\ttfamily [private]}}
+
+Vertex 1 \mbox{\Hypertarget{class_parallelepiped_creator_a2120f519681200f2b431439b2e022e1b}\label{class_parallelepiped_creator_a2120f519681200f2b431439b2e022e1b}} 
+\index{ParallelepipedCreator@{ParallelepipedCreator}!ub@{ub}}
+\index{ub@{ub}!ParallelepipedCreator@{ParallelepipedCreator}}
+\doxysubsubsection{\texorpdfstring{ub}{ub}}
+{\footnotesize\ttfamily double$\ast$ Parallelepiped\+Creator\+::ub\hspace{0.3cm}{\ttfamily [private]}}
+
+Vertex 2 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+creators/Parallelepiped\+Creator.\+h\item 
+creators/Parallelepiped\+Creator.\+cpp\end{DoxyCompactItemize}

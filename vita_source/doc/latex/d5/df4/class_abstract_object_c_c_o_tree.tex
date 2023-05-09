@@ -1,0 +1,828 @@
+\hypertarget{class_abstract_object_c_c_o_tree}{}\doxysection{Abstract\+Object\+CCOTree Class Reference}
+\label{class_abstract_object_c_c_o_tree}\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+
+
+{\ttfamily \#include $<$Abstract\+Object\+CCOTree.\+h$>$}
+
+Inheritance diagram for Abstract\+Object\+CCOTree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/df4/class_abstract_object_c_c_o_tree}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ac6be6b54f61f0db2dc79f47c4d1a1a3c}{Abstract\+Object\+CCOTree}} (\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aea1797e69828b7b55c11af20fb01ccd6}{Abstract\+Object\+CCOTree}} (\mbox{\hyperlink{structpoint}{point}} xi, double qi, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aad315b93744637e18153c4434dac067d}{gam}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a62d3e1ff7e74a6236422273f58fc6012}{eps\+Lim}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a92e6b6d1a2fac7331eee34fb28158828}{nu}}, double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae7215e6237e4d04625a0c96be9f3578d}{ref\+Pressure}}, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}{instance\+Data}})
+\item 
+virtual \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a4d8361714194b0dec0dbda97bec68d2b}{$\sim$\+Abstract\+Object\+CCOTree}} ()
+\item 
+virtual void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a24a38d8d43726a9b4d61efaa2f0bf33c}{get\+Closest\+Tree\+Point}} (\mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{structpoint}{point}} $\ast$x\+Bif, double $\ast$dist)=0
+\item 
+virtual vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a96a4cfda4be0f96eac2bc4adb07fb056}{get\+Close\+Segments}} (\mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$domain, int $\ast$n\+Found)=0
+\item 
+virtual void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a8fa23ca2ea8b9933ce80c331cede89eb}{add\+Vessel}} (\mbox{\hyperlink{structpoint}{point}} x\+Prox, \mbox{\hyperlink{structpoint}{point}} x\+Dist, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$parent, \mbox{\hyperlink{class_abstract_vascular_element_a7d7b7863aae4952ba79a590ee65702ec}{Abstract\+Vascular\+Element\+::\+VESSEL\+\_\+\+FUNCTION}} vessel\+Function)=0
+\item 
+virtual int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a7279cc7eaa7466bc86fa83508df4358a}{test\+Vessel}} (\mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$parent, \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$domain, vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ neighbors, double dlim, \mbox{\hyperlink{structpoint}{point}} $\ast$x\+Bif, double $\ast$cost)=0
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae04ad6b8ba131dc1e9ddda324045548d}{compute\+Pressure}} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}})
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_abf94482b3937739dd83ec4c748e1adbf}{compute\+Tree\+Cost}} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}})
+\item 
+virtual void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a6815c1d167caf524cc81faecffed65e7}{print}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a11f4904c4aafdd748cc4b93f9b78116c}{save}} (string filename)
+\item 
+virtual string \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a25cc167a1c8aae7edc8158683a668647}{get\+Tree\+Name}} ()=0
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a1f90fe393e3bd7f6f4a6ae7195827f17}{get\+Vertices}} ()
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a40659166aaf9843ddc6ac4c7ba7d9505}{get\+Connectivity}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_af8c442bdb65922511391f7f0e3b98b18}{print\+Vtk\+Tree}} ()
+\item 
+long long int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae126ccaccbb13167161ddfadd4353c17}{get\+NTerminals}} ()
+\item 
+long long int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aeef8f145bcb5ebff39b74279f4f2350a}{get\+NTerminals}} (\mbox{\hyperlink{class_abstract_vascular_element_a9c7d6ae9fe8c220ddad143208b0a5a11}{Abstract\+Vascular\+Element\+::\+TERMINAL\+\_\+\+TYPE}} type)
+\item 
+long long int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a0c8fc5cdc84a9f5097dda24443c2462f}{get\+NTerms}} ()
+\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a81862bcbe6e223d216079b1522ad0db1}{get\+XProx}} ()
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a81336407d6138888b916f12d75e7ae74}{get\+QProx}} ()
+\item 
+\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a08cb14298e5ab481a9540b5487db54b0}{get\+Eps\+Lim}} ()
+\item 
+\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ad97518a157cf02e69ef931044251d349}{get\+Gam}} ()
+\item 
+\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aa1ee6820dc34e0aa9f5797c86ed41ee4}{get\+Nu}} ()
+\item 
+\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a98a758f4b6fd1528e8105f46867e60c3}{get\+Root}} ()
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_afb5faccc7f05d32bcfd6f97937b7fb6c}{get\+Vtk\+Tree}} ()
+\item 
+unordered\+\_\+map$<$ long long, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ \& \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a6c683280e655c0628a53146c84fdbeed}{get\+Segments}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_acbe0b850c270bc60967111b73d1b927b}{get\+Vessels}} ()
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a74b76bea7703485a7564a2415b421d4e}{get\+Dp}} () const
+\item 
+\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a2088df2b807ea7cff5c03b28025e4891}{get\+Instance\+Data}} ()
+\item 
+long long int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a8dbf83c006c371dc265364f1275c2979}{get\+Point\+Counter}} () const
+\item 
+int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aefb00fd1ac1eb8daea421cf481fc8e6f}{get\+Current\+Stage}} () const
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a0842a366c08f1b1fa3bf1fbc27c48e66}{get\+Reserved\+Factor}} () const
+\item 
+int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ad616fa635a32bcfd0a836d4eedfa1378}{get\+Is\+In\+Cm}} () const
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aad766c18effb679595d7c2fbae12006a}{set\+Eps\+Lim}} (\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a62d3e1ff7e74a6236422273f58fc6012}{eps\+Lim}})
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a0d5c2d87afe1bff8f5e2e2bb25baccde}{set\+Gam}} (\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aad315b93744637e18153c4434dac067d}{gam}})
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a5c697dca9b49016e8dddc1af43cf0d20}{set\+Nu}} (\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a92e6b6d1a2fac7331eee34fb28158828}{nu}})
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a53deb35aacf40244e396772bc151b3c3}{set\+Point\+Counter}} (long long int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a8d8512b976d31017c242e229dafebd0a}{point\+Counter}})
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ab0422503ddc24447e752c73d20a51887}{set\+Instance\+Data}} (\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}{instance\+Data}})
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aa7e666d1d2736f69aae81e24481497db}{set\+Current\+Stage}} (int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a3597fe2e3dd70d3da743674eb91c2831}{current\+Stage}})
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aa88bb0f5894cad8b52d6a93b57355b52}{set\+Reserved\+Factor}} (double reserved\+Factor)
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a22155ce4ec3b74fa28635bf4e4de9c99}{set\+Is\+In\+Cm}} (int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a11ab0fe8d03165bcbf23bc3cca75cafc}{is\+In\+Cm}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a0bcc6af551702ca4054682acc02d1566}{save\+Vessel}} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$current\+Vessel, ofstream $\ast$out\+File)
+\item 
+virtual void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a401ce5c8e425dae5a8d72bdd007a3464}{save\+Tree}} (ofstream $\ast$out\+File)
+\item 
+void \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ad91b5a57a3fb2593a705d50648769639}{update\+Segment\+Vtk\+Lines}} ()
+\item 
+long long int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae7874b2b981525686500f1c6b23548b4}{count\+Terminals}} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}})
+\item 
+long long int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a7a3f13ee2c446f71d2f826f259c2fd7d}{count\+Terminals}} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}}, \mbox{\hyperlink{class_abstract_vascular_element_a9c7d6ae9fe8c220ddad143208b0a5a11}{Abstract\+Vascular\+Element\+::\+TERMINAL\+\_\+\+TYPE}} type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}{instance\+Data}}
+\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a6b9a8b8d2ba28beba61fe94f9028767c}{x\+Perf}}
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a95cecfb158b008159b0885e4f434046f}{q\+Prox}}
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aa7724194ea9aaa23352a459feaa8c38f}{q\+Reserved\+Factor}}
+\item 
+\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_aad315b93744637e18153c4434dac067d}{gam}}
+\item 
+\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a62d3e1ff7e74a6236422273f58fc6012}{eps\+Lim}}
+\item 
+\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a92e6b6d1a2fac7331eee34fb28158828}{nu}}
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae7215e6237e4d04625a0c96be9f3578d}{ref\+Pressure}}
+\item 
+\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}}
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ad29145c32f075e9c9db3cf1bd2a97b28}{psi\+Factor}}
+\item 
+double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_adfeb609a44be72e7894d09149ed40f3c}{dp}}
+\item 
+long long \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ad6c998c6ee999126718ca75cf7eeea0e}{n\+Terms}}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a241465d780d31882e94993abc0acb3af}{vtk\+Tree}}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Cell\+Locator $>$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ad46c9e54e0a3093cbd5968ee7f2fa71a}{vtk\+Tree\+Locator}}
+\item 
+unordered\+\_\+map$<$ long long, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a4635f6215b084867ee70135812c6971e}{elements}}
+\item 
+long long int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a8d8512b976d31017c242e229dafebd0a}{point\+Counter}}
+\item 
+int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a3597fe2e3dd70d3da743674eb91c2831}{current\+Stage}}
+\item 
+int \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a11ab0fe8d03165bcbf23bc3cca75cafc}{is\+In\+Cm}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a310f2cfa7e9c83f68070452e48d31917}\label{class_abstract_object_c_c_o_tree_a310f2cfa7e9c83f68070452e48d31917}} 
+void {\bfseries save\+Vessels} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}}, ofstream $\ast$tree\+File)
+\item 
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a3240756f82d0b566509ddf1d9b6aa18e}\label{class_abstract_object_c_c_o_tree_a3240756f82d0b566509ddf1d9b6aa18e}} 
+void {\bfseries save\+Connectivity} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}}, ofstream $\ast$tree\+File)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ae951e1087f61f1d97b81bc5b9d0e36e1}\label{class_abstract_object_c_c_o_tree_ae951e1087f61f1d97b81bc5b9d0e36e1}} 
+class {\bfseries Pruning\+CCOOTree}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract tree with vessel structures represented by objects. Its slower than \mbox{\hyperlink{class_abstract_structured_c_c_o_tree}{Abstract\+Structured\+CCOTree}} although has more functionality and is more customizable. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ac6be6b54f61f0db2dc79f47c4d1a1a3c}\label{class_abstract_object_c_c_o_tree_ac6be6b54f61f0db2dc79f47c4d1a1a3c}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{AbstractObjectCCOTree()}{AbstractObjectCCOTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Abstract\+Object\+CCOTree\+::\+Abstract\+Object\+CCOTree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Constructor for tree with no parameters, convenient to create a tree and load its parameters later. 
+\begin{DoxyParams}{Parameters}
+{\em instance\+Data} & Global parameters for instance behavior (amount of tries per bifurcation, point tries before d\+Lim reduction, etc.). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aea1797e69828b7b55c11af20fb01ccd6}\label{class_abstract_object_c_c_o_tree_aea1797e69828b7b55c11af20fb01ccd6}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{AbstractObjectCCOTree()}{AbstractObjectCCOTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Abstract\+Object\+CCOTree\+::\+Abstract\+Object\+CCOTree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{xi,  }\item[{double}]{qi,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{gam,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{eps\+Lim,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{nu,  }\item[{double}]{ref\+Pressure,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Common constructor with all parameters necessary for tree generation. 
+\begin{DoxyParams}{Parameters}
+{\em xi} & Root entry point. \\
+\hline
+{\em qi} & Flow at {\ttfamily xi}. \\
+\hline
+{\em gam} & Function for the exponential coefficient of the Murray Law depending on the bifurcation level. \\
+\hline
+{\em eps\+Lim} & Function of the symmetry ratio (ratio between the radius of the smallest over the biggest sibling) depending on the bifurcation level. \\
+\hline
+{\em nu} & Blood viscosity depending on the bifurcation level. \\
+\hline
+{\em min\+Angle} & Lowest angle allowed at the new bifurcation. \\
+\hline
+{\em ref\+Pressure} & Distal reference pressure for the tree. \\
+\hline
+{\em instance\+Data} & Parameters for this stage generation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a4d8361714194b0dec0dbda97bec68d2b}\label{class_abstract_object_c_c_o_tree_a4d8361714194b0dec0dbda97bec68d2b}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!````~AbstractObjectCCOTree@{$\sim$AbstractObjectCCOTree}}
+\index{````~AbstractObjectCCOTree@{$\sim$AbstractObjectCCOTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstractObjectCCOTree()}{~AbstractObjectCCOTree()}}
+{\footnotesize\ttfamily Abstract\+Object\+CCOTree\+::$\sim$\+Abstract\+Object\+CCOTree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Common destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a8fa23ca2ea8b9933ce80c331cede89eb}\label{class_abstract_object_c_c_o_tree_a8fa23ca2ea8b9933ce80c331cede89eb}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!addVessel@{addVessel}}
+\index{addVessel@{addVessel}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{addVessel()}{addVessel()}}
+{\footnotesize\ttfamily virtual void Abstract\+Object\+CCOTree\+::add\+Vessel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+Prox,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+Dist,  }\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{class_abstract_vascular_element_a7d7b7863aae4952ba79a590ee65702ec}{Abstract\+Vascular\+Element\+::\+VESSEL\+\_\+\+FUNCTION}}}]{vessel\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds a new vessel to the CCO tree.
+\begin{DoxyParams}{Parameters}
+{\em x\+Prox} & and\\
+\hline
+{\em x\+Dist} & are the proximal and distal nodes of the new vessel and\\
+\hline
+{\em parent} & is the attachment parent vessel. \\
+\hline
+{\em x\+Prox} & Proximal point of the new vessel. \\
+\hline
+{\em x\+Dist} & Distal point of the new vessel. \\
+\hline
+{\em parent} & Parent to the new vessel. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_ae9f08ba67c5a9a13b17313c9e86ccaa8}{Single\+Vessel\+CCOOTree}}.
+
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ae04ad6b8ba131dc1e9ddda324045548d}\label{class_abstract_object_c_c_o_tree_ae04ad6b8ba131dc1e9ddda324045548d}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!computePressure@{computePressure}}
+\index{computePressure@{computePressure}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{computePressure()}{computePressure()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::compute\+Pressure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+Computes the pressure for the whole tree for a given reference pressure P\+\_\+r (default P\+\_\+r=0 Pa). 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree root. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_abf94482b3937739dd83ec4c748e1adbf}\label{class_abstract_object_c_c_o_tree_abf94482b3937739dd83ec4c748e1adbf}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!computeTreeCost@{computeTreeCost}}
+\index{computeTreeCost@{computeTreeCost}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{computeTreeCost()}{computeTreeCost()}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::compute\+Tree\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+Computes the total tree volume, if the geometric constraint is not satisfied, it returns INFINITY. 
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total tree volume. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ae7874b2b981525686500f1c6b23548b4}\label{class_abstract_object_c_c_o_tree_ae7874b2b981525686500f1c6b23548b4}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!countTerminals@{countTerminals}}
+\index{countTerminals@{countTerminals}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{countTerminals()}{countTerminals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long long int Abstract\+Object\+CCOTree\+::count\+Terminals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Counts recursively all terminals of the subtree with {\ttfamily root} as root. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of the subtree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Amount of terminals in the subtree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a7a3f13ee2c446f71d2f826f259c2fd7d}\label{class_abstract_object_c_c_o_tree_a7a3f13ee2c446f71d2f826f259c2fd7d}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!countTerminals@{countTerminals}}
+\index{countTerminals@{countTerminals}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{countTerminals()}{countTerminals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily long long int Abstract\+Object\+CCOTree\+::count\+Terminals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{root,  }\item[{\mbox{\hyperlink{class_abstract_vascular_element_a9c7d6ae9fe8c220ddad143208b0a5a11}{Abstract\+Vascular\+Element\+::\+TERMINAL\+\_\+\+TYPE}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Counts recursively the terminals with type {\ttfamily type} of the subtree with {\ttfamily root} as root. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of the subtree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Amount of terminals in the subtree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a96a4cfda4be0f96eac2bc4adb07fb056}\label{class_abstract_object_c_c_o_tree_a96a4cfda4be0f96eac2bc4adb07fb056}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getCloseSegments@{getCloseSegments}}
+\index{getCloseSegments@{getCloseSegments}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getCloseSegments()}{getCloseSegments()}}
+{\footnotesize\ttfamily virtual vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ Abstract\+Object\+CCOTree\+::get\+Close\+Segments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$}]{domain,  }\item[{int $\ast$}]{n\+Found }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the segments in a close neighborhood of {\ttfamily x\+New}. The neighborhood is computed based on the perfusion volume indicated by {\ttfamily domain}. 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Center point of the neighborhood of interest. \\
+\hline
+{\em domain} & Domain of the segments. \\
+\hline
+{\em n\+Found} & Amount of segments in the neighborhood. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of segments in the neighborhood of {\ttfamily x\+New}. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a2c33f20925efececc655c7b8d89c93ed}{Single\+Vessel\+CCOOTree}}.
+
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a24a38d8d43726a9b4d61efaa2f0bf33c}\label{class_abstract_object_c_c_o_tree_a24a38d8d43726a9b4d61efaa2f0bf33c}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getClosestTreePoint@{getClosestTreePoint}}
+\index{getClosestTreePoint@{getClosestTreePoint}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getClosestTreePoint()}{getClosestTreePoint()}}
+{\footnotesize\ttfamily virtual void Abstract\+Object\+CCOTree\+::get\+Closest\+Tree\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{x\+Bif,  }\item[{double $\ast$}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the closest point in the CCOTree with respect to {\ttfamily x\+New} point. 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Point from which the minimum distance is computed. \\
+\hline
+{\em x\+Bif} & Closest point in the tree to {\ttfamily x\+New}. \\
+\hline
+{\em dist} & Minimum distance between {\ttfamily x\+New} and the tree. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_aac665cdb3fa0687f579ef844ac47c5a7}{Single\+Vessel\+CCOOTree}}.
+
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a40659166aaf9843ddc6ac4c7ba7d9505}\label{class_abstract_object_c_c_o_tree_a40659166aaf9843ddc6ac4c7ba7d9505}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getConnectivity@{getConnectivity}}
+\index{getConnectivity@{getConnectivity}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getConnectivity()}{getConnectivity()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ int $>$ $>$ Abstract\+Object\+CCOTree\+::get\+Connectivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a vector with one entry per line element of the tree. Each entry contains the identifiers of the points that constitutes the element. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aefb00fd1ac1eb8daea421cf481fc8e6f}\label{class_abstract_object_c_c_o_tree_aefb00fd1ac1eb8daea421cf481fc8e6f}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getCurrentStage@{getCurrentStage}}
+\index{getCurrentStage@{getCurrentStage}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getCurrentStage()}{getCurrentStage()}}
+{\footnotesize\ttfamily int Abstract\+Object\+CCOTree\+::get\+Current\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of {\ttfamily current\+Stage}. \begin{DoxyReturn}{Returns}
+{\ttfamily current\+Stage}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a74b76bea7703485a7564a2415b421d4e}\label{class_abstract_object_c_c_o_tree_a74b76bea7703485a7564a2415b421d4e}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getDp@{getDp}}
+\index{getDp@{getDp}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getDp()}{getDp()}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::get\+Dp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of {\ttfamily dp}. \begin{DoxyReturn}{Returns}
+{\ttfamily dp}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a08cb14298e5ab481a9540b5487db54b0}\label{class_abstract_object_c_c_o_tree_a08cb14298e5ab481a9540b5487db54b0}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getEpsLim@{getEpsLim}}
+\index{getEpsLim@{getEpsLim}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getEpsLim()}{getEpsLim()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ Abstract\+Object\+CCOTree\+::get\+Eps\+Lim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily eps\+Lim}. \begin{DoxyReturn}{Returns}
+{\ttfamily eps\+Lim}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ad97518a157cf02e69ef931044251d349}\label{class_abstract_object_c_c_o_tree_ad97518a157cf02e69ef931044251d349}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getGam@{getGam}}
+\index{getGam@{getGam}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getGam()}{getGam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ Abstract\+Object\+CCOTree\+::get\+Gam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily gam}. \begin{DoxyReturn}{Returns}
+{\ttfamily gam}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a2088df2b807ea7cff5c03b28025e4891}\label{class_abstract_object_c_c_o_tree_a2088df2b807ea7cff5c03b28025e4891}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getInstanceData@{getInstanceData}}
+\index{getInstanceData@{getInstanceData}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getInstanceData()}{getInstanceData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$ Abstract\+Object\+CCOTree\+::get\+Instance\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily instance\+Data}. \begin{DoxyReturn}{Returns}
+{\ttfamily instance\+Data}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ad616fa635a32bcfd0a836d4eedfa1378}\label{class_abstract_object_c_c_o_tree_ad616fa635a32bcfd0a836d4eedfa1378}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getIsInCm@{getIsInCm}}
+\index{getIsInCm@{getIsInCm}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getIsInCm()}{getIsInCm()}}
+{\footnotesize\ttfamily int Abstract\+Object\+CCOTree\+::get\+Is\+In\+Cm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of {\ttfamily is\+In\+Cm}. \begin{DoxyReturn}{Returns}
+{\ttfamily is\+In\+Cm} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ae126ccaccbb13167161ddfadd4353c17}\label{class_abstract_object_c_c_o_tree_ae126ccaccbb13167161ddfadd4353c17}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getNTerminals@{getNTerminals}}
+\index{getNTerminals@{getNTerminals}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getNTerminals()}{getNTerminals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long long int Abstract\+Object\+CCOTree\+::get\+NTerminals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the amount of terminals in the current tree. \begin{DoxyReturn}{Returns}
+Amount of tree terminals. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aeef8f145bcb5ebff39b74279f4f2350a}\label{class_abstract_object_c_c_o_tree_aeef8f145bcb5ebff39b74279f4f2350a}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getNTerminals@{getNTerminals}}
+\index{getNTerminals@{getNTerminals}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getNTerminals()}{getNTerminals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily long long int Abstract\+Object\+CCOTree\+::get\+NTerminals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element_a9c7d6ae9fe8c220ddad143208b0a5a11}{Abstract\+Vascular\+Element\+::\+TERMINAL\+\_\+\+TYPE}}}]{type }\end{DoxyParamCaption})}
+
+Returns the amount of terminals of a given terminal type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Terminal type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Amount of terminals of the given terminal type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a0c8fc5cdc84a9f5097dda24443c2462f}\label{class_abstract_object_c_c_o_tree_a0c8fc5cdc84a9f5097dda24443c2462f}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getNTerms@{getNTerms}}
+\index{getNTerms@{getNTerms}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getNTerms()}{getNTerms()}}
+{\footnotesize\ttfamily long long int Abstract\+Object\+CCOTree\+::get\+NTerms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily n\+Terms}. \begin{DoxyReturn}{Returns}
+{\ttfamily n\+Terms} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aa1ee6820dc34e0aa9f5797c86ed41ee4}\label{class_abstract_object_c_c_o_tree_aa1ee6820dc34e0aa9f5797c86ed41ee4}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getNu@{getNu}}
+\index{getNu@{getNu}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getNu()}{getNu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ Abstract\+Object\+CCOTree\+::get\+Nu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily nu}. \begin{DoxyReturn}{Returns}
+{\ttfamily nu}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a8dbf83c006c371dc265364f1275c2979}\label{class_abstract_object_c_c_o_tree_a8dbf83c006c371dc265364f1275c2979}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getPointCounter@{getPointCounter}}
+\index{getPointCounter@{getPointCounter}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getPointCounter()}{getPointCounter()}}
+{\footnotesize\ttfamily long long int Abstract\+Object\+CCOTree\+::get\+Point\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of {\ttfamily point\+Counter}. \begin{DoxyReturn}{Returns}
+{\ttfamily point\+Counter}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a81336407d6138888b916f12d75e7ae74}\label{class_abstract_object_c_c_o_tree_a81336407d6138888b916f12d75e7ae74}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getQProx@{getQProx}}
+\index{getQProx@{getQProx}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getQProx()}{getQProx()}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::get\+QProx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily q\+Prox}. \begin{DoxyReturn}{Returns}
+{\ttfamily q\+Prox} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a0842a366c08f1b1fa3bf1fbc27c48e66}\label{class_abstract_object_c_c_o_tree_a0842a366c08f1b1fa3bf1fbc27c48e66}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getReservedFactor@{getReservedFactor}}
+\index{getReservedFactor@{getReservedFactor}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getReservedFactor()}{getReservedFactor()}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::get\+Reserved\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of {\ttfamily q\+Reserved\+Factor}. \begin{DoxyReturn}{Returns}
+{\ttfamily q\+Reserved\+Factor}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a98a758f4b6fd1528e8105f46867e60c3}\label{class_abstract_object_c_c_o_tree_a98a758f4b6fd1528e8105f46867e60c3}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getRoot@{getRoot}}
+\index{getRoot@{getRoot}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getRoot()}{getRoot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ Abstract\+Object\+CCOTree\+::get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily root}. \begin{DoxyReturn}{Returns}
+{\ttfamily root}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a6c683280e655c0628a53146c84fdbeed}\label{class_abstract_object_c_c_o_tree_a6c683280e655c0628a53146c84fdbeed}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getSegments@{getSegments}}
+\index{getSegments@{getSegments}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getSegments()}{getSegments()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ long long, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ \& Abstract\+Object\+CCOTree\+::get\+Segments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily elements}. \begin{DoxyReturn}{Returns}
+{\ttfamily elements}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a25cc167a1c8aae7edc8158683a668647}\label{class_abstract_object_c_c_o_tree_a25cc167a1c8aae7edc8158683a668647}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getTreeName@{getTreeName}}
+\index{getTreeName@{getTreeName}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getTreeName()}{getTreeName()}}
+{\footnotesize\ttfamily virtual string Abstract\+Object\+CCOTree\+::get\+Tree\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of the tree class that implements the Abstract\+CCOTree. \begin{DoxyReturn}{Returns}
+Tree class name. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a6aeccd994eeaa106d0c269313d7cf3dc}{Single\+Vessel\+CCOOTree}}.
+
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a1f90fe393e3bd7f6f4a6ae7195827f17}\label{class_abstract_object_c_c_o_tree_a1f90fe393e3bd7f6f4a6ae7195827f17}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getVertices@{getVertices}}
+\index{getVertices@{getVertices}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getVertices()}{getVertices()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ double $>$ $>$ Abstract\+Object\+CCOTree\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a vector with each point of the tree as entry. Each point is implemented as a vector of three doubles. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_acbe0b850c270bc60967111b73d1b927b}\label{class_abstract_object_c_c_o_tree_acbe0b850c270bc60967111b73d1b927b}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getVessels@{getVessels}}
+\index{getVessels@{getVessels}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getVessels()}{getVessels()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ Abstract\+Object\+CCOTree\+::get\+Vessels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of vessels within {\ttfamily elements}. \begin{DoxyReturn}{Returns}
+{\ttfamily elements}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_afb5faccc7f05d32bcfd6f97937b7fb6c}\label{class_abstract_object_c_c_o_tree_afb5faccc7f05d32bcfd6f97937b7fb6c}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getVtkTree@{getVtkTree}}
+\index{getVtkTree@{getVtkTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getVtkTree()}{getVtkTree()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ Abstract\+Object\+CCOTree\+::get\+Vtk\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily vtk\+Tree}. \begin{DoxyReturn}{Returns}
+{\ttfamily vtk\+Tree}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a81862bcbe6e223d216079b1522ad0db1}\label{class_abstract_object_c_c_o_tree_a81862bcbe6e223d216079b1522ad0db1}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!getXProx@{getXProx}}
+\index{getXProx@{getXProx}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{getXProx()}{getXProx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} Abstract\+Object\+CCOTree\+::get\+XProx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of {\ttfamily x\+Prox}. \begin{DoxyReturn}{Returns}
+{\ttfamily x\+Prox} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a6815c1d167caf524cc81faecffed65e7}\label{class_abstract_object_c_c_o_tree_a6815c1d167caf524cc81faecffed65e7}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!print@{print}}
+\index{print@{print}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Abstract\+Object\+CCOTree\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Prints the current tree vessel by vessel. 
+
+Implemented in \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_acc5c5d57cad07202170ecca7f65978cf}{Single\+Vessel\+CCOOTree}}.
+
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_af8c442bdb65922511391f7f0e3b98b18}\label{class_abstract_object_c_c_o_tree_af8c442bdb65922511391f7f0e3b98b18}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!printVtkTree@{printVtkTree}}
+\index{printVtkTree@{printVtkTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{printVtkTree()}{printVtkTree()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::print\+Vtk\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints points and lines contained in the VTK tree structure. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a11f4904c4aafdd748cc4b93f9b78116c}\label{class_abstract_object_c_c_o_tree_a11f4904c4aafdd748cc4b93f9b78116c}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!save@{save}}
+\index{save@{save}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::save (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Saves the tree data with exception of the vtk objects. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & File to save the tree data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a401ce5c8e425dae5a8d72bdd007a3464}\label{class_abstract_object_c_c_o_tree_a401ce5c8e425dae5a8d72bdd007a3464}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!saveTree@{saveTree}}
+\index{saveTree@{saveTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{saveTree()}{saveTree()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::save\+Tree (\begin{DoxyParamCaption}\item[{ofstream $\ast$}]{out\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Writes a string with the tree attributes in a .cco file. 
+\begin{DoxyParams}{Parameters}
+{\em out\+File} & File writer for the .cco file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a4f5ae33e49f3d7ba07e1f4a31ff3568e}{Single\+Vessel\+CCOOTree}}.
+
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a0bcc6af551702ca4054682acc02d1566}\label{class_abstract_object_c_c_o_tree_a0bcc6af551702ca4054682acc02d1566}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!saveVessel@{saveVessel}}
+\index{saveVessel@{saveVessel}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{saveVessel()}{saveVessel()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::save\+Vessel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{current\+Vessel,  }\item[{ofstream $\ast$}]{out\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Writes a string with the vessel attributes in a .cco file. 
+\begin{DoxyParams}{Parameters}
+{\em current\+Vessel} & Vessel to be saved. \\
+\hline
+{\em out\+File} & File writer for the .cco file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aa7e666d1d2736f69aae81e24481497db}\label{class_abstract_object_c_c_o_tree_aa7e666d1d2736f69aae81e24481497db}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!setCurrentStage@{setCurrentStage}}
+\index{setCurrentStage@{setCurrentStage}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{setCurrentStage()}{setCurrentStage()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::set\+Current\+Stage (\begin{DoxyParamCaption}\item[{int}]{current\+Stage }\end{DoxyParamCaption})}
+
+Setter of {\ttfamily current\+Stage}. 
+\begin{DoxyParams}{Parameters}
+{\em current\+Stage.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aad766c18effb679595d7c2fbae12006a}\label{class_abstract_object_c_c_o_tree_aad766c18effb679595d7c2fbae12006a}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!setEpsLim@{setEpsLim}}
+\index{setEpsLim@{setEpsLim}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{setEpsLim()}{setEpsLim()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::set\+Eps\+Lim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{eps\+Lim }\end{DoxyParamCaption})}
+
+Setter of {\ttfamily eps\+Lim}. 
+\begin{DoxyParams}{Parameters}
+{\em eps\+Lim.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a0d5c2d87afe1bff8f5e2e2bb25baccde}\label{class_abstract_object_c_c_o_tree_a0d5c2d87afe1bff8f5e2e2bb25baccde}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!setGam@{setGam}}
+\index{setGam@{setGam}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{setGam()}{setGam()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::set\+Gam (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{gam }\end{DoxyParamCaption})}
+
+Setter of {\ttfamily gam}. 
+\begin{DoxyParams}{Parameters}
+{\em gam.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ab0422503ddc24447e752c73d20a51887}\label{class_abstract_object_c_c_o_tree_ab0422503ddc24447e752c73d20a51887}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!setInstanceData@{setInstanceData}}
+\index{setInstanceData@{setInstanceData}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{setInstanceData()}{setInstanceData()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::set\+Instance\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Setter of {\ttfamily instance\+Data}. 
+\begin{DoxyParams}{Parameters}
+{\em instance\+Data.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a22155ce4ec3b74fa28635bf4e4de9c99}\label{class_abstract_object_c_c_o_tree_a22155ce4ec3b74fa28635bf4e4de9c99}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!setIsInCm@{setIsInCm}}
+\index{setIsInCm@{setIsInCm}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{setIsInCm()}{setIsInCm()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::set\+Is\+In\+Cm (\begin{DoxyParamCaption}\item[{int}]{is\+In\+Cm }\end{DoxyParamCaption})}
+
+Setter of {\ttfamily is\+In\+Cm}. 
+\begin{DoxyParams}{Parameters}
+{\em is\+In\+Cm.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a5c697dca9b49016e8dddc1af43cf0d20}\label{class_abstract_object_c_c_o_tree_a5c697dca9b49016e8dddc1af43cf0d20}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!setNu@{setNu}}
+\index{setNu@{setNu}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{setNu()}{setNu()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::set\+Nu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{nu }\end{DoxyParamCaption})}
+
+Setter of {\ttfamily nu}. 
+\begin{DoxyParams}{Parameters}
+{\em nu.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a53deb35aacf40244e396772bc151b3c3}\label{class_abstract_object_c_c_o_tree_a53deb35aacf40244e396772bc151b3c3}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!setPointCounter@{setPointCounter}}
+\index{setPointCounter@{setPointCounter}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{setPointCounter()}{setPointCounter()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::set\+Point\+Counter (\begin{DoxyParamCaption}\item[{long long int}]{point\+Counter }\end{DoxyParamCaption})}
+
+Setter of {\ttfamily point\+Counter}. 
+\begin{DoxyParams}{Parameters}
+{\em point\+Counter.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aa88bb0f5894cad8b52d6a93b57355b52}\label{class_abstract_object_c_c_o_tree_aa88bb0f5894cad8b52d6a93b57355b52}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!setReservedFactor@{setReservedFactor}}
+\index{setReservedFactor@{setReservedFactor}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{setReservedFactor()}{setReservedFactor()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::set\+Reserved\+Factor (\begin{DoxyParamCaption}\item[{double}]{reserved\+Factor }\end{DoxyParamCaption})}
+
+Setter of {\ttfamily q\+Reserved\+Factor}. 
+\begin{DoxyParams}{Parameters}
+{\em q\+Reserved\+Factor.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a7279cc7eaa7466bc86fa83508df4358a}\label{class_abstract_object_c_c_o_tree_a7279cc7eaa7466bc86fa83508df4358a}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!testVessel@{testVessel}}
+\index{testVessel@{testVessel}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{testVessel()}{testVessel()}}
+{\footnotesize\ttfamily virtual int Abstract\+Object\+CCOTree\+::test\+Vessel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$}]{domain,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$}]{neighbors,  }\item[{double}]{dlim,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{x\+Bif,  }\item[{double $\ast$}]{cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+For a given spatial point {\ttfamily x\+New} test its connection with {\ttfamily parent} vessel. It must evaluate if the restrictions of geometry and symmetry are satisfied and also if it do not intersects with other vessel of this tree. It returns in {\ttfamily cost} the functional value with the inclusion of such vessel. 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Distal point for the new vessel to test. \\
+\hline
+{\em parent} & Parent vessel to test the {\ttfamily x\+New} point connection. \\
+\hline
+{\em domain} & Tree domain. \\
+\hline
+{\em neighbors} & Close neighbors used for intersection test. \\
+\hline
+{\em dlim} & Not used in the current implementation. \\
+\hline
+{\em x\+Bif} & Proximal point for the new vessel that present the lower function cost. \\
+\hline
+{\em cost} & Functional cost variation for the best bifurcation position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the connection of the tree with x\+New is possible. If not {\ttfamily cost} is INFINITY. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a4efc4561ed2de4d186b16d5b3c006fc2}{Single\+Vessel\+CCOOTree}}.
+
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ad91b5a57a3fb2593a705d50648769639}\label{class_abstract_object_c_c_o_tree_ad91b5a57a3fb2593a705d50648769639}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!updateSegmentVtkLines@{updateSegmentVtkLines}}
+\index{updateSegmentVtkLines@{updateSegmentVtkLines}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{updateSegmentVtkLines()}{updateSegmentVtkLines()}}
+{\footnotesize\ttfamily void Abstract\+Object\+CCOTree\+::update\+Segment\+Vtk\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Updates the {\ttfamily vtk\+Segment} field of each vessel in segments using their {\ttfamily vtk\+Segment\+Id} from the current {\ttfamily vtk\+Tree}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a3597fe2e3dd70d3da743674eb91c2831}\label{class_abstract_object_c_c_o_tree_a3597fe2e3dd70d3da743674eb91c2831}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!currentStage@{currentStage}}
+\index{currentStage@{currentStage}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{currentStage}{currentStage}}
+{\footnotesize\ttfamily int Abstract\+Object\+CCOTree\+::current\+Stage\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stage actually being build. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_adfeb609a44be72e7894d09149ed40f3c}\label{class_abstract_object_c_c_o_tree_adfeb609a44be72e7894d09149ed40f3c}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!dp@{dp}}
+\index{dp@{dp}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{dp}{dp}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::dp\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unused, pressure drop along the tree. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a4635f6215b084867ee70135812c6971e}\label{class_abstract_object_c_c_o_tree_a4635f6215b084867ee70135812c6971e}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!elements@{elements}}
+\index{elements@{elements}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{elements}{elements}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$long long, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$$>$ Abstract\+Object\+CCOTree\+::elements\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vascular elements (vessels or set of vessels) of the tree. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a62d3e1ff7e74a6236422273f58fc6012}\label{class_abstract_object_c_c_o_tree_a62d3e1ff7e74a6236422273f58fc6012}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!epsLim@{epsLim}}
+\index{epsLim@{epsLim}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{epsLim}{epsLim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$double, int$>$$\ast$ Abstract\+Object\+CCOTree\+::eps\+Lim\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constraint for the symmetry between sibling vessels. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aad315b93744637e18153c4434dac067d}\label{class_abstract_object_c_c_o_tree_aad315b93744637e18153c4434dac067d}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!gam@{gam}}
+\index{gam@{gam}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{gam}{gam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$double, int$>$$\ast$ Abstract\+Object\+CCOTree\+::gam\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constraint for the ratio between parent and child radius based on the Murray\textquotesingle{}s Law. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}\label{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!instanceData@{instanceData}}
+\index{instanceData@{instanceData}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{instanceData}{instanceData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_generator_data}{Generator\+Data}}$\ast$ Abstract\+Object\+CCOTree\+::instance\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrapper with parameters associated to a tree generation process. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a11ab0fe8d03165bcbf23bc3cca75cafc}\label{class_abstract_object_c_c_o_tree_a11ab0fe8d03165bcbf23bc3cca75cafc}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!isInCm@{isInCm}}
+\index{isInCm@{isInCm}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{isInCm}{isInCm}}
+{\footnotesize\ttfamily int Abstract\+Object\+CCOTree\+::is\+In\+Cm\hspace{0.3cm}{\ttfamily [protected]}}
+
+If the tree is in cm, otherwise is assumed that is in mm (default) \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ad6c998c6ee999126718ca75cf7eeea0e}\label{class_abstract_object_c_c_o_tree_ad6c998c6ee999126718ca75cf7eeea0e}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!nTerms@{nTerms}}
+\index{nTerms@{nTerms}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{nTerms}{nTerms}}
+{\footnotesize\ttfamily long long Abstract\+Object\+CCOTree\+::n\+Terms\hspace{0.3cm}{\ttfamily [protected]}}
+
+Amount of terminals within the tree. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a92e6b6d1a2fac7331eee34fb28158828}\label{class_abstract_object_c_c_o_tree_a92e6b6d1a2fac7331eee34fb28158828}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!nu@{nu}}
+\index{nu@{nu}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{nu}{nu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$double, int$>$$\ast$ Abstract\+Object\+CCOTree\+::nu\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constraint for the vessel viscosity. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a8d8512b976d31017c242e229dafebd0a}\label{class_abstract_object_c_c_o_tree_a8d8512b976d31017c242e229dafebd0a}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!pointCounter@{pointCounter}}
+\index{pointCounter@{pointCounter}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{pointCounter}{pointCounter}}
+{\footnotesize\ttfamily long long int Abstract\+Object\+CCOTree\+::point\+Counter\hspace{0.3cm}{\ttfamily [protected]}}
+
+Amount of points consumed since the beginning of the CCO generation. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ad29145c32f075e9c9db3cf1bd2a97b28}\label{class_abstract_object_c_c_o_tree_ad29145c32f075e9c9db3cf1bd2a97b28}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!psiFactor@{psiFactor}}
+\index{psiFactor@{psiFactor}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{psiFactor}{psiFactor}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::psi\+Factor\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unused, factor used to estimate pressure in the tree. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a95cecfb158b008159b0885e4f434046f}\label{class_abstract_object_c_c_o_tree_a95cecfb158b008159b0885e4f434046f}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!qProx@{qProx}}
+\index{qProx@{qProx}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{qProx}{qProx}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::q\+Prox\hspace{0.3cm}{\ttfamily [protected]}}
+
+Proximal flow of the tree. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_aa7724194ea9aaa23352a459feaa8c38f}\label{class_abstract_object_c_c_o_tree_aa7724194ea9aaa23352a459feaa8c38f}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!qReservedFactor@{qReservedFactor}}
+\index{qReservedFactor@{qReservedFactor}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{qReservedFactor}{qReservedFactor}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::q\+Reserved\+Factor\hspace{0.3cm}{\ttfamily [protected]}}
+
+Percentage of the flow reserved for RESERVED terminals. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ae7215e6237e4d04625a0c96be9f3578d}\label{class_abstract_object_c_c_o_tree_ae7215e6237e4d04625a0c96be9f3578d}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!refPressure@{refPressure}}
+\index{refPressure@{refPressure}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{refPressure}{refPressure}}
+{\footnotesize\ttfamily double Abstract\+Object\+CCOTree\+::ref\+Pressure\hspace{0.3cm}{\ttfamily [protected]}}
+
+Distal reference pressure of the tree. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}\label{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!root@{root}}
+\index{root@{root}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}}$\ast$ Abstract\+Object\+CCOTree\+::root\hspace{0.3cm}{\ttfamily [protected]}}
+
+Tree root. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a241465d780d31882e94993abc0acb3af}\label{class_abstract_object_c_c_o_tree_a241465d780d31882e94993abc0acb3af}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!vtkTree@{vtkTree}}
+\index{vtkTree@{vtkTree}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{vtkTree}{vtkTree}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Poly\+Data$>$ Abstract\+Object\+CCOTree\+::vtk\+Tree\hspace{0.3cm}{\ttfamily [protected]}}
+
+VTK representation of the tree. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_ad46c9e54e0a3093cbd5968ee7f2fa71a}\label{class_abstract_object_c_c_o_tree_ad46c9e54e0a3093cbd5968ee7f2fa71a}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!vtkTreeLocator@{vtkTreeLocator}}
+\index{vtkTreeLocator@{vtkTreeLocator}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{vtkTreeLocator}{vtkTreeLocator}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Cell\+Locator$>$ Abstract\+Object\+CCOTree\+::vtk\+Tree\+Locator\hspace{0.3cm}{\ttfamily [protected]}}
+
+VTK locator for the tree. \mbox{\Hypertarget{class_abstract_object_c_c_o_tree_a6b9a8b8d2ba28beba61fe94f9028767c}\label{class_abstract_object_c_c_o_tree_a6b9a8b8d2ba28beba61fe94f9028767c}} 
+\index{AbstractObjectCCOTree@{AbstractObjectCCOTree}!xPerf@{xPerf}}
+\index{xPerf@{xPerf}!AbstractObjectCCOTree@{AbstractObjectCCOTree}}
+\doxysubsubsection{\texorpdfstring{xPerf}{xPerf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} Abstract\+Object\+CCOTree\+::x\+Perf\hspace{0.3cm}{\ttfamily [protected]}}
+
+Position of the tree inlet. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/tree/Abstract\+Object\+CCOTree.\+h\item 
+structures/tree/Abstract\+Object\+CCOTree.\+cpp\end{DoxyCompactItemize}

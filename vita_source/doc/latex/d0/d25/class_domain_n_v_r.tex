@@ -1,0 +1,392 @@
+\hypertarget{class_domain_n_v_r}{}\doxysection{Domain\+NVR Class Reference}
+\label{class_domain_n_v_r}\index{DomainNVR@{DomainNVR}}
+
+
+{\ttfamily \#include $<$Domain\+NVR.\+h$>$}
+
+Inheritance diagram for Domain\+NVR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/d25/class_domain_n_v_r}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_domain_n_v_r_a431e9b827836f231d6acc002332eb6a1}{Domain\+NVR}} (string filename\+Hull, vector$<$ string $>$ filename\+Non\+Vascular\+Regions, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_domain_n_v_r_af24a5b01a05b7e07c7cb0ba401dbb209}{Domain\+NVR}} (string filename\+Hull, vector$<$ string $>$ filename\+Non\+Vascular\+Regions, int \mbox{\hyperlink{class_domain_n_v_r_aa8a3d85f1a554c27e0ca399924576822}{n\+Draw}}, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_domain_n_v_r_abf32bdc762f1baacd89e14daf3e65bd7}{Domain\+NVR}} (string filename\+Hull, vector$<$ string $>$ filename\+Non\+Vascular\+Regions, int \mbox{\hyperlink{class_domain_n_v_r_aa8a3d85f1a554c27e0ca399924576822}{n\+Draw}}, int \mbox{\hyperlink{class_domain_n_v_r_aaf470f5f729cb3fc68d5449c52eccde5}{seed}}, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_domain_n_v_r_abae28ed5bffd700b5ade619388fb0b2c}{$\sim$\+Domain\+NVR}} ()
+\item 
+int \mbox{\hyperlink{class_domain_n_v_r_a46b7a56ffdb8f8e0cfcd2a5761571394}{is\+Segment\+Inside}} (\mbox{\hyperlink{structpoint}{point}} xs, \mbox{\hyperlink{structpoint}{point}} xf)
+\item 
+double \mbox{\hyperlink{class_domain_n_v_r_a590ea752ce83767038de90138faf8a21}{get\+Characteristic\+Length}} ()
+\item 
+double \mbox{\hyperlink{class_domain_n_v_r_a5e67e5367a9f22ab0243e06d92abccab}{get\+DLim}} (long long int n\+Vessels, double factor)
+\item 
+double $\ast$ \mbox{\hyperlink{class_domain_n_v_r_a5d97b6894250d8034c5e0679266f9fb1}{get\+Local\+Neighborhood}} (\mbox{\hyperlink{structpoint}{point}} p, long long int n\+Vessels)
+\item 
+double \mbox{\hyperlink{class_domain_n_v_r_aae7b6782c1caab8cf5246c802be410cc}{get\+Size}} ()
+\item 
+virtual \mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{class_domain_n_v_r_a88c76433bc3e8a1c1d60d4e7643f46d0}{get\+Random\+Point}} ()
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+OBBTree $>$ \& \mbox{\hyperlink{class_domain_n_v_r_a504fa4fb67064bdf3b1507a1d7372d41}{get\+Locator}} ()
+\item 
+int \mbox{\hyperlink{class_domain_n_v_r_a3fead46c8720529bc3faaae5b817ccb7}{get\+Draw}} ()
+\item 
+deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \& \mbox{\hyperlink{class_domain_n_v_r_a2b303bccf9a1db72e3bae866d7947f2d}{get\+Random\+Inner\+Points}} ()
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \& \mbox{\hyperlink{class_domain_n_v_r_a50591c2d4b9e055821cc53416bf4263c}{get\+Vtk\+Geometry}} ()
+\item 
+int \mbox{\hyperlink{class_domain_n_v_r_a2dfc8b99e3f99c6e9985ac1bc30296fe}{get\+Seed}} ()
+\item 
+\mbox{\Hypertarget{class_domain_n_v_r_a850f4e02e0fbd1a07b6af782ed7f7a1f}\label{class_domain_n_v_r_a850f4e02e0fbd1a07b6af782ed7f7a1f}} 
+string {\bfseries get\+Filename\+Hull} ()
+\item 
+\mbox{\Hypertarget{class_domain_n_v_r_a5b6bd0df91af8ff7df05366e209948fa}\label{class_domain_n_v_r_a5b6bd0df91af8ff7df05366e209948fa}} 
+vector$<$ string $>$ {\bfseries get\+Filename\+NVR} ()
+\item 
+void \mbox{\hyperlink{class_domain_n_v_r_a459ce8dbe9461c21af93b6fab2783cde}{log\+Domain\+Files}} (FILE $\ast$fp)
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Select\+Enclosed\+Points $>$ \mbox{\hyperlink{class_domain_n_v_r_a1534f6ce52bda9e1f96405ab196e18d1}{get\+Enclosed\+Points}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_domain_n_v_r_a7bcd43488a6810609d6004653d36566f}\label{class_domain_n_v_r_a7bcd43488a6810609d6004653d36566f}} 
+void {\bfseries generate\+Random\+Points} ()
+\item 
+\mbox{\Hypertarget{class_domain_n_v_r_aae7ebe5baaefe6824097127c8d91bb2c}\label{class_domain_n_v_r_aae7ebe5baaefe6824097127c8d91bb2c}} 
+void {\bfseries remove\+Random\+Outer\+Points} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_domain_n_v_r_a8fbb161c35df4d674c42fcf0baa76284}\label{class_domain_n_v_r_a8fbb161c35df4d674c42fcf0baa76284}} 
+deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ {\bfseries random\+Inner\+Points}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_domain_n_v_r_a0a3460ae7f96bdf3f3791b9ef51622c3}\label{class_domain_n_v_r_a0a3460ae7f96bdf3f3791b9ef51622c3}} 
+string {\bfseries filename\+Hull}
+\item 
+\mbox{\Hypertarget{class_domain_n_v_r_a3f307dfcf150ae8e4a7e2c4d7caa1673}\label{class_domain_n_v_r_a3f307dfcf150ae8e4a7e2c4d7caa1673}} 
+vector$<$ string $>$ {\bfseries filename\+NVR}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \mbox{\hyperlink{class_domain_n_v_r_a4870df18eb5b742c6a76ad9ba04533a2}{vtk\+Geometry}}
+\item 
+vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ $>$ \mbox{\hyperlink{class_domain_n_v_r_aff487471a8d4fc7b0a5cfeeb119f8471}{vtk\+Hollow\+Regions}}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+OBBTree $>$ \mbox{\hyperlink{class_domain_n_v_r_a3352f4af5dcc9c78cf2a56fd720da497}{locator}}
+\item 
+vector$<$ vtk\+Smart\+Pointer$<$ vtk\+OBBTree $>$ $>$ \mbox{\hyperlink{class_domain_n_v_r_a8848ec8d5e22bb9d03bd946087f0fa00}{hollow\+Locators}}
+\item 
+double \mbox{\hyperlink{class_domain_n_v_r_a7806401ba6d4de5d8e39d0f468f23ff2}{characteristic\+Length}}
+\item 
+int \mbox{\hyperlink{class_domain_n_v_r_aa8a3d85f1a554c27e0ca399924576822}{n\+Draw}}
+\item 
+int \mbox{\hyperlink{class_domain_n_v_r_aaf470f5f729cb3fc68d5449c52eccde5}{seed}} = -\/1
+\item 
+mt19937 \mbox{\hyperlink{class_domain_n_v_r_a0b5be1fa94ce69a9af453274122b8387}{generator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Domain with non-\/vascularized regions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_domain_n_v_r_a431e9b827836f231d6acc002332eb6a1}\label{class_domain_n_v_r_a431e9b827836f231d6acc002332eb6a1}} 
+\index{DomainNVR@{DomainNVR}!DomainNVR@{DomainNVR}}
+\index{DomainNVR@{DomainNVR}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{DomainNVR()}{DomainNVR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Domain\+NVR\+::\+Domain\+NVR (\begin{DoxyParamCaption}\item[{string}]{filename\+Hull,  }\item[{vector$<$ string $>$}]{filename\+Non\+Vascular\+Regions,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Constructs a domain shaped by {\ttfamily filename\+Hull} with non vascularized regions contained in {\ttfamily filename\+Non\+Vascular\+Regions}. 
+\begin{DoxyParams}{Parameters}
+{\em filename\+Hull} & Domain description. \\
+\hline
+{\em filename\+Non\+Vascular\+Regions} & Non-\/vascularized regions descriptions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_domain_n_v_r_af24a5b01a05b7e07c7cb0ba401dbb209}\label{class_domain_n_v_r_af24a5b01a05b7e07c7cb0ba401dbb209}} 
+\index{DomainNVR@{DomainNVR}!DomainNVR@{DomainNVR}}
+\index{DomainNVR@{DomainNVR}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{DomainNVR()}{DomainNVR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Domain\+NVR\+::\+Domain\+NVR (\begin{DoxyParamCaption}\item[{string}]{filename\+Hull,  }\item[{vector$<$ string $>$}]{filename\+Non\+Vascular\+Regions,  }\item[{int}]{n\+Draw,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Constructs a domain shaped by {\ttfamily filename\+Hull} with non vascularized regions contained in {\ttfamily filename\+Non\+Vascular\+Regions} which generates batches of {\ttfamily n\+Draw} random points each time that the domain is with no more points. 
+\begin{DoxyParams}{Parameters}
+{\em filename\+Hull} & Domain description. \\
+\hline
+{\em filename\+Non\+Vascular\+Regions} & Non-\/vascularized regions descriptions. \\
+\hline
+{\em n\+Draw} & Random points generated at each batch. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_domain_n_v_r_abf32bdc762f1baacd89e14daf3e65bd7}\label{class_domain_n_v_r_abf32bdc762f1baacd89e14daf3e65bd7}} 
+\index{DomainNVR@{DomainNVR}!DomainNVR@{DomainNVR}}
+\index{DomainNVR@{DomainNVR}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{DomainNVR()}{DomainNVR()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Domain\+NVR\+::\+Domain\+NVR (\begin{DoxyParamCaption}\item[{string}]{filename\+Hull,  }\item[{vector$<$ string $>$}]{filename\+Non\+Vascular\+Regions,  }\item[{int}]{n\+Draw,  }\item[{int}]{seed,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Constructs a domain shaped by {\ttfamily filename\+Hull} with non vascularized regions contained in {\ttfamily filename\+Non\+Vascular\+Regions} which generates batches of {\ttfamily n\+Draw} random points each time that the domain is with no more points. 
+\begin{DoxyParams}{Parameters}
+{\em filename\+Hull} & Domain description. \\
+\hline
+{\em filename\+Non\+Vascular\+Regions} & Non-\/vascularized regions descriptions. \\
+\hline
+{\em n\+Draw} & Random points generated at each batch. \\
+\hline
+{\em seed} & Seed for random points generator. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_domain_n_v_r_abae28ed5bffd700b5ade619388fb0b2c}\label{class_domain_n_v_r_abae28ed5bffd700b5ade619388fb0b2c}} 
+\index{DomainNVR@{DomainNVR}!````~DomainNVR@{$\sim$DomainNVR}}
+\index{````~DomainNVR@{$\sim$DomainNVR}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{$\sim$DomainNVR()}{~DomainNVR()}}
+{\footnotesize\ttfamily Domain\+NVR\+::$\sim$\+Domain\+NVR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_domain_n_v_r_a590ea752ce83767038de90138faf8a21}\label{class_domain_n_v_r_a590ea752ce83767038de90138faf8a21}} 
+\index{DomainNVR@{DomainNVR}!getCharacteristicLength@{getCharacteristicLength}}
+\index{getCharacteristicLength@{getCharacteristicLength}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getCharacteristicLength()}{getCharacteristicLength()}}
+{\footnotesize\ttfamily double Domain\+NVR\+::get\+Characteristic\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Estimates a characteristic length for the current domain. This length is useful to estimate the perfusion volume of the domain. \begin{DoxyReturn}{Returns}
+Chracteristic length. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a90ca3dff64bab2428da8ced24e16f4c3}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a5e67e5367a9f22ab0243e06d92abccab}\label{class_domain_n_v_r_a5e67e5367a9f22ab0243e06d92abccab}} 
+\index{DomainNVR@{DomainNVR}!getDLim@{getDLim}}
+\index{getDLim@{getDLim}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getDLim()}{getDLim()}}
+{\footnotesize\ttfamily double Domain\+NVR\+::get\+DLim (\begin{DoxyParamCaption}\item[{long long int}]{n\+Vessels,  }\item[{double}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Minimum distance between a new vessel terminal and the tree based on the current terminal perfusion. This is lower bound criteria for the vessel length and also aids toward a spatially homogeneous terminal distribution. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Vessels} & Quantity of terminals in the current tree. \\
+\hline
+{\em factor} & Factor used to scale a perfusion measure in order to estimate the DLim value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+DLim value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_ac9f39c12182608eb704c051e5d1cbc55}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a3fead46c8720529bc3faaae5b817ccb7}\label{class_domain_n_v_r_a3fead46c8720529bc3faaae5b817ccb7}} 
+\index{DomainNVR@{DomainNVR}!getDraw@{getDraw}}
+\index{getDraw@{getDraw}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getDraw()}{getDraw()}}
+{\footnotesize\ttfamily int Domain\+NVR\+::get\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of random points created in each batch of random generations. \begin{DoxyReturn}{Returns}
+Number of random points created in each batch of random generations. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a1534f6ce52bda9e1f96405ab196e18d1}\label{class_domain_n_v_r_a1534f6ce52bda9e1f96405ab196e18d1}} 
+\index{DomainNVR@{DomainNVR}!getEnclosedPoints@{getEnclosedPoints}}
+\index{getEnclosedPoints@{getEnclosedPoints}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getEnclosedPoints()}{getEnclosedPoints()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+Select\+Enclosed\+Points $>$ Domain\+NVR\+::get\+Enclosed\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual method to be used by \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_logger}{Staged\+FRROTree\+Generator\+Logger}}. 
+
+Implements \mbox{\hyperlink{class_abstract_domain_a30a18859536cb5e15de537b9b38b6e19}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a5d97b6894250d8034c5e0679266f9fb1}\label{class_domain_n_v_r_a5d97b6894250d8034c5e0679266f9fb1}} 
+\index{DomainNVR@{DomainNVR}!getLocalNeighborhood@{getLocalNeighborhood}}
+\index{getLocalNeighborhood@{getLocalNeighborhood}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getLocalNeighborhood()}{getLocalNeighborhood()}}
+{\footnotesize\ttfamily double $\ast$ Domain\+NVR\+::get\+Local\+Neighborhood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{long long int}]{n\+Vessels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the local neighbors to the {\ttfamily p} point locus. The amount of neighbors is estimated based on the current terminal perfusion. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Central point of the neighborhood. \\
+\hline
+{\em n\+Vessels} & Amount of terminals in the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of neighbor vessels. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a7db31e8e114d789e39df59ee99307a84}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a504fa4fb67064bdf3b1507a1d7372d41}\label{class_domain_n_v_r_a504fa4fb67064bdf3b1507a1d7372d41}} 
+\index{DomainNVR@{DomainNVR}!getLocator@{getLocator}}
+\index{getLocator@{getLocator}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getLocator()}{getLocator()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+OBBTree $>$ \& Domain\+NVR\+::get\+Locator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the locator used to test inside segments. \begin{DoxyReturn}{Returns}
+Locator used to test inside segments. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_domain_n_v_r_a2b303bccf9a1db72e3bae866d7947f2d}\label{class_domain_n_v_r_a2b303bccf9a1db72e3bae866d7947f2d}} 
+\index{DomainNVR@{DomainNVR}!getRandomInnerPoints@{getRandomInnerPoints}}
+\index{getRandomInnerPoints@{getRandomInnerPoints}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getRandomInnerPoints()}{getRandomInnerPoints()}}
+{\footnotesize\ttfamily deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \& Domain\+NVR\+::get\+Random\+Inner\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return a set of inner domain points. \begin{DoxyReturn}{Returns}
+Set of inner domain points. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a5cbf88a698f26ddc05ed66fffa95a394}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a88c76433bc3e8a1c1d60d4e7643f46d0}\label{class_domain_n_v_r_a88c76433bc3e8a1c1d60d4e7643f46d0}} 
+\index{DomainNVR@{DomainNVR}!getRandomPoint@{getRandomPoint}}
+\index{getRandomPoint@{getRandomPoint}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getRandomPoint()}{getRandomPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} Domain\+NVR\+::get\+Random\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return a random point inside the domain. \begin{DoxyReturn}{Returns}
+Point inside the domain. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_ae31a5b26d1dc628abe24da7a4d375415}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a2dfc8b99e3f99c6e9985ac1bc30296fe}\label{class_domain_n_v_r_a2dfc8b99e3f99c6e9985ac1bc30296fe}} 
+\index{DomainNVR@{DomainNVR}!getSeed@{getSeed}}
+\index{getSeed@{getSeed}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getSeed()}{getSeed()}}
+{\footnotesize\ttfamily int Domain\+NVR\+::get\+Seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns random generator seed. \begin{DoxyReturn}{Returns}
+{\ttfamily seed} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_aae7b6782c1caab8cf5246c802be410cc}\label{class_domain_n_v_r_aae7b6782c1caab8cf5246c802be410cc}} 
+\index{DomainNVR@{DomainNVR}!getSize@{getSize}}
+\index{getSize@{getSize}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily double Domain\+NVR\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Computes the size of the domain. \begin{DoxyReturn}{Returns}
+Size of the domain. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a049564d82f2c177c39834dfc8da143dc}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a50591c2d4b9e055821cc53416bf4263c}\label{class_domain_n_v_r_a50591c2d4b9e055821cc53416bf4263c}} 
+\index{DomainNVR@{DomainNVR}!getVtkGeometry@{getVtkGeometry}}
+\index{getVtkGeometry@{getVtkGeometry}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{getVtkGeometry()}{getVtkGeometry()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \& Domain\+NVR\+::get\+Vtk\+Geometry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the vtk\+Polydata with the domain representation. \begin{DoxyReturn}{Returns}
+vtk\+Polydata with the domain representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a392d9e31079a2dc5b39b9f34caa15875}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a46b7a56ffdb8f8e0cfcd2a5761571394}\label{class_domain_n_v_r_a46b7a56ffdb8f8e0cfcd2a5761571394}} 
+\index{DomainNVR@{DomainNVR}!isSegmentInside@{isSegmentInside}}
+\index{isSegmentInside@{isSegmentInside}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{isSegmentInside()}{isSegmentInside()}}
+{\footnotesize\ttfamily int Domain\+NVR\+::is\+Segment\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{xs,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{xf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns if the segment defined by the vertexes {\ttfamily xs} and {\ttfamily xf} is inside the current domain. 
+\begin{DoxyParams}{Parameters}
+{\em xs} & Start point of the segment. \\
+\hline
+{\em xf} & End point of the segment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the segment defined by the vertexes {\ttfamily xs} and {\ttfamily xf} is inside the current domain otherwise 0. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a8544eef21fb6700ecc02e9cd50884efd}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_domain_n_v_r_a459ce8dbe9461c21af93b6fab2783cde}\label{class_domain_n_v_r_a459ce8dbe9461c21af93b6fab2783cde}} 
+\index{DomainNVR@{DomainNVR}!logDomainFiles@{logDomainFiles}}
+\index{logDomainFiles@{logDomainFiles}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{logDomainFiles()}{logDomainFiles()}}
+{\footnotesize\ttfamily void Domain\+NVR\+::log\+Domain\+Files (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_domain_n_v_r_a7806401ba6d4de5d8e39d0f468f23ff2}\label{class_domain_n_v_r_a7806401ba6d4de5d8e39d0f468f23ff2}} 
+\index{DomainNVR@{DomainNVR}!characteristicLength@{characteristicLength}}
+\index{characteristicLength@{characteristicLength}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{characteristicLength}{characteristicLength}}
+{\footnotesize\ttfamily double Domain\+NVR\+::characteristic\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+Characteristic length for the domain. \mbox{\Hypertarget{class_domain_n_v_r_a0b5be1fa94ce69a9af453274122b8387}\label{class_domain_n_v_r_a0b5be1fa94ce69a9af453274122b8387}} 
+\index{DomainNVR@{DomainNVR}!generator@{generator}}
+\index{generator@{generator}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{generator}{generator}}
+{\footnotesize\ttfamily mt19937 Domain\+NVR\+::generator\hspace{0.3cm}{\ttfamily [private]}}
+
+Random generator. \mbox{\Hypertarget{class_domain_n_v_r_a8848ec8d5e22bb9d03bd946087f0fa00}\label{class_domain_n_v_r_a8848ec8d5e22bb9d03bd946087f0fa00}} 
+\index{DomainNVR@{DomainNVR}!hollowLocators@{hollowLocators}}
+\index{hollowLocators@{hollowLocators}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{hollowLocators}{hollowLocators}}
+{\footnotesize\ttfamily vector$<$vtk\+Smart\+Pointer$<$vtk\+OBBTree$>$ $>$ Domain\+NVR\+::hollow\+Locators\hspace{0.3cm}{\ttfamily [private]}}
+
+Cell locator responsible to determine if a segment is inside a non-\/vascularized region. \mbox{\Hypertarget{class_domain_n_v_r_a3352f4af5dcc9c78cf2a56fd720da497}\label{class_domain_n_v_r_a3352f4af5dcc9c78cf2a56fd720da497}} 
+\index{DomainNVR@{DomainNVR}!locator@{locator}}
+\index{locator@{locator}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{locator}{locator}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+OBBTree$>$ Domain\+NVR\+::locator\hspace{0.3cm}{\ttfamily [private]}}
+
+Cell locator responsible to determine if a segment is inside the domain. \mbox{\Hypertarget{class_domain_n_v_r_aa8a3d85f1a554c27e0ca399924576822}\label{class_domain_n_v_r_aa8a3d85f1a554c27e0ca399924576822}} 
+\index{DomainNVR@{DomainNVR}!nDraw@{nDraw}}
+\index{nDraw@{nDraw}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{nDraw}{nDraw}}
+{\footnotesize\ttfamily int Domain\+NVR\+::n\+Draw\hspace{0.3cm}{\ttfamily [private]}}
+
+Amount of points randomly generated when no more points are available. \mbox{\Hypertarget{class_domain_n_v_r_aaf470f5f729cb3fc68d5449c52eccde5}\label{class_domain_n_v_r_aaf470f5f729cb3fc68d5449c52eccde5}} 
+\index{DomainNVR@{DomainNVR}!seed@{seed}}
+\index{seed@{seed}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily int Domain\+NVR\+::seed = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+Random instance seed. \mbox{\Hypertarget{class_domain_n_v_r_a4870df18eb5b742c6a76ad9ba04533a2}\label{class_domain_n_v_r_a4870df18eb5b742c6a76ad9ba04533a2}} 
+\index{DomainNVR@{DomainNVR}!vtkGeometry@{vtkGeometry}}
+\index{vtkGeometry@{vtkGeometry}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{vtkGeometry}{vtkGeometry}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Poly\+Data$>$ Domain\+NVR\+::vtk\+Geometry\hspace{0.3cm}{\ttfamily [private]}}
+
+vtk\+Polydata description of the domain. \mbox{\Hypertarget{class_domain_n_v_r_aff487471a8d4fc7b0a5cfeeb119f8471}\label{class_domain_n_v_r_aff487471a8d4fc7b0a5cfeeb119f8471}} 
+\index{DomainNVR@{DomainNVR}!vtkHollowRegions@{vtkHollowRegions}}
+\index{vtkHollowRegions@{vtkHollowRegions}!DomainNVR@{DomainNVR}}
+\doxysubsubsection{\texorpdfstring{vtkHollowRegions}{vtkHollowRegions}}
+{\footnotesize\ttfamily vector$<$vtk\+Smart\+Pointer$<$vtk\+Poly\+Data$>$ $>$ Domain\+NVR\+::vtk\+Hollow\+Regions\hspace{0.3cm}{\ttfamily [private]}}
+
+Non-\/vascularized subdomains represented by vtk\+Polydata. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/domain/Domain\+NVR.\+h\item 
+structures/domain/Domain\+NVR.\+cpp\end{DoxyCompactItemize}

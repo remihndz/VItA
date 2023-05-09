@@ -1,0 +1,112 @@
+\hypertarget{class_sphere_creator}{}\doxysection{Sphere\+Creator Class Reference}
+\label{class_sphere_creator}\index{SphereCreator@{SphereCreator}}
+
+
+{\ttfamily \#include $<$Sphere\+Creator.\+h$>$}
+
+Inheritance diagram for Sphere\+Creator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/df1/class_sphere_creator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sphere_creator_a8fc063b81421021b1da0e77d57071cf6}{Sphere\+Creator}} (vector$<$ double $>$ \mbox{\hyperlink{class_sphere_creator_a4d3548be7ec07037e2d007dc07657de3}{center}}, double \mbox{\hyperlink{class_sphere_creator_aa0e357cf00720699cdaee04253ce492d}{radius}}, double \mbox{\hyperlink{class_sphere_creator_ae324f313bf48348001f328ea3abd9c7c}{phi\+Resolution}}, double \mbox{\hyperlink{class_sphere_creator_a062bf41868fd771016df76cb19550c36}{theta\+Resolution}})
+\item 
+virtual \mbox{\hyperlink{class_sphere_creator_a6e7073144b46c1988c2974689e5d1d21}{$\sim$\+Sphere\+Creator}} ()
+\item 
+void \mbox{\hyperlink{class_sphere_creator_a35e16f36b147b2fb2705d9413f5a963e}{create}} (string filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{class_sphere_creator_a4d3548be7ec07037e2d007dc07657de3}{center}}
+\item 
+double \mbox{\hyperlink{class_sphere_creator_aa0e357cf00720699cdaee04253ce492d}{radius}}
+\item 
+double \mbox{\hyperlink{class_sphere_creator_ae324f313bf48348001f328ea3abd9c7c}{phi\+Resolution}}
+\item 
+double \mbox{\hyperlink{class_sphere_creator_a062bf41868fd771016df76cb19550c36}{theta\+Resolution}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a VTP file containing a sphere. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sphere_creator_a8fc063b81421021b1da0e77d57071cf6}\label{class_sphere_creator_a8fc063b81421021b1da0e77d57071cf6}} 
+\index{SphereCreator@{SphereCreator}!SphereCreator@{SphereCreator}}
+\index{SphereCreator@{SphereCreator}!SphereCreator@{SphereCreator}}
+\doxysubsubsection{\texorpdfstring{SphereCreator()}{SphereCreator()}}
+{\footnotesize\ttfamily Sphere\+Creator\+::\+Sphere\+Creator (\begin{DoxyParamCaption}\item[{vector$<$ double $>$}]{center,  }\item[{double}]{radius,  }\item[{double}]{phi\+Resolution,  }\item[{double}]{theta\+Resolution }\end{DoxyParamCaption})}
+
+Initialize the inner variables of the object. 
+\begin{DoxyParams}{Parameters}
+{\em center} & 3D point denoting the center of the sphere. \\
+\hline
+{\em radius} & Radius of the sphere. \\
+\hline
+{\em phi\+Resolution} & Azimutal resolution of the sphere. \\
+\hline
+{\em theta\+Resolution} & Zenital resolution of the sphere. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sphere_creator_a6e7073144b46c1988c2974689e5d1d21}\label{class_sphere_creator_a6e7073144b46c1988c2974689e5d1d21}} 
+\index{SphereCreator@{SphereCreator}!````~SphereCreator@{$\sim$SphereCreator}}
+\index{````~SphereCreator@{$\sim$SphereCreator}!SphereCreator@{SphereCreator}}
+\doxysubsubsection{\texorpdfstring{$\sim$SphereCreator()}{~SphereCreator()}}
+{\footnotesize\ttfamily Sphere\+Creator\+::$\sim$\+Sphere\+Creator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Standard destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sphere_creator_a35e16f36b147b2fb2705d9413f5a963e}\label{class_sphere_creator_a35e16f36b147b2fb2705d9413f5a963e}} 
+\index{SphereCreator@{SphereCreator}!create@{create}}
+\index{create@{create}!SphereCreator@{SphereCreator}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void Sphere\+Creator\+::create (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Persist the object in a file with VTP format. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Save file for the current object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_creator_a1991e446444ffea2b85216b64f2dcf9e}{Abstract\+Creator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sphere_creator_a4d3548be7ec07037e2d007dc07657de3}\label{class_sphere_creator_a4d3548be7ec07037e2d007dc07657de3}} 
+\index{SphereCreator@{SphereCreator}!center@{center}}
+\index{center@{center}!SphereCreator@{SphereCreator}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily vector$<$double$>$ Sphere\+Creator\+::center\hspace{0.3cm}{\ttfamily [private]}}
+
+3D point denoting the center of the sphere. \mbox{\Hypertarget{class_sphere_creator_ae324f313bf48348001f328ea3abd9c7c}\label{class_sphere_creator_ae324f313bf48348001f328ea3abd9c7c}} 
+\index{SphereCreator@{SphereCreator}!phiResolution@{phiResolution}}
+\index{phiResolution@{phiResolution}!SphereCreator@{SphereCreator}}
+\doxysubsubsection{\texorpdfstring{phiResolution}{phiResolution}}
+{\footnotesize\ttfamily double Sphere\+Creator\+::phi\+Resolution\hspace{0.3cm}{\ttfamily [private]}}
+
+Azimutal resolution of the sphere. \mbox{\Hypertarget{class_sphere_creator_aa0e357cf00720699cdaee04253ce492d}\label{class_sphere_creator_aa0e357cf00720699cdaee04253ce492d}} 
+\index{SphereCreator@{SphereCreator}!radius@{radius}}
+\index{radius@{radius}!SphereCreator@{SphereCreator}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily double Sphere\+Creator\+::radius\hspace{0.3cm}{\ttfamily [private]}}
+
+Radius of the sphere. \mbox{\Hypertarget{class_sphere_creator_a062bf41868fd771016df76cb19550c36}\label{class_sphere_creator_a062bf41868fd771016df76cb19550c36}} 
+\index{SphereCreator@{SphereCreator}!thetaResolution@{thetaResolution}}
+\index{thetaResolution@{thetaResolution}!SphereCreator@{SphereCreator}}
+\doxysubsubsection{\texorpdfstring{thetaResolution}{thetaResolution}}
+{\footnotesize\ttfamily double Sphere\+Creator\+::theta\+Resolution\hspace{0.3cm}{\ttfamily [private]}}
+
+Zenital resolution of the sphere. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+creators/Sphere\+Creator.\+h\item 
+creators/Sphere\+Creator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{class_distribution_generator}{}\doxysection{Distribution\+Generator Class Reference}
+\label{class_distribution_generator}\index{DistributionGenerator@{DistributionGenerator}}
+
+
+{\ttfamily \#include $<$Distribution\+Generator.\+h$>$}
+
+Inheritance diagram for Distribution\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.885522cm]{dc/dc8/class_distribution_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_distribution_generator_a9ade678342c897fddf74da6a453cfa7b}{Distribution\+Generator}} ()
+\item 
+virtual \mbox{\hyperlink{class_distribution_generator_ada1c1b4e9024716e3041ee7836deff65}{$\sim$\+Distribution\+Generator}} ()
+\item 
+virtual void \mbox{\hyperlink{class_distribution_generator_ae4fa2d599942539e4b1971b0a8d5f8ba}{initialize}} (int seed, double $\ast$\mbox{\hyperlink{class_distribution_generator_abbb670b1d48a4820559097b85bf6ee2d}{bounding\+Box}})
+\item 
+virtual vector$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \mbox{\hyperlink{class_distribution_generator_a50bb6de32c7cb30f469af390c669a113}{get\+NPoints}} (int n)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \mbox{\hyperlink{class_distribution_generator_abbb670b1d48a4820559097b85bf6ee2d}{bounding\+Box}}
+\item 
+mt19937 \mbox{\hyperlink{class_distribution_generator_a875697de8d5c0a4d18e473e483a9646c}{generator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract generator of points. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_distribution_generator_a9ade678342c897fddf74da6a453cfa7b}\label{class_distribution_generator_a9ade678342c897fddf74da6a453cfa7b}} 
+\index{DistributionGenerator@{DistributionGenerator}!DistributionGenerator@{DistributionGenerator}}
+\index{DistributionGenerator@{DistributionGenerator}!DistributionGenerator@{DistributionGenerator}}
+\doxysubsubsection{\texorpdfstring{DistributionGenerator()}{DistributionGenerator()}}
+{\footnotesize\ttfamily Distribution\+Generator\+::\+Distribution\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{class_distribution_generator_ada1c1b4e9024716e3041ee7836deff65}\label{class_distribution_generator_ada1c1b4e9024716e3041ee7836deff65}} 
+\index{DistributionGenerator@{DistributionGenerator}!````~DistributionGenerator@{$\sim$DistributionGenerator}}
+\index{````~DistributionGenerator@{$\sim$DistributionGenerator}!DistributionGenerator@{DistributionGenerator}}
+\doxysubsubsection{\texorpdfstring{$\sim$DistributionGenerator()}{~DistributionGenerator()}}
+{\footnotesize\ttfamily Distribution\+Generator\+::$\sim$\+Distribution\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_distribution_generator_a50bb6de32c7cb30f469af390c669a113}\label{class_distribution_generator_a50bb6de32c7cb30f469af390c669a113}} 
+\index{DistributionGenerator@{DistributionGenerator}!getNPoints@{getNPoints}}
+\index{getNPoints@{getNPoints}!DistributionGenerator@{DistributionGenerator}}
+\doxysubsubsection{\texorpdfstring{getNPoints()}{getNPoints()}}
+{\footnotesize\ttfamily virtual vector$<$ \mbox{\hyperlink{structpoint}{point}} $>$ Distribution\+Generator\+::get\+NPoints (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return a vector of {\ttfamily n} points of the distribution. 
+\begin{DoxyParams}{Parameters}
+{\em n} & Amount of output points. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of distribution points. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_composite_distribution_generator_ac5aaadd082a0df0bda42cc8768ecc8d2}{Composite\+Distribution\+Generator}}, \mbox{\hyperlink{class_normal_distribution_generator_abad3d89c150cf60744bab34dba3b3367}{Normal\+Distribution\+Generator}}, and \mbox{\hyperlink{class_uniform_distribution_generator_a3628de975c16748b69b5838e4b02ea41}{Uniform\+Distribution\+Generator}}.
+
+\mbox{\Hypertarget{class_distribution_generator_ae4fa2d599942539e4b1971b0a8d5f8ba}\label{class_distribution_generator_ae4fa2d599942539e4b1971b0a8d5f8ba}} 
+\index{DistributionGenerator@{DistributionGenerator}!initialize@{initialize}}
+\index{initialize@{initialize}!DistributionGenerator@{DistributionGenerator}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Distribution\+Generator\+::initialize (\begin{DoxyParamCaption}\item[{int}]{seed,  }\item[{double $\ast$}]{bounding\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Initializer of the generator. Execute it before any getter call is performed. 
+
+Reimplemented in \mbox{\hyperlink{class_composite_distribution_generator_a799c7a57b895245c81a9492ddff63384}{Composite\+Distribution\+Generator}}, \mbox{\hyperlink{class_normal_distribution_generator_a858dfdfc16ab4367bf41ed76831eae45}{Normal\+Distribution\+Generator}}, and \mbox{\hyperlink{class_uniform_distribution_generator_a9f40ba5dca7db03833f00a846218ae68}{Uniform\+Distribution\+Generator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_distribution_generator_abbb670b1d48a4820559097b85bf6ee2d}\label{class_distribution_generator_abbb670b1d48a4820559097b85bf6ee2d}} 
+\index{DistributionGenerator@{DistributionGenerator}!boundingBox@{boundingBox}}
+\index{boundingBox@{boundingBox}!DistributionGenerator@{DistributionGenerator}}
+\doxysubsubsection{\texorpdfstring{boundingBox}{boundingBox}}
+{\footnotesize\ttfamily double$\ast$ Distribution\+Generator\+::bounding\+Box\hspace{0.3cm}{\ttfamily [protected]}}
+
+Bounding box of the domain where the points will be generated. \mbox{\Hypertarget{class_distribution_generator_a875697de8d5c0a4d18e473e483a9646c}\label{class_distribution_generator_a875697de8d5c0a4d18e473e483a9646c}} 
+\index{DistributionGenerator@{DistributionGenerator}!generator@{generator}}
+\index{generator@{generator}!DistributionGenerator@{DistributionGenerator}}
+\doxysubsubsection{\texorpdfstring{generator}{generator}}
+{\footnotesize\ttfamily mt19937 Distribution\+Generator\+::generator\hspace{0.3cm}{\ttfamily [protected]}}
+
+Random generator. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/domain/Distribution\+Generator.\+h\item 
+structures/domain/Distribution\+Generator.\+cpp\end{DoxyCompactItemize}

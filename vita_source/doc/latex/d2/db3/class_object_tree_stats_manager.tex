@@ -1,0 +1,112 @@
+\hypertarget{class_object_tree_stats_manager}{}\doxysection{Object\+Tree\+Stats\+Manager Class Reference}
+\label{class_object_tree_stats_manager}\index{ObjectTreeStatsManager@{ObjectTreeStatsManager}}
+
+
+{\ttfamily \#include $<$Object\+Tree\+Stats\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_tree_stats_manager_a44ccd21d6b24cfe89c898caffc7e3592}\label{class_object_tree_stats_manager_a44ccd21d6b24cfe89c898caffc7e3592}} 
+{\bfseries Object\+Tree\+Stats\+Manager} (\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$\mbox{\hyperlink{class_object_tree_stats_manager_abb9a49ec700913c42e9a073e137e9920}{tree}})
+\item 
+void \mbox{\hyperlink{class_object_tree_stats_manager_a5400eb4536c115308d393b350bb5ae62}{get\+Mean\+Per\+Level}} (vector$<$ double $>$ $\ast$levels, vector$<$ double $>$ $\ast$means, vector$<$ double $>$ $\ast$stds, \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} att)
+\item 
+void \mbox{\hyperlink{class_object_tree_stats_manager_ad007a9e835974f9b34b0f9e818928f66}{get\+Attributes\+Per\+Level}} (vector$<$ double $>$ $\ast$levels, vector$<$ vector$<$ double $>$ $>$ $\ast$values, vector$<$ \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} $>$ att)
+\item 
+void \mbox{\hyperlink{class_object_tree_stats_manager_a1aeb4b5268fa2a46f24715e63a2d9683}{get\+Attributes\+Per\+Level}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root, vector$<$ double $>$ $\ast$levels, vector$<$ vector$<$ double $>$ $>$ $\ast$values, vector$<$ \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} $>$ att)
+\item 
+void \mbox{\hyperlink{class_object_tree_stats_manager_a25c500074992ccd27419cf483b228cd4}{get\+Branches\+Attributes\+Per\+Level}} (vector$<$ double $>$ $\ast$banches, vector$<$ double $>$ $\ast$levels, vector$<$ vector$<$ double $>$ $>$ $\ast$values, vector$<$ \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} $>$ att, int stage)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ \mbox{\hyperlink{class_object_tree_stats_manager_abb9a49ec700913c42e9a073e137e9920}{tree}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Facade class used to access to all statistical analysis services implemented. The class aims to return vectors with the statistical results and no plots or any other outputs. Outputs are expected to be generated in the CCORendering library to decouple GUI from data and model components. The last is key to support the CCO library in clusters or environments with no GUI capabilities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_tree_stats_manager_a1aeb4b5268fa2a46f24715e63a2d9683}\label{class_object_tree_stats_manager_a1aeb4b5268fa2a46f24715e63a2d9683}} 
+\index{ObjectTreeStatsManager@{ObjectTreeStatsManager}!getAttributesPerLevel@{getAttributesPerLevel}}
+\index{getAttributesPerLevel@{getAttributesPerLevel}!ObjectTreeStatsManager@{ObjectTreeStatsManager}}
+\doxysubsubsection{\texorpdfstring{getAttributesPerLevel()}{getAttributesPerLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Object\+Tree\+Stats\+Manager\+::get\+Attributes\+Per\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root,  }\item[{vector$<$ double $>$ $\ast$}]{levels,  }\item[{vector$<$ vector$<$ double $>$ $>$ $\ast$}]{values,  }\item[{vector$<$ \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} $>$}]{att }\end{DoxyParamCaption})}
+
+Load {\ttfamily values} with all attributes indicated in {\ttfamily att} in the subtree rooted at {\ttfamily root}. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Subtree to be scanned. \\
+\hline
+{\em levels} & Levels of bifurcation (0,..., N-\/1). \\
+\hline
+{\em values} & Violin data for each level. \\
+\hline
+{\em att} & Field for sampling. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_tree_stats_manager_ad007a9e835974f9b34b0f9e818928f66}\label{class_object_tree_stats_manager_ad007a9e835974f9b34b0f9e818928f66}} 
+\index{ObjectTreeStatsManager@{ObjectTreeStatsManager}!getAttributesPerLevel@{getAttributesPerLevel}}
+\index{getAttributesPerLevel@{getAttributesPerLevel}!ObjectTreeStatsManager@{ObjectTreeStatsManager}}
+\doxysubsubsection{\texorpdfstring{getAttributesPerLevel()}{getAttributesPerLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Object\+Tree\+Stats\+Manager\+::get\+Attributes\+Per\+Level (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ $\ast$}]{levels,  }\item[{vector$<$ vector$<$ double $>$ $>$ $\ast$}]{values,  }\item[{vector$<$ \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} $>$}]{att }\end{DoxyParamCaption})}
+
+Load {\ttfamily values} with all attributes indicated in {\ttfamily att}. 
+\begin{DoxyParams}{Parameters}
+{\em levels} & Levels of bifurcation (0,..., N-\/1). \\
+\hline
+{\em values} & Violin data for each level. \\
+\hline
+{\em att} & Field for sampling. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_tree_stats_manager_a25c500074992ccd27419cf483b228cd4}\label{class_object_tree_stats_manager_a25c500074992ccd27419cf483b228cd4}} 
+\index{ObjectTreeStatsManager@{ObjectTreeStatsManager}!getBranchesAttributesPerLevel@{getBranchesAttributesPerLevel}}
+\index{getBranchesAttributesPerLevel@{getBranchesAttributesPerLevel}!ObjectTreeStatsManager@{ObjectTreeStatsManager}}
+\doxysubsubsection{\texorpdfstring{getBranchesAttributesPerLevel()}{getBranchesAttributesPerLevel()}}
+{\footnotesize\ttfamily void Object\+Tree\+Stats\+Manager\+::get\+Branches\+Attributes\+Per\+Level (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ $\ast$}]{banches,  }\item[{vector$<$ double $>$ $\ast$}]{levels,  }\item[{vector$<$ vector$<$ double $>$ $>$ $\ast$}]{values,  }\item[{vector$<$ \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} $>$}]{att,  }\item[{int}]{stage }\end{DoxyParamCaption})}
+
+Load load {\ttfamily values} with the attributes {\ttfamily att}. Only segments from stage {\ttfamily stage} and its children are processed. 
+\begin{DoxyParams}{Parameters}
+{\em branches} & Vector with the identifier of each sample associated to its branch. \\
+\hline
+{\em levels} & Levels of bifurcation (0,..., N-\/1). \\
+\hline
+{\em values} & Violin data for each level. \\
+\hline
+{\em att} & Field for sampling. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_tree_stats_manager_a5400eb4536c115308d393b350bb5ae62}\label{class_object_tree_stats_manager_a5400eb4536c115308d393b350bb5ae62}} 
+\index{ObjectTreeStatsManager@{ObjectTreeStatsManager}!getMeanPerLevel@{getMeanPerLevel}}
+\index{getMeanPerLevel@{getMeanPerLevel}!ObjectTreeStatsManager@{ObjectTreeStatsManager}}
+\doxysubsubsection{\texorpdfstring{getMeanPerLevel()}{getMeanPerLevel()}}
+{\footnotesize\ttfamily void Object\+Tree\+Stats\+Manager\+::get\+Mean\+Per\+Level (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ $\ast$}]{levels,  }\item[{vector$<$ double $>$ $\ast$}]{means,  }\item[{vector$<$ double $>$ $\ast$}]{stds,  }\item[{\mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}}}]{att }\end{DoxyParamCaption})}
+
+Load the vector {\ttfamily levels}, {\ttfamily means} and {\ttfamily stds} with the number of bifurcation level and mean and standard deviation of a vessel field across that levels. 
+\begin{DoxyParams}{Parameters}
+{\em levels} & Levels of bifurcation (0,..., N-\/1). \\
+\hline
+{\em means} & Mean for each level. \\
+\hline
+{\em stds} & Standard deviation for each level. \\
+\hline
+{\em att} & Field over which the mean and std is computed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_object_tree_stats_manager_abb9a49ec700913c42e9a073e137e9920}\label{class_object_tree_stats_manager_abb9a49ec700913c42e9a073e137e9920}} 
+\index{ObjectTreeStatsManager@{ObjectTreeStatsManager}!tree@{tree}}
+\index{tree@{tree}!ObjectTreeStatsManager@{ObjectTreeStatsManager}}
+\doxysubsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}}$\ast$ Object\+Tree\+Stats\+Manager\+::tree\hspace{0.3cm}{\ttfamily [private]}}
+
+Tree that undergo through statistical analysis. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stats/Object\+Tree\+Stats\+Manager.\+h\item 
+stats/Object\+Tree\+Stats\+Manager.\+cpp\end{DoxyCompactItemize}

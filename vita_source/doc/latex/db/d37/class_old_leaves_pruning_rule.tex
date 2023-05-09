@@ -1,0 +1,56 @@
+\hypertarget{class_old_leaves_pruning_rule}{}\doxysection{Old\+Leaves\+Pruning\+Rule Class Reference}
+\label{class_old_leaves_pruning_rule}\index{OldLeavesPruningRule@{OldLeavesPruningRule}}
+
+
+{\ttfamily \#include $<$Old\+Leaves\+Pruning\+Rule.\+h$>$}
+
+Inheritance diagram for Old\+Leaves\+Pruning\+Rule\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{db/d37/class_old_leaves_pruning_rule}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_old_leaves_pruning_rule_acab81db5d33d7111cd1eef11120c487f}\label{class_old_leaves_pruning_rule_acab81db5d33d7111cd1eef11120c487f}} 
+{\bfseries Old\+Leaves\+Pruning\+Rule} (int old\+Leave\+Stage)
+\item 
+bool \mbox{\hyperlink{class_old_leaves_pruning_rule_a74dd177379fb889d492c547006b305ef}{needs\+Pruning}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_old_leaves_pruning_rule_a0485e5496ea0539794330e4d5dae1cef}\label{class_old_leaves_pruning_rule_a0485e5496ea0539794330e4d5dae1cef}} 
+int {\bfseries old\+Leave\+Stage}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rule that evaluates if the tree leaves belong to a certain old stage. The purpose of this rule is to remove needle-\/like vessels from earlier stages that do not sprout in further stages, resulting in slender vessels. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_old_leaves_pruning_rule_a74dd177379fb889d492c547006b305ef}\label{class_old_leaves_pruning_rule_a74dd177379fb889d492c547006b305ef}} 
+\index{OldLeavesPruningRule@{OldLeavesPruningRule}!needsPruning@{needsPruning}}
+\index{needsPruning@{needsPruning}!OldLeavesPruningRule@{OldLeavesPruningRule}}
+\doxysubsubsection{\texorpdfstring{needsPruning()}{needsPruning()}}
+{\footnotesize\ttfamily bool Old\+Leaves\+Pruning\+Rule\+::needs\+Pruning (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+If true the branch (root and all daughter vessels) are marked for puning. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root vessel where the pruning is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the branch has to be pruned. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_pruning_rule_a064886df592c6cf77f69afdad571991b}{Abstract\+Pruning\+Rule}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/tree/pruning/Old\+Leaves\+Pruning\+Rule.\+h\item 
+structures/tree/pruning/Old\+Leaves\+Pruning\+Rule.\+cpp\end{DoxyCompactItemize}

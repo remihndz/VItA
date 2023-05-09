@@ -1,0 +1,66 @@
+\hypertarget{class_checkpoint_saving_task}{}\doxysection{Checkpoint\+Saving\+Task Class Reference}
+\label{class_checkpoint_saving_task}\index{CheckpointSavingTask@{CheckpointSavingTask}}
+
+
+{\ttfamily \#include $<$Checkpoint\+Saving\+Task.\+h$>$}
+
+Inheritance diagram for Checkpoint\+Saving\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/d08/class_checkpoint_saving_task}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_checkpoint_saving_task_ab61aa6ed861c3c4100bb23244a570935}{Checkpoint\+Saving\+Task}} (string path, string prefix)
+\item 
+void \mbox{\hyperlink{class_checkpoint_saving_task_a2de7e9e3d339826477b8ad611b3489fa}{execute}} (long long int terminals, \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$tree)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_checkpoint_saving_task_af927d8fde7306da51808d46cd4c685f0}\label{class_checkpoint_saving_task_af927d8fde7306da51808d46cd4c685f0}} 
+string {\bfseries path}
+\item 
+\mbox{\Hypertarget{class_checkpoint_saving_task_a73faeac9133baf2de1a951e1ceb177f9}\label{class_checkpoint_saving_task_a73faeac9133baf2de1a951e1ceb177f9}} 
+string {\bfseries prefix}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Saves a \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} structure in .cco format. Does not save d\+Lim value, thus resume a generation process may differ from the original execution. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_checkpoint_saving_task_ab61aa6ed861c3c4100bb23244a570935}\label{class_checkpoint_saving_task_ab61aa6ed861c3c4100bb23244a570935}} 
+\index{CheckpointSavingTask@{CheckpointSavingTask}!CheckpointSavingTask@{CheckpointSavingTask}}
+\index{CheckpointSavingTask@{CheckpointSavingTask}!CheckpointSavingTask@{CheckpointSavingTask}}
+\doxysubsubsection{\texorpdfstring{CheckpointSavingTask()}{CheckpointSavingTask()}}
+{\footnotesize\ttfamily Checkpoint\+Saving\+Task\+::\+Checkpoint\+Saving\+Task (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{string}]{prefix }\end{DoxyParamCaption})}
+
+Saves the {\ttfamily tree} in the given path. 
+\begin{DoxyParams}{Parameters}
+{\em path} & Output directory. \\
+\hline
+{\em prefix} & Prefix for the generated files. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_checkpoint_saving_task_a2de7e9e3d339826477b8ad611b3489fa}\label{class_checkpoint_saving_task_a2de7e9e3d339826477b8ad611b3489fa}} 
+\index{CheckpointSavingTask@{CheckpointSavingTask}!execute@{execute}}
+\index{execute@{execute}!CheckpointSavingTask@{CheckpointSavingTask}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Checkpoint\+Saving\+Task\+::execute (\begin{DoxyParamCaption}\item[{long long int}]{terminals,  }\item[{\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Saves the tree in its current state in a .cco format. 
+
+Implements \mbox{\hyperlink{class_abstract_saving_task}{Abstract\+Saving\+Task}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+io/task/Checkpoint\+Saving\+Task.\+h\item 
+io/task/Checkpoint\+Saving\+Task.\+cpp\end{DoxyCompactItemize}

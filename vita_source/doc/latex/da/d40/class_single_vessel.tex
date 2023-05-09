@@ -1,0 +1,411 @@
+\hypertarget{class_single_vessel}{}\doxysection{Single\+Vessel Class Reference}
+\label{class_single_vessel}\index{SingleVessel@{SingleVessel}}
+
+
+{\ttfamily \#include $<$Single\+Vessel.\+h$>$}
+
+Inheritance diagram for Single\+Vessel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d40/class_single_vessel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_single_vessel_a6e397458482fd04bc3c1514eb518f05b}{get\+Branching\+Points}} (vector$<$ \mbox{\hyperlink{structpoint}{point}} $>$ $\ast$branching\+Points, \mbox{\hyperlink{structpoint}{point}} x\+New)
+\item 
+\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ \mbox{\hyperlink{class_single_vessel_a7b905db74d4f733ea3cdb86ec961e9d1}{get\+Parent}} ()
+\item 
+\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ \mbox{\hyperlink{class_single_vessel_a25b7df0247aea7a482566de82c56ff3f}{get\+Parent\+Vessel\+To}} (\mbox{\hyperlink{structpoint}{point}} xp)
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ \& \mbox{\hyperlink{class_single_vessel_a982d61ce4b6025bc07a4ccc95e1acc9f}{get\+Children}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_single_vessel_a159e7d2d69cd3cae7b26f2ca374da817}{get\+Children\+Vessel\+To}} (\mbox{\hyperlink{structpoint}{point}} xd)
+\item 
+vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_single_vessel_a42b2be50278e2c5ffe63d013b17e9713}{get\+Vessels\+Connected\+To}} (\mbox{\hyperlink{structpoint}{point}} p)
+\item 
+long long int \mbox{\hyperlink{class_single_vessel_a91a1cfd8cae1063b268cf1794859a245}{get\+Terminals}} ()
+\item 
+long long int \mbox{\hyperlink{class_single_vessel_ab9802f20fabbb352c91a3082980e543c}{get\+Terminals}} (\mbox{\hyperlink{class_abstract_vascular_element_a9c7d6ae9fe8c220ddad143208b0a5a11}{TERMINAL\+\_\+\+TYPE}} type)
+\item 
+double \mbox{\hyperlink{class_single_vessel_ac2cb07695080b9c7c6da65a2d52e0a51}{get\+Volume}} ()
+\item 
+void \mbox{\hyperlink{class_single_vessel_adb7b986bc0da45d0720caf08989e00ce}{update\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_single_vessel_ac50e2a301750d3e6c64fa3e5fc37f79e}{get\+Terminal\+Flow}} (double q\+Prox, double q\+Reserved, int common\+Terminals)
+\item 
+double \mbox{\hyperlink{class_single_vessel_a934c1d6b9a590621d53d78fedfed4c30}{get\+Distal\+Radius}} ()
+\item 
+double \mbox{\hyperlink{class_single_vessel_a439762c206fe749024ecc8c601d51738}{get\+Proximal\+Pressure}} ()
+\item 
+void \mbox{\hyperlink{class_single_vessel_a11c4b9cfc4248dafda09d6a3ab8a60c7}{save\+Vessel\+Data}} (ofstream $\ast$tree\+File)
+\item 
+void \mbox{\hyperlink{class_single_vessel_a84bfe24d24716e35cc1b811eea2a6ec8}{save\+Vessel\+Connectivity}} (ofstream $\ast$tree\+File)
+\item 
+\mbox{\Hypertarget{class_single_vessel_a9504ab8fe39e1c06d71eeff8488ec3d7}\label{class_single_vessel_a9504ab8fe39e1c06d71eeff8488ec3d7}} 
+string {\bfseries coord\+To\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Line $>$ \mbox{\hyperlink{class_single_vessel_af37e0b95e68662ded08ef7037b64b7e4}{vtk\+Segment}}
+\item 
+vtk\+Id\+Type \mbox{\hyperlink{class_single_vessel_aa283409729185f57950d58a483b7d661}{vtk\+Segment\+Id}}
+\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{class_single_vessel_a22d0c3617e92838a3a45310b9cbe7f91}{x\+Prox}}
+\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{class_single_vessel_aff9be7494294fb039b2aa284eb39c171}{x\+Dist}}
+\item 
+int \mbox{\hyperlink{class_single_vessel_acb4f005fc124382aa5dac06194b43007}{n\+Level}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_a972becbedffb100e3839f5fb06d54ee3}{radius}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_ae31525b610b4ef7f7c61db0446a983a2}{beta}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_af96ace62c72b4c495e625724fdc69c1f}{length}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_ac629f35d34a3adb31f92b06823b320b2}{resistance}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_a8f5954708c5334dc8ed9f10693381566}{local\+Resistance}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_ab11b1dc88a1725b79d6ef2344680cf77}{viscosity}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_a31a369f55958ce8d945fab6781e577c4}{flow}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_af3e07bf47e7fbc3f04bfa9c7aaa51926}{pressure}}
+\item 
+long long int \mbox{\hyperlink{class_single_vessel_ab59549ae5a43283077be9bbb25cc01a6}{ID}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_a2d9634eeadb4fce742f5bfdf4f9077ed}{tree\+Volume}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_single_vessel_a4ba9764d805e456b1a5a911547bafe87}{bifurcation\+Tests}} = 6
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Composite vessel structure that for a single rectilinear vessel. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_single_vessel_a6e397458482fd04bc3c1514eb518f05b}\label{class_single_vessel_a6e397458482fd04bc3c1514eb518f05b}} 
+\index{SingleVessel@{SingleVessel}!getBranchingPoints@{getBranchingPoints}}
+\index{getBranchingPoints@{getBranchingPoints}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getBranchingPoints()}{getBranchingPoints()}}
+{\footnotesize\ttfamily void Single\+Vessel\+::get\+Branching\+Points (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structpoint}{point}} $>$ $\ast$}]{branching\+Points,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Fill {\ttfamily branching\+Points} with the potential points for branching in the current vessel, accorading to the {\ttfamily branching\+Mode}. 
+\begin{DoxyParams}{Parameters}
+{\em branching\+Points} & Vector filled with the possible branching points of this vessel. \\
+\hline
+{\em x\+New} & Terminal position of the new vessel to branch with. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a0ec4dde7ce06f1d977d19b5a340eca52}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a982d61ce4b6025bc07a4ccc95e1acc9f}\label{class_single_vessel_a982d61ce4b6025bc07a4ccc95e1acc9f}} 
+\index{SingleVessel@{SingleVessel}!getChildren@{getChildren}}
+\index{getChildren@{getChildren}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getChildren()}{getChildren()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ \& Single\+Vessel\+::get\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns all the children vessels to this vascular element. \begin{DoxyReturn}{Returns}
+Children vessels to this vascular element. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a76176d8d75138c0a1193d325e41abd92}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a159e7d2d69cd3cae7b26f2ca374da817}\label{class_single_vessel_a159e7d2d69cd3cae7b26f2ca374da817}} 
+\index{SingleVessel@{SingleVessel}!getChildrenVesselTo@{getChildrenVesselTo}}
+\index{getChildrenVesselTo@{getChildrenVesselTo}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getChildrenVesselTo()}{getChildrenVesselTo()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$ Single\+Vessel\+::get\+Children\+Vessel\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{xd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns all \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} that are children of this vascular element. 
+\begin{DoxyParams}{Parameters}
+{\em xd} & Point of children vessels attachment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} that is parent for this vascular element. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a01937bac84fde821fcf738f732fa8b07}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a934c1d6b9a590621d53d78fedfed4c30}\label{class_single_vessel_a934c1d6b9a590621d53d78fedfed4c30}} 
+\index{SingleVessel@{SingleVessel}!getDistalRadius@{getDistalRadius}}
+\index{getDistalRadius@{getDistalRadius}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getDistalRadius()}{getDistalRadius()}}
+{\footnotesize\ttfamily double Single\+Vessel\+::get\+Distal\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the radius at the distal point of the vessel. \begin{DoxyReturn}{Returns}
+Radius at the distal point of the vessel. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a3880bed8d0a9223107bcee195bb89e51}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a7b905db74d4f733ea3cdb86ec961e9d1}\label{class_single_vessel_a7b905db74d4f733ea3cdb86ec961e9d1}} 
+\index{SingleVessel@{SingleVessel}!getParent@{getParent}}
+\index{getParent@{getParent}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ Single\+Vessel\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns its parental \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}}. \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} proximally attached. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a13ca94c90d8d32a09183630b1a9c37de}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a25b7df0247aea7a482566de82c56ff3f}\label{class_single_vessel_a25b7df0247aea7a482566de82c56ff3f}} 
+\index{SingleVessel@{SingleVessel}!getParentVesselTo@{getParentVesselTo}}
+\index{getParentVesselTo@{getParentVesselTo}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getParentVesselTo()}{getParentVesselTo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ Single\+Vessel\+::get\+Parent\+Vessel\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{xp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} that is parent for this vascular element. 
+\begin{DoxyParams}{Parameters}
+{\em xp} & Point of parent vessel attachment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} that is parent for this vascular element. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a6a261125e66a6cd3b8683f0934bcc5b2}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a439762c206fe749024ecc8c601d51738}\label{class_single_vessel_a439762c206fe749024ecc8c601d51738}} 
+\index{SingleVessel@{SingleVessel}!getProximalPressure@{getProximalPressure}}
+\index{getProximalPressure@{getProximalPressure}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getProximalPressure()}{getProximalPressure()}}
+{\footnotesize\ttfamily double Single\+Vessel\+::get\+Proximal\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the pressure at the proximal point of the vessel. \begin{DoxyReturn}{Returns}
+Pressure at the proximal point of the vessel. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_aa486370af563a9ea9bfcdcde8ee38426}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_ac50e2a301750d3e6c64fa3e5fc37f79e}\label{class_single_vessel_ac50e2a301750d3e6c64fa3e5fc37f79e}} 
+\index{SingleVessel@{SingleVessel}!getTerminalFlow@{getTerminalFlow}}
+\index{getTerminalFlow@{getTerminalFlow}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getTerminalFlow()}{getTerminalFlow()}}
+{\footnotesize\ttfamily double Single\+Vessel\+::get\+Terminal\+Flow (\begin{DoxyParamCaption}\item[{double}]{q\+Prox,  }\item[{double}]{q\+Reserved,  }\item[{int}]{common\+Terminals }\end{DoxyParamCaption})}
+
+Determine the flow at this terminal based on tree information (e.\+g. amount of terminals and inflow). 
+\begin{DoxyParams}{Parameters}
+{\em tree} & Tree that contains this vessel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Amount of flow outgoing this terminal. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_a91a1cfd8cae1063b268cf1794859a245}\label{class_single_vessel_a91a1cfd8cae1063b268cf1794859a245}} 
+\index{SingleVessel@{SingleVessel}!getTerminals@{getTerminals}}
+\index{getTerminals@{getTerminals}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getTerminals()}{getTerminals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long long int Single\+Vessel\+::get\+Terminals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns all the inner terminals in the current vascular element. \begin{DoxyReturn}{Returns}
+Terminals in the current vascular element. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a85d8d19d6f92a4e7cc95cc0f8f5a59c9}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_ab9802f20fabbb352c91a3082980e543c}\label{class_single_vessel_ab9802f20fabbb352c91a3082980e543c}} 
+\index{SingleVessel@{SingleVessel}!getTerminals@{getTerminals}}
+\index{getTerminals@{getTerminals}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getTerminals()}{getTerminals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily long long int Single\+Vessel\+::get\+Terminals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element_a9c7d6ae9fe8c220ddad143208b0a5a11}{TERMINAL\+\_\+\+TYPE}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a42b2be50278e2c5ffe63d013b17e9713}\label{class_single_vessel_a42b2be50278e2c5ffe63d013b17e9713}} 
+\index{SingleVessel@{SingleVessel}!getVesselsConnectedTo@{getVesselsConnectedTo}}
+\index{getVesselsConnectedTo@{getVesselsConnectedTo}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getVesselsConnectedTo()}{getVesselsConnectedTo()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$ Single\+Vessel\+::get\+Vessels\+Connected\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns all vessels in this vascular structure connected to point {\ttfamily p}. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Point at which all target vessels are connected to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Set of vessels connected to {\ttfamily p}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a48e8a673ffc71bbae4a602b74f9890f1}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_ac2cb07695080b9c7c6da65a2d52e0a51}\label{class_single_vessel_ac2cb07695080b9c7c6da65a2d52e0a51}} 
+\index{SingleVessel@{SingleVessel}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily double Single\+Vessel\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the functional cost contribution of this vascular element. If any constraint --e.\+g. geometric constrains-- are violated the function must return INFINITY. \begin{DoxyReturn}{Returns}
+Functional cost contribution. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_ae4ecb632a94e89ac21f6523637bdb9cd}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a84bfe24d24716e35cc1b811eea2a6ec8}\label{class_single_vessel_a84bfe24d24716e35cc1b811eea2a6ec8}} 
+\index{SingleVessel@{SingleVessel}!saveVesselConnectivity@{saveVesselConnectivity}}
+\index{saveVesselConnectivity@{saveVesselConnectivity}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{saveVesselConnectivity()}{saveVesselConnectivity()}}
+{\footnotesize\ttfamily void Single\+Vessel\+::save\+Vessel\+Connectivity (\begin{DoxyParamCaption}\item[{ofstream $\ast$}]{tree\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes connectivity of this vessel at the file associated to {\ttfamily tree\+File} stream. 
+\begin{DoxyParams}{Parameters}
+{\em tree\+File} & Output file stream. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a878c2826beb1a549c28659182760fbab}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_a11c4b9cfc4248dafda09d6a3ab8a60c7}\label{class_single_vessel_a11c4b9cfc4248dafda09d6a3ab8a60c7}} 
+\index{SingleVessel@{SingleVessel}!saveVesselData@{saveVesselData}}
+\index{saveVesselData@{saveVesselData}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{saveVesselData()}{saveVesselData()}}
+{\footnotesize\ttfamily void Single\+Vessel\+::save\+Vessel\+Data (\begin{DoxyParamCaption}\item[{ofstream $\ast$}]{tree\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes the vessel data at the file associated to {\ttfamily tree\+File} stream. 
+\begin{DoxyParams}{Parameters}
+{\em tree\+File} & Output file stream. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_aff5f129b31f0c82aebf2d7387859914d}{Abstract\+Vascular\+Element}}.
+
+\mbox{\Hypertarget{class_single_vessel_adb7b986bc0da45d0720caf08989e00ce}\label{class_single_vessel_adb7b986bc0da45d0720caf08989e00ce}} 
+\index{SingleVessel@{SingleVessel}!updatePressure@{updatePressure}}
+\index{updatePressure@{updatePressure}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{updatePressure()}{updatePressure()}}
+{\footnotesize\ttfamily void Single\+Vessel\+::update\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates vascular element pressure from children to parent direction. 
+
+Implements \mbox{\hyperlink{class_abstract_vascular_element_a258a830359614d0217e820293a9bdaa9}{Abstract\+Vascular\+Element}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_single_vessel_ae31525b610b4ef7f7c61db0446a983a2}\label{class_single_vessel_ae31525b610b4ef7f7c61db0446a983a2}} 
+\index{SingleVessel@{SingleVessel}!beta@{beta}}
+\index{beta@{beta}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{beta}{beta}}
+{\footnotesize\ttfamily double Single\+Vessel\+::beta}
+
+Radius relative to the parent vessel (i.\+e. radius/parent\+\_\+radius). For root, it is the radius value. \mbox{\Hypertarget{class_single_vessel_a4ba9764d805e456b1a5a911547bafe87}\label{class_single_vessel_a4ba9764d805e456b1a5a911547bafe87}} 
+\index{SingleVessel@{SingleVessel}!bifurcationTests@{bifurcationTests}}
+\index{bifurcationTests@{bifurcationTests}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{bifurcationTests}{bifurcationTests}}
+{\footnotesize\ttfamily int Single\+Vessel\+::bifurcation\+Tests = 6\hspace{0.3cm}{\ttfamily [static]}}
+
+Points to be tested for branching in DEFORMABLE\+\_\+\+PARENT mode. \mbox{\Hypertarget{class_single_vessel_a31a369f55958ce8d945fab6781e577c4}\label{class_single_vessel_a31a369f55958ce8d945fab6781e577c4}} 
+\index{SingleVessel@{SingleVessel}!flow@{flow}}
+\index{flow@{flow}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{flow}{flow}}
+{\footnotesize\ttfamily double Single\+Vessel\+::flow}
+
+Flow in this vessel. \mbox{\Hypertarget{class_single_vessel_ab59549ae5a43283077be9bbb25cc01a6}\label{class_single_vessel_ab59549ae5a43283077be9bbb25cc01a6}} 
+\index{SingleVessel@{SingleVessel}!ID@{ID}}
+\index{ID@{ID}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily long long int Single\+Vessel\+::\+ID}
+
+Generation step \mbox{\Hypertarget{class_single_vessel_af96ace62c72b4c495e625724fdc69c1f}\label{class_single_vessel_af96ace62c72b4c495e625724fdc69c1f}} 
+\index{SingleVessel@{SingleVessel}!length@{length}}
+\index{length@{length}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily double Single\+Vessel\+::length}
+
+Distance between x\+Prox and x\+Dist. \mbox{\Hypertarget{class_single_vessel_a8f5954708c5334dc8ed9f10693381566}\label{class_single_vessel_a8f5954708c5334dc8ed9f10693381566}} 
+\index{SingleVessel@{SingleVessel}!localResistance@{localResistance}}
+\index{localResistance@{localResistance}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{localResistance}{localResistance}}
+{\footnotesize\ttfamily double Single\+Vessel\+::local\+Resistance}
+
+Local fluid-\/dynamic resistance. \mbox{\Hypertarget{class_single_vessel_acb4f005fc124382aa5dac06194b43007}\label{class_single_vessel_acb4f005fc124382aa5dac06194b43007}} 
+\index{SingleVessel@{SingleVessel}!nLevel@{nLevel}}
+\index{nLevel@{nLevel}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{nLevel}{nLevel}}
+{\footnotesize\ttfamily int Single\+Vessel\+::n\+Level}
+
+Bifurcation level from proximal to distal (Root is at level 0). \mbox{\Hypertarget{class_single_vessel_af3e07bf47e7fbc3f04bfa9c7aaa51926}\label{class_single_vessel_af3e07bf47e7fbc3f04bfa9c7aaa51926}} 
+\index{SingleVessel@{SingleVessel}!pressure@{pressure}}
+\index{pressure@{pressure}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{pressure}{pressure}}
+{\footnotesize\ttfamily double Single\+Vessel\+::pressure}
+
+Pressure in the vessel. \mbox{\Hypertarget{class_single_vessel_a972becbedffb100e3839f5fb06d54ee3}\label{class_single_vessel_a972becbedffb100e3839f5fb06d54ee3}} 
+\index{SingleVessel@{SingleVessel}!radius@{radius}}
+\index{radius@{radius}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily double Single\+Vessel\+::radius}
+
+Vessel radius. \mbox{\Hypertarget{class_single_vessel_ac629f35d34a3adb31f92b06823b320b2}\label{class_single_vessel_ac629f35d34a3adb31f92b06823b320b2}} 
+\index{SingleVessel@{SingleVessel}!resistance@{resistance}}
+\index{resistance@{resistance}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{resistance}{resistance}}
+{\footnotesize\ttfamily double Single\+Vessel\+::resistance}
+
+Reduced fluid-\/dynamic resistance. \mbox{\Hypertarget{class_single_vessel_a2d9634eeadb4fce742f5bfdf4f9077ed}\label{class_single_vessel_a2d9634eeadb4fce742f5bfdf4f9077ed}} 
+\index{SingleVessel@{SingleVessel}!treeVolume@{treeVolume}}
+\index{treeVolume@{treeVolume}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{treeVolume}{treeVolume}}
+{\footnotesize\ttfamily double Single\+Vessel\+::tree\+Volume}
+
+Volume of this down tree branch. \mbox{\Hypertarget{class_single_vessel_ab11b1dc88a1725b79d6ef2344680cf77}\label{class_single_vessel_ab11b1dc88a1725b79d6ef2344680cf77}} 
+\index{SingleVessel@{SingleVessel}!viscosity@{viscosity}}
+\index{viscosity@{viscosity}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{viscosity}{viscosity}}
+{\footnotesize\ttfamily double Single\+Vessel\+::viscosity}
+
+Blood viscosity. \mbox{\Hypertarget{class_single_vessel_af37e0b95e68662ded08ef7037b64b7e4}\label{class_single_vessel_af37e0b95e68662ded08ef7037b64b7e4}} 
+\index{SingleVessel@{SingleVessel}!vtkSegment@{vtkSegment}}
+\index{vtkSegment@{vtkSegment}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{vtkSegment}{vtkSegment}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Line$>$ Single\+Vessel\+::vtk\+Segment}
+
+VTK geomtric representation. \mbox{\Hypertarget{class_single_vessel_aa283409729185f57950d58a483b7d661}\label{class_single_vessel_aa283409729185f57950d58a483b7d661}} 
+\index{SingleVessel@{SingleVessel}!vtkSegmentId@{vtkSegmentId}}
+\index{vtkSegmentId@{vtkSegmentId}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{vtkSegmentId}{vtkSegmentId}}
+{\footnotesize\ttfamily vtk\+Id\+Type Single\+Vessel\+::vtk\+Segment\+Id}
+
+Unique identifier for the vessel. \mbox{\Hypertarget{class_single_vessel_aff9be7494294fb039b2aa284eb39c171}\label{class_single_vessel_aff9be7494294fb039b2aa284eb39c171}} 
+\index{SingleVessel@{SingleVessel}!xDist@{xDist}}
+\index{xDist@{xDist}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{xDist}{xDist}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} Single\+Vessel\+::x\+Dist}
+
+Distal position of the vessel. \mbox{\Hypertarget{class_single_vessel_a22d0c3617e92838a3a45310b9cbe7f91}\label{class_single_vessel_a22d0c3617e92838a3a45310b9cbe7f91}} 
+\index{SingleVessel@{SingleVessel}!xProx@{xProx}}
+\index{xProx@{xProx}!SingleVessel@{SingleVessel}}
+\doxysubsubsection{\texorpdfstring{xProx}{xProx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} Single\+Vessel\+::x\+Prox}
+
+Proximal position of the vessel. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/vascular\+Elements/Single\+Vessel.\+h\item 
+structures/vascular\+Elements/Single\+Vessel.\+cpp\end{DoxyCompactItemize}

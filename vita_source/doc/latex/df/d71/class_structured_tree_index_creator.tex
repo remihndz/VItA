@@ -1,0 +1,149 @@
+\hypertarget{class_structured_tree_index_creator}{}\doxysection{Structured\+Tree\+Index\+Creator Class Reference}
+\label{class_structured_tree_index_creator}\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+
+
+{\ttfamily \#include $<$Structured\+Tree\+Index\+Creator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_structured_tree_index_creator_ad1013e4d872325b8f6aae5c9843b0492}{Structured\+Tree\+Index\+Creator}} (\mbox{\hyperlink{class_abstract_structured_c_c_o_tree}{Abstract\+Structured\+CCOTree}} $\ast$\mbox{\hyperlink{class_structured_tree_index_creator_a8894f73fc3e17f5323ca40f40141c32f}{tree}})
+\item 
+vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ \mbox{\hyperlink{class_structured_tree_index_creator_af283b0ea03d3e5aa717125399255adbb}{get\+Terminals}} ()
+\item 
+vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ \mbox{\hyperlink{class_structured_tree_index_creator_a53525b83242296f449d84a0f2f832e15}{get\+All\+Segments}} ()
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_structured_tree_index_creator_a551e4b1eb90e7a5b0474e0a6663b1aac}{get\+Segments\+By\+Level}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_structured_tree_index_creator_aa1885ce3aeb80c9d24c927e4f9d0097d}{extract\+Terminals}} (\mbox{\hyperlink{structvessel}{vessel}} $\ast$root, vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ $\ast$extracted\+Terminals)
+\item 
+void \mbox{\hyperlink{class_structured_tree_index_creator_a9734e404c861b941ce03bd54adb0d3c1}{extract\+All\+Segments}} (\mbox{\hyperlink{structvessel}{vessel}} $\ast$root, vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ $\ast$extracted\+Terminals)
+\item 
+void \mbox{\hyperlink{class_structured_tree_index_creator_a2197c30eba1f194ea54cefaec2e1b02a}{extract\+Segments\+By\+Level}} (\mbox{\hyperlink{structvessel}{vessel}} $\ast$root, vector$<$ vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ $>$ $\ast$extracted\+Terminals, unsigned level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_structured_c_c_o_tree}{Abstract\+Structured\+CCOTree}} $\ast$ \mbox{\hyperlink{class_structured_tree_index_creator_a8894f73fc3e17f5323ca40f40141c32f}{tree}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates indexes for a given tree to ease the manipulation of its segments. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_structured_tree_index_creator_ad1013e4d872325b8f6aae5c9843b0492}\label{class_structured_tree_index_creator_ad1013e4d872325b8f6aae5c9843b0492}} 
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{StructuredTreeIndexCreator()}{StructuredTreeIndexCreator()}}
+{\footnotesize\ttfamily Structured\+Tree\+Index\+Creator\+::\+Structured\+Tree\+Index\+Creator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_structured_c_c_o_tree}{Abstract\+Structured\+CCOTree}} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em tree} & Tree to index.\\
+\hline
+\end{DoxyParams}
+Creates an instance associated with {\ttfamily tree} . 
+\begin{DoxyParams}{Parameters}
+{\em tree} & Instance associated with the index creator. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_structured_tree_index_creator_a9734e404c861b941ce03bd54adb0d3c1}\label{class_structured_tree_index_creator_a9734e404c861b941ce03bd54adb0d3c1}} 
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!extractAllSegments@{extractAllSegments}}
+\index{extractAllSegments@{extractAllSegments}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{extractAllSegments()}{extractAllSegments()}}
+{\footnotesize\ttfamily void Structured\+Tree\+Index\+Creator\+::extract\+All\+Segments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvessel}{vessel}} $\ast$}]{root,  }\item[{vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ $\ast$}]{extracted\+Segments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Recursively in pre-\/order, adds all tree segments to the vector {\ttfamily extracted\+Segments}. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree root. \\
+\hline
+{\em extracted\+Segments} & Extracted segments. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_structured_tree_index_creator_a2197c30eba1f194ea54cefaec2e1b02a}\label{class_structured_tree_index_creator_a2197c30eba1f194ea54cefaec2e1b02a}} 
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!extractSegmentsByLevel@{extractSegmentsByLevel}}
+\index{extractSegmentsByLevel@{extractSegmentsByLevel}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{extractSegmentsByLevel()}{extractSegmentsByLevel()}}
+{\footnotesize\ttfamily void Structured\+Tree\+Index\+Creator\+::extract\+Segments\+By\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvessel}{vessel}} $\ast$}]{root,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ $>$ $\ast$}]{extracted\+Segments,  }\item[{unsigned}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Recursively in pre-\/order, adds all tree segments to the vector {\ttfamily extracted\+Segments} in the entry corresponding to their bifurcation level. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree root. \\
+\hline
+{\em extracted\+Segments} & Extracted segments. \\
+\hline
+{\em level} & Current deepness level in the tree. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_structured_tree_index_creator_aa1885ce3aeb80c9d24c927e4f9d0097d}\label{class_structured_tree_index_creator_aa1885ce3aeb80c9d24c927e4f9d0097d}} 
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!extractTerminals@{extractTerminals}}
+\index{extractTerminals@{extractTerminals}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{extractTerminals()}{extractTerminals()}}
+{\footnotesize\ttfamily void Structured\+Tree\+Index\+Creator\+::extract\+Terminals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvessel}{vessel}} $\ast$}]{root,  }\item[{vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ $\ast$}]{extracted\+Terminals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Recursively adds the tree terminals to the given vector {\ttfamily extracted\+Terminals}. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree root. \\
+\hline
+{\em extracted\+Terminals} & Extracted terminals. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_structured_tree_index_creator_a53525b83242296f449d84a0f2f832e15}\label{class_structured_tree_index_creator_a53525b83242296f449d84a0f2f832e15}} 
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!getAllSegments@{getAllSegments}}
+\index{getAllSegments@{getAllSegments}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{getAllSegments()}{getAllSegments()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ Structured\+Tree\+Index\+Creator\+::get\+All\+Segments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all segments of {\ttfamily tree}. \begin{DoxyReturn}{Returns}
+Vector of segments.
+\end{DoxyReturn}
+Returns a vector with all the tree segments. \begin{DoxyReturn}{Returns}
+vector with all the tree segments. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_structured_tree_index_creator_a551e4b1eb90e7a5b0474e0a6663b1aac}\label{class_structured_tree_index_creator_a551e4b1eb90e7a5b0474e0a6663b1aac}} 
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!getSegmentsByLevel@{getSegmentsByLevel}}
+\index{getSegmentsByLevel@{getSegmentsByLevel}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{getSegmentsByLevel()}{getSegmentsByLevel()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ $>$ Structured\+Tree\+Index\+Creator\+::get\+Segments\+By\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a vector for each tree bifurcation level, containing the segments of {\ttfamily tree} for such level. \begin{DoxyReturn}{Returns}
+Vector of vectors of segments.
+\end{DoxyReturn}
+Returns a vector for which the i-\/th entry contains a vector with all segments at the i-\/th tree level. \begin{DoxyReturn}{Returns}
+vector for which the i-\/th entry contains a vector with all segments at the i-\/th tree level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_structured_tree_index_creator_af283b0ea03d3e5aa717125399255adbb}\label{class_structured_tree_index_creator_af283b0ea03d3e5aa717125399255adbb}} 
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!getTerminals@{getTerminals}}
+\index{getTerminals@{getTerminals}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{getTerminals()}{getTerminals()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ Structured\+Tree\+Index\+Creator\+::get\+Terminals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all terminal segments of {\ttfamily tree}. \begin{DoxyReturn}{Returns}
+Vector of terminal segments.
+\end{DoxyReturn}
+Returns a vector with all the tree terminals. \begin{DoxyReturn}{Returns}
+vector with all the tree terminals. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_structured_tree_index_creator_a8894f73fc3e17f5323ca40f40141c32f}\label{class_structured_tree_index_creator_a8894f73fc3e17f5323ca40f40141c32f}} 
+\index{StructuredTreeIndexCreator@{StructuredTreeIndexCreator}!tree@{tree}}
+\index{tree@{tree}!StructuredTreeIndexCreator@{StructuredTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_structured_c_c_o_tree}{Abstract\+Structured\+CCOTree}}$\ast$ Structured\+Tree\+Index\+Creator\+::tree\hspace{0.3cm}{\ttfamily [private]}}
+
+Tree for which the indexes are created. ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stats/Structured\+Tree\+Index\+Creator.\+h\item 
+stats/Structured\+Tree\+Index\+Creator.\+cpp\end{DoxyCompactItemize}

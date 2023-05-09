@@ -1,0 +1,118 @@
+\hypertarget{class_abstract_cost_estimator}{}\doxysection{Abstract\+Cost\+Estimator Class Reference}
+\label{class_abstract_cost_estimator}\index{AbstractCostEstimator@{AbstractCostEstimator}}
+
+
+{\ttfamily \#include $<$Abstract\+Cost\+Estimator.\+h$>$}
+
+Inheritance diagram for Abstract\+Cost\+Estimator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.568627cm]{db/d7c/class_abstract_cost_estimator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_cost_estimator_af4ab3e04dbf4c41e10e084e069715973}{Abstract\+Cost\+Estimator}} ()
+\item 
+virtual \mbox{\hyperlink{class_abstract_cost_estimator_a96e75392a803041183a39eb3bb22b580}{$\sim$\+Abstract\+Cost\+Estimator}} ()
+\item 
+virtual \mbox{\hyperlink{class_abstract_cost_estimator}{Abstract\+Cost\+Estimator}} $\ast$ \mbox{\hyperlink{class_abstract_cost_estimator_ab6eac1b5cd0a24d6c86639467a8ac96f}{clone}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_abstract_cost_estimator_a8a806c3e4537c6d4acc428b029fd60de}{previous\+State}} (\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$tree, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$parent, \mbox{\hyperlink{structpoint}{point}} i\+New, \mbox{\hyperlink{structpoint}{point}} i\+Test, double d\+Lim)=0
+\item 
+virtual double \mbox{\hyperlink{class_abstract_cost_estimator_a2be0c6cc4aa6a73110c75ad903af428e}{compute\+Cost}} (\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$tree)=0
+\item 
+virtual void \mbox{\hyperlink{class_abstract_cost_estimator_a5d88f22a1ed54c869c74d32730081300}{log\+Cost\+Estimator}} (FILE $\ast$fp)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Estimates the functional cost of a tree. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract_cost_estimator_af4ab3e04dbf4c41e10e084e069715973}\label{class_abstract_cost_estimator_af4ab3e04dbf4c41e10e084e069715973}} 
+\index{AbstractCostEstimator@{AbstractCostEstimator}!AbstractCostEstimator@{AbstractCostEstimator}}
+\index{AbstractCostEstimator@{AbstractCostEstimator}!AbstractCostEstimator@{AbstractCostEstimator}}
+\doxysubsubsection{\texorpdfstring{AbstractCostEstimator()}{AbstractCostEstimator()}}
+{\footnotesize\ttfamily Abstract\+Cost\+Estimator\+::\+Abstract\+Cost\+Estimator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Common constructor. \mbox{\Hypertarget{class_abstract_cost_estimator_a96e75392a803041183a39eb3bb22b580}\label{class_abstract_cost_estimator_a96e75392a803041183a39eb3bb22b580}} 
+\index{AbstractCostEstimator@{AbstractCostEstimator}!````~AbstractCostEstimator@{$\sim$AbstractCostEstimator}}
+\index{````~AbstractCostEstimator@{$\sim$AbstractCostEstimator}!AbstractCostEstimator@{AbstractCostEstimator}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstractCostEstimator()}{~AbstractCostEstimator()}}
+{\footnotesize\ttfamily Abstract\+Cost\+Estimator\+::$\sim$\+Abstract\+Cost\+Estimator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Common destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_cost_estimator_ab6eac1b5cd0a24d6c86639467a8ac96f}\label{class_abstract_cost_estimator_ab6eac1b5cd0a24d6c86639467a8ac96f}} 
+\index{AbstractCostEstimator@{AbstractCostEstimator}!clone@{clone}}
+\index{clone@{clone}!AbstractCostEstimator@{AbstractCostEstimator}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_abstract_cost_estimator}{Abstract\+Cost\+Estimator}} $\ast$ Abstract\+Cost\+Estimator\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Clones the current estimator instance. \begin{DoxyReturn}{Returns}
+Cloned instance. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_adim_sprouting_volumetric_cost_estimator_acc28ad0a4add66222f87d9df84797524}{Adim\+Sprouting\+Volumetric\+Cost\+Estimator}}, \mbox{\hyperlink{class_sprouting_volumetric_cost_estimator_a9adf0950cceb8f82d66639bdabda6043}{Sprouting\+Volumetric\+Cost\+Estimator}}, and \mbox{\hyperlink{class_volumetric_cost_estimator_a513b5fa164962f2761485aebf44072bf}{Volumetric\+Cost\+Estimator}}.
+
+\mbox{\Hypertarget{class_abstract_cost_estimator_a2be0c6cc4aa6a73110c75ad903af428e}\label{class_abstract_cost_estimator_a2be0c6cc4aa6a73110c75ad903af428e}} 
+\index{AbstractCostEstimator@{AbstractCostEstimator}!computeCost@{computeCost}}
+\index{computeCost@{computeCost}!AbstractCostEstimator@{AbstractCostEstimator}}
+\doxysubsubsection{\texorpdfstring{computeCost()}{computeCost()}}
+{\footnotesize\ttfamily virtual double Abstract\+Cost\+Estimator\+::compute\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Computes the functional cost of the given tree. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of the tree at the current step. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cost of the given tree. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_adim_sprouting_volumetric_cost_estimator_a14757be74a1c73be8322dab990713936}{Adim\+Sprouting\+Volumetric\+Cost\+Estimator}}, \mbox{\hyperlink{class_sprouting_volumetric_cost_estimator_ab301bfd1c1a93aa0f7535f268499dc63}{Sprouting\+Volumetric\+Cost\+Estimator}}, and \mbox{\hyperlink{class_volumetric_cost_estimator_aca3637b77cc6657e4c5f916f09fd38e3}{Volumetric\+Cost\+Estimator}}.
+
+\mbox{\Hypertarget{class_abstract_cost_estimator_a5d88f22a1ed54c869c74d32730081300}\label{class_abstract_cost_estimator_a5d88f22a1ed54c869c74d32730081300}} 
+\index{AbstractCostEstimator@{AbstractCostEstimator}!logCostEstimator@{logCostEstimator}}
+\index{logCostEstimator@{logCostEstimator}!AbstractCostEstimator@{AbstractCostEstimator}}
+\doxysubsubsection{\texorpdfstring{logCostEstimator()}{logCostEstimator()}}
+{\footnotesize\ttfamily virtual void Abstract\+Cost\+Estimator\+::log\+Cost\+Estimator (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual method to be used by \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_logger}{Staged\+FRROTree\+Generator\+Logger}} 
+
+Implemented in \mbox{\hyperlink{class_adim_sprouting_volumetric_cost_estimator_a92519a64edf3dfcaf8b88dff95739f8c}{Adim\+Sprouting\+Volumetric\+Cost\+Estimator}}, \mbox{\hyperlink{class_sprouting_volumetric_cost_estimator_a202d439e5ee04e885041e3c1e0c9eac5}{Sprouting\+Volumetric\+Cost\+Estimator}}, and \mbox{\hyperlink{class_volumetric_cost_estimator_ae8b35e13ab75c627f921025feaef4930}{Volumetric\+Cost\+Estimator}}.
+
+\mbox{\Hypertarget{class_abstract_cost_estimator_a8a806c3e4537c6d4acc428b029fd60de}\label{class_abstract_cost_estimator_a8a806c3e4537c6d4acc428b029fd60de}} 
+\index{AbstractCostEstimator@{AbstractCostEstimator}!previousState@{previousState}}
+\index{previousState@{previousState}!AbstractCostEstimator@{AbstractCostEstimator}}
+\doxysubsubsection{\texorpdfstring{previousState()}{previousState()}}
+{\footnotesize\ttfamily virtual void Abstract\+Cost\+Estimator\+::previous\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$}]{tree,  }\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{i\+New,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{i\+Test,  }\item[{double}]{d\+Lim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Extracts information of the tree at the previous step. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of the tree at the previous step. \\
+\hline
+{\em parent} & Vascular element where the new vessel will be connected. \\
+\hline
+{\em i\+New} & Distal position of the new vessel. \\
+\hline
+{\em i\+Test} & Proximal position of the new vessel. \\
+\hline
+{\em d\+Lim} & Minimum radius distance from the new vessel to the tree. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_adim_sprouting_volumetric_cost_estimator_aa776aae78d397d422ff6b8041c07c412}{Adim\+Sprouting\+Volumetric\+Cost\+Estimator}}, \mbox{\hyperlink{class_sprouting_volumetric_cost_estimator_a712cbceabb8a8f63521af8d31010f955}{Sprouting\+Volumetric\+Cost\+Estimator}}, and \mbox{\hyperlink{class_volumetric_cost_estimator_a0ff762e6a26e1c6937cc28e88d1dc24d}{Volumetric\+Cost\+Estimator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/tree/Abstract\+Cost\+Estimator.\+h\item 
+structures/tree/Abstract\+Cost\+Estimator.\+cpp\end{DoxyCompactItemize}

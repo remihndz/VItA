@@ -1,0 +1,666 @@
+\hypertarget{class_single_vessel_c_c_o_o_tree}{}\doxysection{Single\+Vessel\+CCOOTree Class Reference}
+\label{class_single_vessel_c_c_o_o_tree}\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+
+
+{\ttfamily \#include $<$Single\+Vessel\+CCOOTree.\+h$>$}
+
+Inheritance diagram for Single\+Vessel\+CCOOTree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/d93/class_single_vessel_c_c_o_o_tree}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a0151dcbe49ac8b9e792930d702afe890}{Single\+Vessel\+CCOOTree}} (\mbox{\hyperlink{structpoint}{point}} xi, double \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a92984c132be3e2eaed34adfc261afa48}{root\+Radius}}, double qi, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aad315b93744637e18153c4434dac067d}{gam}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a62d3e1ff7e74a6236422273f58fc6012}{eps\+Lim}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a92e6b6d1a2fac7331eee34fb28158828}{nu}}, double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae7215e6237e4d04625a0c96be9f3578d}{ref\+Pressure}}, double resistance\+Variation\+Tolerance, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_ae26fe0d30497926f2ea0f043d4d19804}{Single\+Vessel\+CCOOTree}} (string filename\+CCO, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}{instance\+Data}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aad315b93744637e18153c4434dac067d}{gam}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a62d3e1ff7e74a6236422273f58fc6012}{eps\+Lim}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a92e6b6d1a2fac7331eee34fb28158828}{nu}})
+\item 
+\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a3b95648509148c82901f8f930ed06b1c}{Single\+Vessel\+CCOOTree}} (string filename\+CCO, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aca7aecbd89dadc46dd9dce14cfde31e1}{instance\+Data}}, double qi, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_aad315b93744637e18153c4434dac067d}{gam}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a62d3e1ff7e74a6236422273f58fc6012}{eps\+Lim}}, \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_a92e6b6d1a2fac7331eee34fb28158828}{nu}}, double \mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae7215e6237e4d04625a0c96be9f3578d}{ref\+Pressure}}, double viscosity\+Tolerance)
+\item 
+\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a5b4ebf13fd8d75c765a295f971e814a1}{Single\+Vessel\+CCOOTree}} (\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} $\ast$base\+Tree)
+\item 
+\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a1c137ac564fb37adef0830032e68e0e0}{$\sim$\+Single\+Vessel\+CCOOTree}} ()
+\item 
+\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} $\ast$ \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_acff17f1c7f1c69539d94f86e0ffbe267}{clone}} ()
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_aac665cdb3fa0687f579ef844ac47c5a7}{get\+Closest\+Tree\+Point}} (\mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{structpoint}{point}} $\ast$x\+Bif, double $\ast$dist)
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a2c33f20925efececc655c7b8d89c93ed}{get\+Close\+Segments}} (\mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$domain, int $\ast$n\+Found)
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_ae9f08ba67c5a9a13b17313c9e86ccaa8}{add\+Vessel}} (\mbox{\hyperlink{structpoint}{point}} x\+Prox, \mbox{\hyperlink{structpoint}{point}} x\+Dist, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$parent, \mbox{\hyperlink{class_abstract_vascular_element_a7d7b7863aae4952ba79a590ee65702ec}{Abstract\+Vascular\+Element\+::\+VESSEL\+\_\+\+FUNCTION}} vessel\+Function)
+\item 
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a1eddd1f1e210aca04c5cd01e6c404a57}\label{class_single_vessel_c_c_o_o_tree_a1eddd1f1e210aca04c5cd01e6c404a57}} 
+void {\bfseries add\+Vessel\+Merge\+Fast} (\mbox{\hyperlink{structpoint}{point}} x\+Prox, \mbox{\hyperlink{structpoint}{point}} x\+Dist, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$parent, \mbox{\hyperlink{class_abstract_vascular_element_a7d7b7863aae4952ba79a590ee65702ec}{Abstract\+Vascular\+Element\+::\+VESSEL\+\_\+\+FUNCTION}} vessel\+Function, unordered\+\_\+map$<$ string, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$string\+To\+Pointer)
+\item 
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_adcc0000ad0b9c62a890f0105e55fcd04}\label{class_single_vessel_c_c_o_o_tree_adcc0000ad0b9c62a890f0105e55fcd04}} 
+void {\bfseries add\+Vessel\+Merge} (\mbox{\hyperlink{structpoint}{point}} x\+Prox, \mbox{\hyperlink{structpoint}{point}} x\+Dist, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$parent, \mbox{\hyperlink{class_abstract_vascular_element_a7d7b7863aae4952ba79a590ee65702ec}{Abstract\+Vascular\+Element\+::\+VESSEL\+\_\+\+FUNCTION}} vessel\+Function, unordered\+\_\+map$<$ string, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$string\+To\+Pointer)
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_aa5950530096da0df6c5314e7d910846f}{add\+Valitated\+Vessel}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$new\+Vessel, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$original\+Vessel, unordered\+\_\+map$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ \&copied\+To)
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a8c8a372c9b431bf6d16152e7ae92a153}{add\+Valitated\+Vessel\+Fast}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$new\+Vessel, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$original\+Vessel, unordered\+\_\+map$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ \&copied\+To)
+\item 
+int \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a4efc4561ed2de4d186b16d5b3c006fc2}{test\+Vessel}} (\mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$parent, \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$domain, vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ neighbors, double dlim, \mbox{\hyperlink{structpoint}{point}} $\ast$x\+Bif, double $\ast$cost)
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_acc5c5d57cad07202170ecca7f65978cf}{print}} ()
+\item 
+string \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a6aeccd994eeaa106d0c269313d7cf3dc}{get\+Tree\+Name}} ()
+\item 
+double \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a2736be9eef11a5b1e8f45218a8933d84}{get\+Root\+Radius}} ()
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a0a3ffdee4f53e21209a187b9539f41ec}{remove\+Withered\+Branches}} (int stage)
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a8f8c3457c301d6d8f91ac4ff1a5c2de5}{remove}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$\mbox{\hyperlink{structvessel}{vessel}})
+\item 
+bool \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a9e1b432708271e41cd9a3438d2f2fe44}{is\+Withered}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$\mbox{\hyperlink{structvessel}{vessel}})
+\item 
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a2b430429fc18792a7b672362533b6fc1}\label{class_single_vessel_c_c_o_o_tree_a2b430429fc18792a7b672362533b6fc1}} 
+string {\bfseries get\+Filename\+CCO} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a4f5ae33e49f3d7ba07e1f4a31ff3568e}{save\+Tree}} (ofstream $\ast$out\+File)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} $\ast$ \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_afcabe5e4cb15ffdb18097c28ecc72e44}{clone\+Up\+To}} (int levels, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$parent)
+\item 
+\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a8fc66762911652eec13b986a69b60e08}{clone\+Tree}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}}, unordered\+\_\+map$<$ long long, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ $\ast$segments)
+\item 
+double \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_ac0580b83043a18855988071a2a3f4913}{evaluate}} (\mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{structpoint}{point}} x\+Test, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$parent, double d\+Lim)
+\item 
+double \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a154064bf9792abee19671f39c851eb25}{evaluate}} (\mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$parent, double d\+Lim)
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_ac8d4ca178e13ed388ad5fe0411ca0b75}{update\+Tree}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}}, \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} $\ast$tree)
+\item 
+int \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a83661a533a356d3631696b32dee89632}{is\+Symmetrically\+Valid}} (double beta1, double beta2, int n\+Level)
+\item 
+int \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_aaf5664ee98d5c6b4b4c0c01a9921a80d}{are\+Valid\+Angles}} (\mbox{\hyperlink{structpoint}{point}} x\+Bif, \mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$parent, double min\+Angle)
+\item 
+int \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a6c97600f94db54a0df9146880dd601ee}{is\+Valid\+Opening\+Angle}} (\mbox{\hyperlink{structpoint}{point}} x\+Bif, \mbox{\hyperlink{structpoint}{point}} x\+New, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$parent, double min\+Plane\+Angle)
+\item 
+int \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a7ac08a2e8d1b05eea1d6debf109caaf1}{is\+Intersecting\+Vessels}} (\mbox{\hyperlink{structpoint}{point}} p1, \mbox{\hyperlink{structpoint}{point}} p2, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$parent, vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ neighbors)
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a08fc003426f3a8697af2f57d03a702c9}{update\+Tree\+Viscosities\+Beta}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$\mbox{\hyperlink{class_abstract_object_c_c_o_tree_ae1b17938ad34d92629915159c49bb89a}{root}}, double $\ast$max\+Beta\+Variation)
+\item 
+double \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a125eba238125b220cb021829603e6e97}{get\+Nu\+FL}} (double radius)
+\item 
+void \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_ac213538ea943f22310f6c20e47a72170}{create\+Segment\+Vtk\+Lines}} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$root\+Vessel)
+\item 
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a4342670f18a93e68e43755ec06207d77}\label{class_single_vessel_c_c_o_o_tree_a4342670f18a93e68e43755ec06207d77}} 
+double {\bfseries get\+Variation\+Tolerance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a599c476ad6c863c1935b29480bded847}\label{class_single_vessel_c_c_o_o_tree_a599c476ad6c863c1935b29480bded847}} 
+string {\bfseries filename\+CCO}
+\item 
+double \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a92984c132be3e2eaed34adfc261afa48}{root\+Radius}}
+\item 
+double \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_abd14cc5350019a67cc3f8ff881af58e4}{variation\+Tolerance}}
+\item 
+long long int \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree_a9766e247e4414d77c9a50ed4d09b3138}{n\+Common\+Terminals}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_ae951e1087f61f1d97b81bc5b9d0e36e1}\label{class_single_vessel_c_c_o_o_tree_ae951e1087f61f1d97b81bc5b9d0e36e1}} 
+class {\bfseries Pruning\+CCOOTree}
+\item 
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_ae912566168bf423b7566ad70543febff}\label{class_single_vessel_c_c_o_o_tree_ae912566168bf423b7566ad70543febff}} 
+class {\bfseries Breadth\+First\+Pruning}
+\item 
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a57496a795071bd3fdb065504460f04f9}\label{class_single_vessel_c_c_o_o_tree_a57496a795071bd3fdb065504460f04f9}} 
+class {\bfseries Tree\+Merger}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+N-\/furcation tree with only \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} elements as vascular elements. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a0151dcbe49ac8b9e792930d702afe890}\label{class_single_vessel_c_c_o_o_tree_a0151dcbe49ac8b9e792930d702afe890}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{SingleVesselCCOOTree()}{SingleVesselCCOOTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Single\+Vessel\+CCOOTree\+::\+Single\+Vessel\+CCOOTree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{xi,  }\item[{double}]{root\+Radius,  }\item[{double}]{qi,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{gam,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{eps\+Lim,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{nu,  }\item[{double}]{ref\+Pressure,  }\item[{double}]{resistance\+Variation\+Tolerance,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Common tree creator. 
+\begin{DoxyParams}{Parameters}
+{\em xi} & Root point. \\
+\hline
+{\em root\+Radius} & Root radius. \\
+\hline
+{\em qi} & Flow at the root. \\
+\hline
+{\em gam} & Murray law function. \\
+\hline
+{\em eps\+Lim} & Sibling vessels ratio function. \\
+\hline
+{\em nu} & Viscosity function with respect to the tree level. \\
+\hline
+{\em min\+Angle} & Minimum angle allowed. \\
+\hline
+{\em resistance\+Variation\+Tolerance} & Convergence tolerance for the iterative viscosity scheme. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_ae26fe0d30497926f2ea0f043d4d19804}\label{class_single_vessel_c_c_o_o_tree_ae26fe0d30497926f2ea0f043d4d19804}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{SingleVesselCCOOTree()}{SingleVesselCCOOTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Single\+Vessel\+CCOOTree\+::\+Single\+Vessel\+CCOOTree (\begin{DoxyParamCaption}\item[{string}]{filename\+CCO,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{gam,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{eps\+Lim,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{nu }\end{DoxyParamCaption})}
+
+Creates a new tree from the .cco file {\ttfamily filename} in VItA format. 
+\begin{DoxyParams}{Parameters}
+{\em filename\+CCO} & Path to the .cco file. \\
+\hline
+{\em gam} & Murray law function. \\
+\hline
+{\em eps\+Lim} & Sibling vessels ratio function. \\
+\hline
+{\em nu} & Viscosity function with respect to the tree level. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a3b95648509148c82901f8f930ed06b1c}\label{class_single_vessel_c_c_o_o_tree_a3b95648509148c82901f8f930ed06b1c}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{SingleVesselCCOOTree()}{SingleVesselCCOOTree()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Single\+Vessel\+CCOOTree\+::\+Single\+Vessel\+CCOOTree (\begin{DoxyParamCaption}\item[{string}]{filename\+CCO,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data,  }\item[{double}]{qi,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{gam,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{eps\+Lim,  }\item[{\mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$}]{nu,  }\item[{double}]{ref\+Pressure,  }\item[{double}]{viscosity\+Tolerance }\end{DoxyParamCaption})}
+
+Creates a new tree from the .cco file {\ttfamily filename} in He\+Mo\+Lab format. 
+\begin{DoxyParams}{Parameters}
+{\em filename\+CCO} & Path to the .cco file. \\
+\hline
+{\em qi} & Flow at the root. \\
+\hline
+{\em gam} & Murray law function. \\
+\hline
+{\em eps\+Lim} & Sibling vessels ratio function. \\
+\hline
+{\em nu} & Viscosity function with respect to the tree level. \\
+\hline
+{\em min\+Angle} & Minimum angle allowed. \\
+\hline
+{\em ref\+Pressure} & Convergence tolerance for the iterative viscosity scheme. \\
+\hline
+{\em viscosity\+Tolerance} & Convergence tolerance for the iterative viscosity scheme. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a5b4ebf13fd8d75c765a295f971e814a1}\label{class_single_vessel_c_c_o_o_tree_a5b4ebf13fd8d75c765a295f971e814a1}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{SingleVesselCCOOTree()}{SingleVesselCCOOTree()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Single\+Vessel\+CCOOTree\+::\+Single\+Vessel\+CCOOTree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} $\ast$}]{base\+Tree }\end{DoxyParamCaption})}
+
+Creates a copy of the tree only with its parameters. Does not create vessel data. 
+\begin{DoxyParams}{Parameters}
+{\em base\+Tree} & Base tree. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a1c137ac564fb37adef0830032e68e0e0}\label{class_single_vessel_c_c_o_o_tree_a1c137ac564fb37adef0830032e68e0e0}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!````~SingleVesselCCOOTree@{$\sim$SingleVesselCCOOTree}}
+\index{````~SingleVesselCCOOTree@{$\sim$SingleVesselCCOOTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{$\sim$SingleVesselCCOOTree()}{~SingleVesselCCOOTree()}}
+{\footnotesize\ttfamily Single\+Vessel\+CCOOTree\+::$\sim$\+Single\+Vessel\+CCOOTree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Common destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_aa5950530096da0df6c5314e7d910846f}\label{class_single_vessel_c_c_o_o_tree_aa5950530096da0df6c5314e7d910846f}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!addValitatedVessel@{addValitatedVessel}}
+\index{addValitatedVessel@{addValitatedVessel}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{addValitatedVessel()}{addValitatedVessel()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::add\+Valitated\+Vessel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{new\+Vessel,  }\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{original\+Vessel,  }\item[{unordered\+\_\+map$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ \&}]{copied\+To }\end{DoxyParamCaption})}
+
+Adds a vessel that has already been validated. This function is used by Breadth\+First\+Prunning. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Vessel} & Vessel that will be added. \\
+\hline
+{\em original\+Vessel} & Vessel that has been validaded in a previous tree. \\
+\hline
+{\em copied\+To} & Mapping such that copied\+To\mbox{[}original\+Vessel\mbox{]} = copied\+Vessel; \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a8c8a372c9b431bf6d16152e7ae92a153}\label{class_single_vessel_c_c_o_o_tree_a8c8a372c9b431bf6d16152e7ae92a153}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!addValitatedVesselFast@{addValitatedVesselFast}}
+\index{addValitatedVesselFast@{addValitatedVesselFast}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{addValitatedVesselFast()}{addValitatedVesselFast()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::add\+Valitated\+Vessel\+Fast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{new\+Vessel,  }\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{original\+Vessel,  }\item[{unordered\+\_\+map$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$, \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ \&}]{copied\+To }\end{DoxyParamCaption})}
+
+Adds a vessel that has already been validated, but do not update the tree. This function is used by Breadth\+First\+Prunning. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Vessel} & Vessel that will be added. \\
+\hline
+{\em original\+Vessel} & Vessel that has been validaded in a previous tree. \\
+\hline
+{\em copied\+To} & Mapping such that copied\+To\mbox{[}original\+Vessel\mbox{]} = copied\+Vessel; \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_ae9f08ba67c5a9a13b17313c9e86ccaa8}\label{class_single_vessel_c_c_o_o_tree_ae9f08ba67c5a9a13b17313c9e86ccaa8}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!addVessel@{addVessel}}
+\index{addVessel@{addVessel}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{addVessel()}{addVessel()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::add\+Vessel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+Prox,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+Dist,  }\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{class_abstract_vascular_element_a7d7b7863aae4952ba79a590ee65702ec}{Abstract\+Vascular\+Element\+::\+VESSEL\+\_\+\+FUNCTION}}}]{vessel\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adds a new vessel to the CCO tree.
+\begin{DoxyParams}{Parameters}
+{\em x\+Prox} & and\\
+\hline
+{\em x\+Dist} & are the proximal and distal nodes of the new vessel and\\
+\hline
+{\em parent} & is the attachment parent vessel. \\
+\hline
+{\em x\+Prox} & Proximal point of the new vessel. \\
+\hline
+{\em x\+Dist} & Distal point of the new vessel. \\
+\hline
+{\em parent} & Parent to the new vessel. \\
+\hline
+{\em vessel\+Function} & Vessel function of the added vessel. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a8fa23ca2ea8b9933ce80c331cede89eb}{Abstract\+Object\+CCOTree}}.
+
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_aaf5664ee98d5c6b4b4c0c01a9921a80d}\label{class_single_vessel_c_c_o_o_tree_aaf5664ee98d5c6b4b4c0c01a9921a80d}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!areValidAngles@{areValidAngles}}
+\index{areValidAngles@{areValidAngles}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{areValidAngles()}{areValidAngles()}}
+{\footnotesize\ttfamily int Single\+Vessel\+CCOOTree\+::are\+Valid\+Angles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+Bif,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{parent,  }\item[{double}]{min\+Angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Checks if the angles of the parent vessel and the new vessel do not violate the minimum angle constraint. 
+\begin{DoxyParams}{Parameters}
+{\em x\+Bif} & Bifurcation point between the new vessel and the distal part of the parent vessel (i\+Con). \\
+\hline
+{\em x\+New} & Distal point of the new vessel. \\
+\hline
+{\em parent} & Parent vessel. \\
+\hline
+{\em min\+Angle} & Minimum angle constraint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the angles are higher than the minimum allowed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_acff17f1c7f1c69539d94f86e0ffbe267}\label{class_single_vessel_c_c_o_o_tree_acff17f1c7f1c69539d94f86e0ffbe267}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!clone@{clone}}
+\index{clone@{clone}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} $\ast$ Single\+Vessel\+CCOOTree\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a copy from the tree without the vtk structures (neither from the tree nor from the vessels). \begin{DoxyReturn}{Returns}
+Copy from the tree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a8fc66762911652eec13b986a69b60e08}\label{class_single_vessel_c_c_o_o_tree_a8fc66762911652eec13b986a69b60e08}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!cloneTree@{cloneTree}}
+\index{cloneTree@{cloneTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{cloneTree()}{cloneTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ Single\+Vessel\+CCOOTree\+::clone\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root,  }\item[{unordered\+\_\+map$<$ long long, \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ $\ast$}]{segments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Clones the subtree with parent vessel {\ttfamily root} recursively. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of the tree to clone. \\
+\hline
+{\em segments} & Segments of the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cloned subtree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_afcabe5e4cb15ffdb18097c28ecc72e44}\label{class_single_vessel_c_c_o_o_tree_afcabe5e4cb15ffdb18097c28ecc72e44}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!cloneUpTo@{cloneUpTo}}
+\index{cloneUpTo@{cloneUpTo}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{cloneUpTo()}{cloneUpTo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} $\ast$ Single\+Vessel\+CCOOTree\+::clone\+Up\+To (\begin{DoxyParamCaption}\item[{int}]{levels,  }\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Clones the subtree with parent vessel {\ttfamily levels} . 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of the tree to clone. \\
+\hline
+{\em segments} & Segments of the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cloned subtree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_ac213538ea943f22310f6c20e47a72170}\label{class_single_vessel_c_c_o_o_tree_ac213538ea943f22310f6c20e47a72170}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!createSegmentVtkLines@{createSegmentVtkLines}}
+\index{createSegmentVtkLines@{createSegmentVtkLines}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{createSegmentVtkLines()}{createSegmentVtkLines()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::create\+Segment\+Vtk\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{root\+Vessel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Creates the VTK lines and points associated to a He\+Mo\+Lab file loaded. \mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_ac0580b83043a18855988071a2a3f4913}\label{class_single_vessel_c_c_o_o_tree_ac0580b83043a18855988071a2a3f4913}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Single\+Vessel\+CCOOTree\+::evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+Test,  }\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{parent,  }\item[{double}]{d\+Lim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Returns a partial variation of the cost functional due to the new segment inclusion. 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Proximal point of the new vessel. \\
+\hline
+{\em x\+Test} & Distal point of the new vessel. \\
+\hline
+{\em parent} & Parent to the new vessel. \\
+\hline
+{\em d\+Lim} & Minimum distance from the new vessel to the tree. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a154064bf9792abee19671f39c851eb25}\label{class_single_vessel_c_c_o_o_tree_a154064bf9792abee19671f39c851eb25}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Single\+Vessel\+CCOOTree\+::evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{parent,  }\item[{double}]{d\+Lim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Returns a partial variation of the cost functional due to the new segment inclusion. This method is only used for DISTAL\+\_\+\+BRANCHING vessels. 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Proximal point of the new vessel. \\
+\hline
+{\em parent} & Parent to the new vessel. \\
+\hline
+{\em d\+Lim} & Minimum distance from the new vessel to the tree. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a2c33f20925efececc655c7b8d89c93ed}\label{class_single_vessel_c_c_o_o_tree_a2c33f20925efececc655c7b8d89c93ed}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!getCloseSegments@{getCloseSegments}}
+\index{getCloseSegments@{getCloseSegments}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{getCloseSegments()}{getCloseSegments()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$ Single\+Vessel\+CCOOTree\+::get\+Close\+Segments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$}]{domain,  }\item[{int $\ast$}]{n\+Found }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the segments in a close neighborhood of {\ttfamily x\+New}. The neighborhood is computed based on the perfusion volume indicated by {\ttfamily domain}. 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Center point of the neighborhood of interest. \\
+\hline
+{\em domain} & Domain of the segments. \\
+\hline
+{\em n\+Found} & Amount of segments in the neighborhood. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of segments in the neighborhood of {\ttfamily x\+New}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a96a4cfda4be0f96eac2bc4adb07fb056}{Abstract\+Object\+CCOTree}}.
+
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_aac665cdb3fa0687f579ef844ac47c5a7}\label{class_single_vessel_c_c_o_o_tree_aac665cdb3fa0687f579ef844ac47c5a7}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!getClosestTreePoint@{getClosestTreePoint}}
+\index{getClosestTreePoint@{getClosestTreePoint}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{getClosestTreePoint()}{getClosestTreePoint()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::get\+Closest\+Tree\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{x\+Bif,  }\item[{double $\ast$}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the closest point in the CCOTree with respect to {\ttfamily x\+New} point. 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Point from which the minimum distance is computed. \\
+\hline
+{\em x\+Bif} & Closest point in the tree to {\ttfamily x\+New}. \\
+\hline
+{\em dist} & Minimum distance between {\ttfamily x\+New} and the tree. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a24a38d8d43726a9b4d61efaa2f0bf33c}{Abstract\+Object\+CCOTree}}.
+
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a125eba238125b220cb021829603e6e97}\label{class_single_vessel_c_c_o_o_tree_a125eba238125b220cb021829603e6e97}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!getNuFL@{getNuFL}}
+\index{getNuFL@{getNuFL}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{getNuFL()}{getNuFL()}}
+{\footnotesize\ttfamily double Single\+Vessel\+CCOOTree\+::get\+Nu\+FL (\begin{DoxyParamCaption}\item[{double}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns the viscosity estimated with the Fahraeus-\/\+Lindquist model. 
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Viscosity value.
+\end{DoxyReturn}
+Function for radius in milimeters 
+\begin{DoxyParams}{Parameters}
+{\em radius} & Vessel radius in millimeters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Viscosity in centipoise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a2736be9eef11a5b1e8f45218a8933d84}\label{class_single_vessel_c_c_o_o_tree_a2736be9eef11a5b1e8f45218a8933d84}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!getRootRadius@{getRootRadius}}
+\index{getRootRadius@{getRootRadius}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{getRootRadius()}{getRootRadius()}}
+{\footnotesize\ttfamily double Single\+Vessel\+CCOOTree\+::get\+Root\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the root radius. \begin{DoxyReturn}{Returns}
+Root radius. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a6aeccd994eeaa106d0c269313d7cf3dc}\label{class_single_vessel_c_c_o_o_tree_a6aeccd994eeaa106d0c269313d7cf3dc}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!getTreeName@{getTreeName}}
+\index{getTreeName@{getTreeName}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{getTreeName()}{getTreeName()}}
+{\footnotesize\ttfamily string Single\+Vessel\+CCOOTree\+::get\+Tree\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the class name identifier. \begin{DoxyReturn}{Returns}
+Class name. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a25cc167a1c8aae7edc8158683a668647}{Abstract\+Object\+CCOTree}}.
+
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a7ac08a2e8d1b05eea1d6debf109caaf1}\label{class_single_vessel_c_c_o_o_tree_a7ac08a2e8d1b05eea1d6debf109caaf1}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!isIntersectingVessels@{isIntersectingVessels}}
+\index{isIntersectingVessels@{isIntersectingVessels}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{isIntersectingVessels()}{isIntersectingVessels()}}
+{\footnotesize\ttfamily int Single\+Vessel\+CCOOTree\+::is\+Intersecting\+Vessels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p1,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p2,  }\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{parent,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$}]{neighbors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+It returns if the line
+\begin{DoxyParams}{Parameters}
+{\em p1} & -\/\\
+\hline
+{\em p2} & intersects any vessel of the tree beside parent. \\
+\hline
+{\em p1} & Extreme point 1 of the line. \\
+\hline
+{\em p2} & Extreme point 2 of the line. \\
+\hline
+{\em parent} & Vessel excluded from the checking. \\
+\hline
+{\em boundary\+Tol} & Factor of line contraction at the extremes to avoid false intersections due to contact with anastomose. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the segment intersects any segment of the tree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a83661a533a356d3631696b32dee89632}\label{class_single_vessel_c_c_o_o_tree_a83661a533a356d3631696b32dee89632}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!isSymmetricallyValid@{isSymmetricallyValid}}
+\index{isSymmetricallyValid@{isSymmetricallyValid}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{isSymmetricallyValid()}{isSymmetricallyValid()}}
+{\footnotesize\ttfamily int Single\+Vessel\+CCOOTree\+::is\+Symmetrically\+Valid (\begin{DoxyParamCaption}\item[{double}]{beta1,  }\item[{double}]{beta2,  }\item[{int}]{n\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+For a giving pair of beta between sibling of a parent vessel, it analyze the symmetry constrain given by eps\+Lim function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em beta1} & Beta for the 1st sibling. \\
+\hline
+{\em beta2} & Beta for the 2nd sibling. \\
+\hline
+{\em n\+Level} & Tree level of the bifurcation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the simmetry constrain is satisfied. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a6c97600f94db54a0df9146880dd601ee}\label{class_single_vessel_c_c_o_o_tree_a6c97600f94db54a0df9146880dd601ee}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!isValidOpeningAngle@{isValidOpeningAngle}}
+\index{isValidOpeningAngle@{isValidOpeningAngle}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{isValidOpeningAngle()}{isValidOpeningAngle()}}
+{\footnotesize\ttfamily int Single\+Vessel\+CCOOTree\+::is\+Valid\+Opening\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+Bif,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{parent,  }\item[{double}]{min\+Plane\+Angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Checks if the angle between the plane of the parent and sibling vessel and the new vessel satisfies the opening angle constraint. 
+\begin{DoxyParams}{Parameters}
+{\em x\+Bif} & Bifurcation point between the new vessel and the distal part of the parent vessel (i\+Con). \\
+\hline
+{\em x\+New} & Distal point of the new vessel. \\
+\hline
+{\em parent} & Parent vessel. \\
+\hline
+{\em min\+Plane\+Angle} & Minimum opening angle constraint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the angles satisfies the minimum plane angle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a9e1b432708271e41cd9a3438d2f2fe44}\label{class_single_vessel_c_c_o_o_tree_a9e1b432708271e41cd9a3438d2f2fe44}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!isWithered@{isWithered}}
+\index{isWithered@{isWithered}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{isWithered()}{isWithered()}}
+{\footnotesize\ttfamily bool Single\+Vessel\+CCOOTree\+::is\+Withered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{vessel }\end{DoxyParamCaption})}
+
+Returns if the {\ttfamily vessel} at stage {\ttfamily stage} has no connexions with vessels at stage {\ttfamily stage} + 1. 
+\begin{DoxyParams}{Parameters}
+{\em vessel} & Vessel to evaluate if it is withered or not. \\
+\hline
+{\em stage} & Stage of the vessel {\ttfamily vessl} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If it is withered or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_acc5c5d57cad07202170ecca7f65978cf}\label{class_single_vessel_c_c_o_o_tree_acc5c5d57cad07202170ecca7f65978cf}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!print@{print}}
+\index{print@{print}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints the current tree node by node. 
+
+Implements \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a6815c1d167caf524cc81faecffed65e7}{Abstract\+Object\+CCOTree}}.
+
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a8f8c3457c301d6d8f91ac4ff1a5c2de5}\label{class_single_vessel_c_c_o_o_tree_a8f8c3457c301d6d8f91ac4ff1a5c2de5}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!remove@{remove}}
+\index{remove@{remove}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{vessel }\end{DoxyParamCaption})}
+
+Removes a vessel and its subtree from the current tree. 
+\begin{DoxyParams}{Parameters}
+{\em vessel} & Vessel to be removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a0a3ffdee4f53e21209a187b9539f41ec}\label{class_single_vessel_c_c_o_o_tree_a0a3ffdee4f53e21209a187b9539f41ec}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!removeWitheredBranches@{removeWitheredBranches}}
+\index{removeWitheredBranches@{removeWitheredBranches}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{removeWitheredBranches()}{removeWitheredBranches()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::remove\+Withered\+Branches (\begin{DoxyParamCaption}\item[{int}]{stage }\end{DoxyParamCaption})}
+
+Removes all branches at stage {\ttfamily stage} such that do not branch in the next stages. 
+\begin{DoxyParams}{Parameters}
+{\em stage} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a4f5ae33e49f3d7ba07e1f4a31ff3568e}\label{class_single_vessel_c_c_o_o_tree_a4f5ae33e49f3d7ba07e1f4a31ff3568e}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!saveTree@{saveTree}}
+\index{saveTree@{saveTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{saveTree()}{saveTree()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::save\+Tree (\begin{DoxyParamCaption}\item[{ofstream $\ast$}]{out\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns a string with the tree atributes to create the .cco file. 
+\begin{DoxyParams}{Parameters}
+{\em out\+File} & File writer for the .cco file. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a401ce5c8e425dae5a8d72bdd007a3464}{Abstract\+Object\+CCOTree}}.
+
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a4efc4561ed2de4d186b16d5b3c006fc2}\label{class_single_vessel_c_c_o_o_tree_a4efc4561ed2de4d186b16d5b3c006fc2}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!testVessel@{testVessel}}
+\index{testVessel@{testVessel}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{testVessel()}{testVessel()}}
+{\footnotesize\ttfamily int Single\+Vessel\+CCOOTree\+::test\+Vessel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$}]{domain,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$ $>$}]{neighbors,  }\item[{double}]{dlim,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{x\+Bif,  }\item[{double $\ast$}]{cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+For a given spatial point {\ttfamily x\+New} test its connection with {\ttfamily parent} vessel. It must evaluate if the restrictions of geometry and symmetry are satisfied and also if it do not intersects with other vessel of this tree. It returns in {\ttfamily cost} the functional variation by the inclusion of such vessel. 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Distal point for the new vessel to test. \\
+\hline
+{\em parent} & Parent vessel to test the {\ttfamily x\+New} point connection. \\
+\hline
+{\em domain} & Tree domain. \\
+\hline
+{\em neighbors} & Close neighbors used for intersection test. \\
+\hline
+{\em dlim} & Not used in the current implementation. \\
+\hline
+{\em x\+Bif} & Proximal point for the new vessel that present the lower function cost. \\
+\hline
+{\em cost} & Functional cost variation for the best bifurcation position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the connection of the tree with x\+New is possible. If not {\ttfamily cost} is INFINITY. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_object_c_c_o_tree_a7279cc7eaa7466bc86fa83508df4358a}{Abstract\+Object\+CCOTree}}.
+
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_ac8d4ca178e13ed388ad5fe0411ca0b75}\label{class_single_vessel_c_c_o_o_tree_ac8d4ca178e13ed388ad5fe0411ca0b75}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!updateTree@{updateTree}}
+\index{updateTree@{updateTree}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{updateTree()}{updateTree()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::update\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root,  }\item[{\mbox{\hyperlink{class_single_vessel_c_c_o_o_tree}{Single\+Vessel\+CCOOTree}} $\ast$}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Updates the tree values for the current topology in only one tree \char`\"{}in order\char`\"{} swept (O(\+N)). As the recursion deepens, the level number is computed for each element. As the recursion is returning, it computes the flow and resistance for the current node and the radius ratio for its childs. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root vessel for the tree to update. \\
+\hline
+{\em tree} & Tree to update. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a08fc003426f3a8697af2f57d03a702c9}\label{class_single_vessel_c_c_o_o_tree_a08fc003426f3a8697af2f57d03a702c9}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!updateTreeViscositiesBeta@{updateTreeViscositiesBeta}}
+\index{updateTreeViscositiesBeta@{updateTreeViscositiesBeta}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{updateTreeViscositiesBeta()}{updateTreeViscositiesBeta()}}
+{\footnotesize\ttfamily void Single\+Vessel\+CCOOTree\+::update\+Tree\+Viscosities\+Beta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root,  }\item[{double $\ast$}]{max\+Beta\+Variation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Updates the tree beta values for the current vessel diameters. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree root. \\
+\hline
+{\em parent\+Radius} & 1.\+0 if root is actually the tree root, or parent radius of root otherwise. \\
+\hline
+{\em max\+Beta\+Variation} & The maximum variation of the beta value due to the update. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a9766e247e4414d77c9a50ed4d09b3138}\label{class_single_vessel_c_c_o_o_tree_a9766e247e4414d77c9a50ed4d09b3138}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!nCommonTerminals@{nCommonTerminals}}
+\index{nCommonTerminals@{nCommonTerminals}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{nCommonTerminals}{nCommonTerminals}}
+{\footnotesize\ttfamily long long int Single\+Vessel\+CCOOTree\+::n\+Common\+Terminals\hspace{0.3cm}{\ttfamily [private]}}
+
+Amount of non-\/common terminals. \mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_a92984c132be3e2eaed34adfc261afa48}\label{class_single_vessel_c_c_o_o_tree_a92984c132be3e2eaed34adfc261afa48}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!rootRadius@{rootRadius}}
+\index{rootRadius@{rootRadius}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{rootRadius}{rootRadius}}
+{\footnotesize\ttfamily double Single\+Vessel\+CCOOTree\+::root\+Radius\hspace{0.3cm}{\ttfamily [private]}}
+
+Root radius. \mbox{\Hypertarget{class_single_vessel_c_c_o_o_tree_abd14cc5350019a67cc3f8ff881af58e4}\label{class_single_vessel_c_c_o_o_tree_abd14cc5350019a67cc3f8ff881af58e4}} 
+\index{SingleVesselCCOOTree@{SingleVesselCCOOTree}!variationTolerance@{variationTolerance}}
+\index{variationTolerance@{variationTolerance}!SingleVesselCCOOTree@{SingleVesselCCOOTree}}
+\doxysubsubsection{\texorpdfstring{variationTolerance}{variationTolerance}}
+{\footnotesize\ttfamily double Single\+Vessel\+CCOOTree\+::variation\+Tolerance\hspace{0.3cm}{\ttfamily [private]}}
+
+Convergence tolerance. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/tree/Single\+Vessel\+CCOOTree.\+h\item 
+structures/tree/Single\+Vessel\+CCOOTree.\+cpp\end{DoxyCompactItemize}

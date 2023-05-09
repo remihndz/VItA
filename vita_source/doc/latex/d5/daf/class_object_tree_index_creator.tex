@@ -1,0 +1,189 @@
+\hypertarget{class_object_tree_index_creator}{}\doxysection{Object\+Tree\+Index\+Creator Class Reference}
+\label{class_object_tree_index_creator}\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+
+
+{\ttfamily \#include $<$Object\+Tree\+Index\+Creator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_tree_index_creator_af220fab4271a242387187cd644bf5e9e}{Object\+Tree\+Index\+Creator}} (\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$\mbox{\hyperlink{class_object_tree_index_creator_ae2d0b3f63422659447c6997456d85352}{tree}})
+\item 
+vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ \mbox{\hyperlink{class_object_tree_index_creator_aaea42549467d38aaa054f5179fa37260}{get\+Terminals}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ \mbox{\hyperlink{class_object_tree_index_creator_a324d08b22ecf61f72e627d18706cdb61}{get\+All\+Segments}} ()
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_object_tree_index_creator_a5afc254baed451f06ba94a35e1627742}{get\+Segments\+By\+Level}} ()
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_object_tree_index_creator_a8177f74ee988619a1af8ebf452e51022}{get\+Segments\+By\+Level}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root)
+\item 
+vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ \mbox{\hyperlink{class_object_tree_index_creator_ae61ed56cb7c2999956b8a851d747d039}{get\+Root\+At\+Stage}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root, int stage)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_object_tree_index_creator_ac6c4ceb77098ec5f1f8e0058c570b1f7}{extract\+Terminals}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root, vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$extracted\+Terminals)
+\item 
+void \mbox{\hyperlink{class_object_tree_index_creator_add5f44fb25628a90f146278c47b1656d}{extract\+All\+Segments}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root, vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$extracted\+Terminals)
+\item 
+void \mbox{\hyperlink{class_object_tree_index_creator_a688225bb1526d26ebc365708edae1be1}{extract\+Segments\+By\+Level}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root, vector$<$ vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $>$ $\ast$extracted\+Terminals, unsigned level)
+\item 
+\mbox{\Hypertarget{class_object_tree_index_creator_a5361cb94122b566232f481b94adf7798}\label{class_object_tree_index_creator_a5361cb94122b566232f481b94adf7798}} 
+void {\bfseries extract\+Roots\+At\+Stage} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root, vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$extracted\+Roots, int stage)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ \mbox{\hyperlink{class_object_tree_index_creator_ae2d0b3f63422659447c6997456d85352}{tree}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates indexes for a given tree to ease the manipulation of its segments. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_object_tree_index_creator_af220fab4271a242387187cd644bf5e9e}\label{class_object_tree_index_creator_af220fab4271a242387187cd644bf5e9e}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{ObjectTreeIndexCreator()}{ObjectTreeIndexCreator()}}
+{\footnotesize\ttfamily Object\+Tree\+Index\+Creator\+::\+Object\+Tree\+Index\+Creator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em tree} & Tree to index.\\
+\hline
+\end{DoxyParams}
+Creates an instance associated with {\ttfamily tree} . 
+\begin{DoxyParams}{Parameters}
+{\em tree} & Instance associated with the index creator. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_tree_index_creator_add5f44fb25628a90f146278c47b1656d}\label{class_object_tree_index_creator_add5f44fb25628a90f146278c47b1656d}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!extractAllSegments@{extractAllSegments}}
+\index{extractAllSegments@{extractAllSegments}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{extractAllSegments()}{extractAllSegments()}}
+{\footnotesize\ttfamily void Object\+Tree\+Index\+Creator\+::extract\+All\+Segments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root,  }\item[{vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$}]{extracted\+Segments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Recursively in pre-\/order, adds all tree segments to the vector {\ttfamily extracted\+Segments}. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree root. \\
+\hline
+{\em extracted\+Segments} & Extracted segments. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_tree_index_creator_a688225bb1526d26ebc365708edae1be1}\label{class_object_tree_index_creator_a688225bb1526d26ebc365708edae1be1}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!extractSegmentsByLevel@{extractSegmentsByLevel}}
+\index{extractSegmentsByLevel@{extractSegmentsByLevel}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{extractSegmentsByLevel()}{extractSegmentsByLevel()}}
+{\footnotesize\ttfamily void Object\+Tree\+Index\+Creator\+::extract\+Segments\+By\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $>$ $\ast$}]{extracted\+Segments,  }\item[{unsigned}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Recursively in pre-\/order, adds all tree segments to the vector {\ttfamily extracted\+Segments} in the entry corresponding to their bifurcation level. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree root. \\
+\hline
+{\em extracted\+Segments} & Extracted segments. \\
+\hline
+{\em level} & Current deepness level in the tree. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_tree_index_creator_ac6c4ceb77098ec5f1f8e0058c570b1f7}\label{class_object_tree_index_creator_ac6c4ceb77098ec5f1f8e0058c570b1f7}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!extractTerminals@{extractTerminals}}
+\index{extractTerminals@{extractTerminals}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{extractTerminals()}{extractTerminals()}}
+{\footnotesize\ttfamily void Object\+Tree\+Index\+Creator\+::extract\+Terminals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root,  }\item[{vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $\ast$}]{extracted\+Terminals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Recursively adds the tree terminals to the given vector {\ttfamily extracted\+Terminals}. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree root. \\
+\hline
+{\em extracted\+Terminals} & Extracted terminals. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_tree_index_creator_a324d08b22ecf61f72e627d18706cdb61}\label{class_object_tree_index_creator_a324d08b22ecf61f72e627d18706cdb61}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!getAllSegments@{getAllSegments}}
+\index{getAllSegments@{getAllSegments}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{getAllSegments()}{getAllSegments()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ Object\+Tree\+Index\+Creator\+::get\+All\+Segments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all segments of {\ttfamily tree}. \begin{DoxyReturn}{Returns}
+Vector of segments.
+\end{DoxyReturn}
+Returns a vector with all the tree segments. \begin{DoxyReturn}{Returns}
+vector with all the tree segments. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_tree_index_creator_ae61ed56cb7c2999956b8a851d747d039}\label{class_object_tree_index_creator_ae61ed56cb7c2999956b8a851d747d039}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!getRootAtStage@{getRootAtStage}}
+\index{getRootAtStage@{getRootAtStage}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{getRootAtStage()}{getRootAtStage()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ Object\+Tree\+Index\+Creator\+::get\+Root\+At\+Stage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root,  }\item[{int}]{stage }\end{DoxyParamCaption})}
+
+Returns a vector of all root for the given stage. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of the main tree. \\
+\hline
+{\em stage} & Stage to which roots and all children vessels belong. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector with roots for the given stage. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_tree_index_creator_a5afc254baed451f06ba94a35e1627742}\label{class_object_tree_index_creator_a5afc254baed451f06ba94a35e1627742}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!getSegmentsByLevel@{getSegmentsByLevel}}
+\index{getSegmentsByLevel@{getSegmentsByLevel}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{getSegmentsByLevel()}{getSegmentsByLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vector$<$ vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $>$ Object\+Tree\+Index\+Creator\+::get\+Segments\+By\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a vector for each tree bifurcation level, containing the segments of {\ttfamily tree} for such level. \begin{DoxyReturn}{Returns}
+Vector of vectors of segments.
+\end{DoxyReturn}
+Returns a vector for which the i-\/th entry contains a vector with all segments at the i-\/th tree level. \begin{DoxyReturn}{Returns}
+vector for which the i-\/th entry contains a vector with all segments at the i-\/th tree level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_tree_index_creator_a8177f74ee988619a1af8ebf452e51022}\label{class_object_tree_index_creator_a8177f74ee988619a1af8ebf452e51022}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!getSegmentsByLevel@{getSegmentsByLevel}}
+\index{getSegmentsByLevel@{getSegmentsByLevel}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{getSegmentsByLevel()}{getSegmentsByLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily vector$<$ vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ $>$ Object\+Tree\+Index\+Creator\+::get\+Segments\+By\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+Returns a vector for each tree bifurcation level, containing the segments of {\ttfamily tree} for such level. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Tree of the sub/tree to analyse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of vectors of segments.
+\end{DoxyReturn}
+Returns a vector for which the i-\/th entry contains a vector with all segments at the i-\/th tree level. \begin{DoxyReturn}{Returns}
+vector for which the i-\/th entry contains a vector with all segments at the i-\/th tree level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_object_tree_index_creator_aaea42549467d38aaa054f5179fa37260}\label{class_object_tree_index_creator_aaea42549467d38aaa054f5179fa37260}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!getTerminals@{getTerminals}}
+\index{getTerminals@{getTerminals}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{getTerminals()}{getTerminals()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ Object\+Tree\+Index\+Creator\+::get\+Terminals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all terminal segments of {\ttfamily tree}. \begin{DoxyReturn}{Returns}
+Vector of terminal segments.
+\end{DoxyReturn}
+Returns a vector with all the tree terminals. \begin{DoxyReturn}{Returns}
+vector with all the tree terminals. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_object_tree_index_creator_ae2d0b3f63422659447c6997456d85352}\label{class_object_tree_index_creator_ae2d0b3f63422659447c6997456d85352}} 
+\index{ObjectTreeIndexCreator@{ObjectTreeIndexCreator}!tree@{tree}}
+\index{tree@{tree}!ObjectTreeIndexCreator@{ObjectTreeIndexCreator}}
+\doxysubsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}}$\ast$ Object\+Tree\+Index\+Creator\+::tree\hspace{0.3cm}{\ttfamily [private]}}
+
+Tree for which the indexes are created. ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stats/Object\+Tree\+Index\+Creator.\+h\item 
+stats/Object\+Tree\+Index\+Creator.\+cpp\end{DoxyCompactItemize}

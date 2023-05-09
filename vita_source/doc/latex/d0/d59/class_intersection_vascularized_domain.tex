@@ -1,0 +1,376 @@
+\hypertarget{class_intersection_vascularized_domain}{}\doxysection{Intersection\+Vascularized\+Domain Class Reference}
+\label{class_intersection_vascularized_domain}\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+
+
+{\ttfamily \#include $<$Intersection\+Vascularized\+Domain.\+h$>$}
+
+Inheritance diagram for Intersection\+Vascularized\+Domain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/d59/class_intersection_vascularized_domain}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_intersection_vascularized_domain_ad5eb56a0c6f7197af3d1263f7625bbc5}{Intersection\+Vascularized\+Domain}} (vector$<$ string $>$ filename\+Vascular\+Regions, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_intersection_vascularized_domain_a5bd62b749b6f25562b7170e3bfb8f6d7}{Intersection\+Vascularized\+Domain}} (vector$<$ string $>$ filename\+Vascular\+Regions, int \mbox{\hyperlink{class_intersection_vascularized_domain_a98a16d98d16b37b13593d7a2aee872f3}{n\+Draw}}, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_intersection_vascularized_domain_a5b6f8a4f0c2a4eac2ba76dc3345a0994}{Intersection\+Vascularized\+Domain}} (vector$<$ string $>$ filename\+Vascular\+Regions, int \mbox{\hyperlink{class_intersection_vascularized_domain_a98a16d98d16b37b13593d7a2aee872f3}{n\+Draw}}, int \mbox{\hyperlink{class_intersection_vascularized_domain_abe078f4d223d21554d6f6709d5db47b0}{seed}}, \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_intersection_vascularized_domain_a5928fcdd2ac5810df3d6e5fcbbd091c3}{$\sim$\+Intersection\+Vascularized\+Domain}} ()
+\item 
+int \mbox{\hyperlink{class_intersection_vascularized_domain_accd160eb77fede65322d67293177e54f}{is\+Segment\+Inside}} (\mbox{\hyperlink{structpoint}{point}} xs, \mbox{\hyperlink{structpoint}{point}} xf)
+\item 
+double \mbox{\hyperlink{class_intersection_vascularized_domain_a6ded581a637a098d2ddfec6ae6801132}{get\+Characteristic\+Length}} ()
+\item 
+double \mbox{\hyperlink{class_intersection_vascularized_domain_a24e31c45b099a27ea3d13b1923ea5340}{get\+DLim}} (long long int n\+Vessels, double factor)
+\item 
+double $\ast$ \mbox{\hyperlink{class_intersection_vascularized_domain_a4b35793edb3ec9847e8be75d81dfbd9d}{get\+Local\+Neighborhood}} (\mbox{\hyperlink{structpoint}{point}} p, long long int n\+Vessels)
+\item 
+double \mbox{\hyperlink{class_intersection_vascularized_domain_a4c4dc6ce4711752e7d082346499d70b5}{get\+Size}} ()
+\item 
+virtual \mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{class_intersection_vascularized_domain_a39e0fd3443fed3fecf4ecc799e39baa2}{get\+Random\+Point}} ()
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+OBBTree $>$ \& \mbox{\hyperlink{class_intersection_vascularized_domain_a1188cff5b710e8281a9cecf998532a20}{get\+Locator}} ()
+\item 
+int \mbox{\hyperlink{class_intersection_vascularized_domain_a451cea01fadfed6f9a1118755c36f16b}{get\+Draw}} ()
+\item 
+deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \& \mbox{\hyperlink{class_intersection_vascularized_domain_afa0103c0c3ed989e1b67e50d14684321}{get\+Random\+Inner\+Points}} ()
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \& \mbox{\hyperlink{class_intersection_vascularized_domain_aacdc4a4263423e8c8dd992ba4f00f826}{get\+Vtk\+Geometry}} ()
+\item 
+int \mbox{\hyperlink{class_intersection_vascularized_domain_ac5be919284b7c826f8ca69626e0049ed}{get\+Seed}} ()
+\item 
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a616aaa4343c0e9d69b61ed43e5c1a474}\label{class_intersection_vascularized_domain_a616aaa4343c0e9d69b61ed43e5c1a474}} 
+vector$<$ string $>$ {\bfseries get\+Filename\+VR} ()
+\item 
+void \mbox{\hyperlink{class_intersection_vascularized_domain_a946c5bb97084408e1b02f5952ba591f9}{log\+Domain\+Files}} (FILE $\ast$fp)
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Select\+Enclosed\+Points $>$ \mbox{\hyperlink{class_intersection_vascularized_domain_ad9fb0eb04e488d76e1f8b04975fc50d4}{get\+Enclosed\+Points}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a9f49c20ae3e45f5c3a45d95c7a83f564}\label{class_intersection_vascularized_domain_a9f49c20ae3e45f5c3a45d95c7a83f564}} 
+void {\bfseries generate\+Random\+Points} ()
+\item 
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a835ac8aeef4b5c2731ca8b0f2c36e727}\label{class_intersection_vascularized_domain_a835ac8aeef4b5c2731ca8b0f2c36e727}} 
+void {\bfseries remove\+Random\+Outer\+Points} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_intersection_vascularized_domain_afdb89cfb5da3abb20351ece21dc500d0}\label{class_intersection_vascularized_domain_afdb89cfb5da3abb20351ece21dc500d0}} 
+deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ {\bfseries random\+Inner\+Points}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_intersection_vascularized_domain_ab6588cf2cfa4a09b57cc023610189313}\label{class_intersection_vascularized_domain_ab6588cf2cfa4a09b57cc023610189313}} 
+vector$<$ string $>$ {\bfseries filename\+VR}
+\item 
+vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ $>$ \mbox{\hyperlink{class_intersection_vascularized_domain_a0cfc67dad7db0d7c95b50eb6992c8339}{vtk\+Vascularized\+Regions}}
+\item 
+vector$<$ vtk\+Smart\+Pointer$<$ vtk\+OBBTree $>$ $>$ \mbox{\hyperlink{class_intersection_vascularized_domain_aedf9a331b6785010abad7111b447a418}{sublocators}}
+\item 
+double $\ast$ \mbox{\hyperlink{class_intersection_vascularized_domain_a09393f0750ed293a45953f3a080cd7d6}{bounding\+Box}}
+\item 
+double \mbox{\hyperlink{class_intersection_vascularized_domain_a6cd023b45323ac979b45ff56597ad621}{characteristic\+Length}}
+\item 
+int \mbox{\hyperlink{class_intersection_vascularized_domain_a98a16d98d16b37b13593d7a2aee872f3}{n\+Draw}}
+\item 
+int \mbox{\hyperlink{class_intersection_vascularized_domain_abe078f4d223d21554d6f6709d5db47b0}{seed}} = -\/1
+\item 
+mt19937 \mbox{\hyperlink{class_intersection_vascularized_domain_a6245d7a96b0c7e453080ccde826ea654}{generator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This domain vascularises just the intersection between all vascularised regions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_intersection_vascularized_domain_ad5eb56a0c6f7197af3d1263f7625bbc5}\label{class_intersection_vascularized_domain_ad5eb56a0c6f7197af3d1263f7625bbc5}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{IntersectionVascularizedDomain()}{IntersectionVascularizedDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Intersection\+Vascularized\+Domain\+::\+Intersection\+Vascularized\+Domain (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{filename\+Vascular\+Regions,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Constructs a domain shaped by {\ttfamily filename\+Hull} (transport domain) with vascularized and non-\/vascularized regions contained in {\ttfamily filename\+Vascular\+Regions} and {\ttfamily filename\+Non\+Vascular\+Regions} respectively. 
+\begin{DoxyParams}{Parameters}
+{\em filename\+Hull} & Domain description. \\
+\hline
+{\em filename\+Vascular\+Regions} & Vascularized regions descriptions. \\
+\hline
+{\em filename\+Non\+Vascular\+Regions} & Non-\/vascularized regions descriptions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a5bd62b749b6f25562b7170e3bfb8f6d7}\label{class_intersection_vascularized_domain_a5bd62b749b6f25562b7170e3bfb8f6d7}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{IntersectionVascularizedDomain()}{IntersectionVascularizedDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Intersection\+Vascularized\+Domain\+::\+Intersection\+Vascularized\+Domain (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{filename\+Vascular\+Regions,  }\item[{int}]{n\+Draw,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Constructs a domain shaped by {\ttfamily filename\+Hull} (transport domain) with vascularized and non-\/vascularized regions contained in {\ttfamily filename\+Vascular\+Regions} and {\ttfamily filename\+Non\+Vascular\+Regions} respectively. Also, itgenerates batches of {\ttfamily n\+Draw} random points each time that the domain is with no more points. 
+\begin{DoxyParams}{Parameters}
+{\em filename\+Vascular\+Regions} & Vascularized regions descriptions. \\
+\hline
+{\em n\+Draw} & Random points generated at each batch. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a5b6f8a4f0c2a4eac2ba76dc3345a0994}\label{class_intersection_vascularized_domain_a5b6f8a4f0c2a4eac2ba76dc3345a0994}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{IntersectionVascularizedDomain()}{IntersectionVascularizedDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Intersection\+Vascularized\+Domain\+::\+Intersection\+Vascularized\+Domain (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{filename\+Vascular\+Regions,  }\item[{int}]{n\+Draw,  }\item[{int}]{seed,  }\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Constructs a domain shaped by {\ttfamily filename\+Hull} (transport domain) with vascularized and non-\/vascularized regions contained in {\ttfamily filename\+Vascular\+Regions} and {\ttfamily filename\+Non\+Vascular\+Regions} respectively. Also, itgenerates batches of {\ttfamily n\+Draw} random points each time that the domain is with no more points. 
+\begin{DoxyParams}{Parameters}
+{\em filename\+Vascular\+Regions} & Vascularized regions descriptions. \\
+\hline
+{\em n\+Draw} & Random points generated at each batch. \\
+\hline
+{\em seed} & Seed for random points generation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a5928fcdd2ac5810df3d6e5fcbbd091c3}\label{class_intersection_vascularized_domain_a5928fcdd2ac5810df3d6e5fcbbd091c3}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!````~IntersectionVascularizedDomain@{$\sim$IntersectionVascularizedDomain}}
+\index{````~IntersectionVascularizedDomain@{$\sim$IntersectionVascularizedDomain}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{$\sim$IntersectionVascularizedDomain()}{~IntersectionVascularizedDomain()}}
+{\footnotesize\ttfamily Intersection\+Vascularized\+Domain\+::$\sim$\+Intersection\+Vascularized\+Domain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desctructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a6ded581a637a098d2ddfec6ae6801132}\label{class_intersection_vascularized_domain_a6ded581a637a098d2ddfec6ae6801132}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getCharacteristicLength@{getCharacteristicLength}}
+\index{getCharacteristicLength@{getCharacteristicLength}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getCharacteristicLength()}{getCharacteristicLength()}}
+{\footnotesize\ttfamily double Intersection\+Vascularized\+Domain\+::get\+Characteristic\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Estimates a characteristic length for the current domain. This length is useful to estimate the perfusion volume of the domain. \begin{DoxyReturn}{Returns}
+Chracteristic length. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a90ca3dff64bab2428da8ced24e16f4c3}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a24e31c45b099a27ea3d13b1923ea5340}\label{class_intersection_vascularized_domain_a24e31c45b099a27ea3d13b1923ea5340}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getDLim@{getDLim}}
+\index{getDLim@{getDLim}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getDLim()}{getDLim()}}
+{\footnotesize\ttfamily double Intersection\+Vascularized\+Domain\+::get\+DLim (\begin{DoxyParamCaption}\item[{long long int}]{n\+Vessels,  }\item[{double}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Minimum distance between a new vessel terminal and the tree based on the current terminal perfusion. This is lower bound criteria for the vessel length and also aids toward a spatially homogeneous terminal distribution. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Vessels} & Quantity of terminals in the current tree. \\
+\hline
+{\em factor} & Factor used to scale a perfusion measure in order to estimate the DLim value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+DLim value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_ac9f39c12182608eb704c051e5d1cbc55}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a451cea01fadfed6f9a1118755c36f16b}\label{class_intersection_vascularized_domain_a451cea01fadfed6f9a1118755c36f16b}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getDraw@{getDraw}}
+\index{getDraw@{getDraw}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getDraw()}{getDraw()}}
+{\footnotesize\ttfamily int Intersection\+Vascularized\+Domain\+::get\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of random points created in each batch of random generations. \begin{DoxyReturn}{Returns}
+Number of random points created in each batch of random generations. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_ad9fb0eb04e488d76e1f8b04975fc50d4}\label{class_intersection_vascularized_domain_ad9fb0eb04e488d76e1f8b04975fc50d4}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getEnclosedPoints@{getEnclosedPoints}}
+\index{getEnclosedPoints@{getEnclosedPoints}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getEnclosedPoints()}{getEnclosedPoints()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+Select\+Enclosed\+Points $>$ Intersection\+Vascularized\+Domain\+::get\+Enclosed\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns vtk\+Select\+Enclosed\+Points for the first geometry passed to the domain. 
+
+Implements \mbox{\hyperlink{class_abstract_domain_a30a18859536cb5e15de537b9b38b6e19}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a4b35793edb3ec9847e8be75d81dfbd9d}\label{class_intersection_vascularized_domain_a4b35793edb3ec9847e8be75d81dfbd9d}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getLocalNeighborhood@{getLocalNeighborhood}}
+\index{getLocalNeighborhood@{getLocalNeighborhood}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getLocalNeighborhood()}{getLocalNeighborhood()}}
+{\footnotesize\ttfamily double $\ast$ Intersection\+Vascularized\+Domain\+::get\+Local\+Neighborhood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{long long int}]{n\+Vessels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the local neighbors to the {\ttfamily p} point locus. The amount of neighbors is estimated based on the current terminal perfusion. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Central point of the neighborhood. \\
+\hline
+{\em n\+Vessels} & Amount of terminals in the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of neighbor vessels. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a7db31e8e114d789e39df59ee99307a84}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a1188cff5b710e8281a9cecf998532a20}\label{class_intersection_vascularized_domain_a1188cff5b710e8281a9cecf998532a20}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getLocator@{getLocator}}
+\index{getLocator@{getLocator}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getLocator()}{getLocator()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+OBBTree $>$ \& Intersection\+Vascularized\+Domain\+::get\+Locator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the locator used to test inside segments. \begin{DoxyReturn}{Returns}
+Locator used to test inside segments. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_intersection_vascularized_domain_afa0103c0c3ed989e1b67e50d14684321}\label{class_intersection_vascularized_domain_afa0103c0c3ed989e1b67e50d14684321}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getRandomInnerPoints@{getRandomInnerPoints}}
+\index{getRandomInnerPoints@{getRandomInnerPoints}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getRandomInnerPoints()}{getRandomInnerPoints()}}
+{\footnotesize\ttfamily deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \& Intersection\+Vascularized\+Domain\+::get\+Random\+Inner\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return a set of inner domain points. \begin{DoxyReturn}{Returns}
+Set of inner domain points. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a5cbf88a698f26ddc05ed66fffa95a394}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a39e0fd3443fed3fecf4ecc799e39baa2}\label{class_intersection_vascularized_domain_a39e0fd3443fed3fecf4ecc799e39baa2}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getRandomPoint@{getRandomPoint}}
+\index{getRandomPoint@{getRandomPoint}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getRandomPoint()}{getRandomPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} Intersection\+Vascularized\+Domain\+::get\+Random\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return a random point inside the domain. \begin{DoxyReturn}{Returns}
+Point inside the domain. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_ae31a5b26d1dc628abe24da7a4d375415}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_ac5be919284b7c826f8ca69626e0049ed}\label{class_intersection_vascularized_domain_ac5be919284b7c826f8ca69626e0049ed}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getSeed@{getSeed}}
+\index{getSeed@{getSeed}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getSeed()}{getSeed()}}
+{\footnotesize\ttfamily int Intersection\+Vascularized\+Domain\+::get\+Seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns random generator seed. \begin{DoxyReturn}{Returns}
+{\ttfamily seed} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a4c4dc6ce4711752e7d082346499d70b5}\label{class_intersection_vascularized_domain_a4c4dc6ce4711752e7d082346499d70b5}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getSize@{getSize}}
+\index{getSize@{getSize}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily double Intersection\+Vascularized\+Domain\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Computes the size of the domain. \begin{DoxyReturn}{Returns}
+Size of the domain. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a049564d82f2c177c39834dfc8da143dc}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_aacdc4a4263423e8c8dd992ba4f00f826}\label{class_intersection_vascularized_domain_aacdc4a4263423e8c8dd992ba4f00f826}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!getVtkGeometry@{getVtkGeometry}}
+\index{getVtkGeometry@{getVtkGeometry}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{getVtkGeometry()}{getVtkGeometry()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \& Intersection\+Vascularized\+Domain\+::get\+Vtk\+Geometry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the vtk\+Polydata with the domain representation. \begin{DoxyReturn}{Returns}
+vtk\+Polydata with the domain representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a392d9e31079a2dc5b39b9f34caa15875}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_accd160eb77fede65322d67293177e54f}\label{class_intersection_vascularized_domain_accd160eb77fede65322d67293177e54f}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!isSegmentInside@{isSegmentInside}}
+\index{isSegmentInside@{isSegmentInside}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{isSegmentInside()}{isSegmentInside()}}
+{\footnotesize\ttfamily int Intersection\+Vascularized\+Domain\+::is\+Segment\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{xs,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{xf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns if the segment defined by the vertexes {\ttfamily xs} and {\ttfamily xf} is inside the current transport domain without intersecting non-\/vascularized regions. 
+\begin{DoxyParams}{Parameters}
+{\em xs} & Start point of the segment. \\
+\hline
+{\em xf} & End point of the segment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the segment defined by the vertexes {\ttfamily xs} and {\ttfamily xf} is inside the current domain otherwise 0. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a8544eef21fb6700ecc02e9cd50884efd}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a946c5bb97084408e1b02f5952ba591f9}\label{class_intersection_vascularized_domain_a946c5bb97084408e1b02f5952ba591f9}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!logDomainFiles@{logDomainFiles}}
+\index{logDomainFiles@{logDomainFiles}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{logDomainFiles()}{logDomainFiles()}}
+{\footnotesize\ttfamily void Intersection\+Vascularized\+Domain\+::log\+Domain\+Files (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_intersection_vascularized_domain_a09393f0750ed293a45953f3a080cd7d6}\label{class_intersection_vascularized_domain_a09393f0750ed293a45953f3a080cd7d6}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!boundingBox@{boundingBox}}
+\index{boundingBox@{boundingBox}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{boundingBox}{boundingBox}}
+{\footnotesize\ttfamily double$\ast$ Intersection\+Vascularized\+Domain\+::bounding\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+Bounding box of the domain \mbox{\Hypertarget{class_intersection_vascularized_domain_a6cd023b45323ac979b45ff56597ad621}\label{class_intersection_vascularized_domain_a6cd023b45323ac979b45ff56597ad621}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!characteristicLength@{characteristicLength}}
+\index{characteristicLength@{characteristicLength}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{characteristicLength}{characteristicLength}}
+{\footnotesize\ttfamily double Intersection\+Vascularized\+Domain\+::characteristic\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+Characteristic length for the domain. \mbox{\Hypertarget{class_intersection_vascularized_domain_a6245d7a96b0c7e453080ccde826ea654}\label{class_intersection_vascularized_domain_a6245d7a96b0c7e453080ccde826ea654}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!generator@{generator}}
+\index{generator@{generator}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{generator}{generator}}
+{\footnotesize\ttfamily mt19937 Intersection\+Vascularized\+Domain\+::generator\hspace{0.3cm}{\ttfamily [private]}}
+
+Random generator. \mbox{\Hypertarget{class_intersection_vascularized_domain_a98a16d98d16b37b13593d7a2aee872f3}\label{class_intersection_vascularized_domain_a98a16d98d16b37b13593d7a2aee872f3}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!nDraw@{nDraw}}
+\index{nDraw@{nDraw}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{nDraw}{nDraw}}
+{\footnotesize\ttfamily int Intersection\+Vascularized\+Domain\+::n\+Draw\hspace{0.3cm}{\ttfamily [private]}}
+
+Amount of points randomly generated when no more points are available. \mbox{\Hypertarget{class_intersection_vascularized_domain_abe078f4d223d21554d6f6709d5db47b0}\label{class_intersection_vascularized_domain_abe078f4d223d21554d6f6709d5db47b0}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!seed@{seed}}
+\index{seed@{seed}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily int Intersection\+Vascularized\+Domain\+::seed = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+Random instance seed. \mbox{\Hypertarget{class_intersection_vascularized_domain_aedf9a331b6785010abad7111b447a418}\label{class_intersection_vascularized_domain_aedf9a331b6785010abad7111b447a418}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!sublocators@{sublocators}}
+\index{sublocators@{sublocators}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{sublocators}{sublocators}}
+{\footnotesize\ttfamily vector$<$vtk\+Smart\+Pointer$<$vtk\+OBBTree$>$ $>$ Intersection\+Vascularized\+Domain\+::sublocators\hspace{0.3cm}{\ttfamily [private]}}
+
+Cell locators responsible to determine if a segment is inside of each domain. \mbox{\Hypertarget{class_intersection_vascularized_domain_a0cfc67dad7db0d7c95b50eb6992c8339}\label{class_intersection_vascularized_domain_a0cfc67dad7db0d7c95b50eb6992c8339}} 
+\index{IntersectionVascularizedDomain@{IntersectionVascularizedDomain}!vtkVascularizedRegions@{vtkVascularizedRegions}}
+\index{vtkVascularizedRegions@{vtkVascularizedRegions}!IntersectionVascularizedDomain@{IntersectionVascularizedDomain}}
+\doxysubsubsection{\texorpdfstring{vtkVascularizedRegions}{vtkVascularizedRegions}}
+{\footnotesize\ttfamily vector$<$vtk\+Smart\+Pointer$<$vtk\+Poly\+Data$>$ $>$ Intersection\+Vascularized\+Domain\+::vtk\+Vascularized\+Regions\hspace{0.3cm}{\ttfamily [private]}}
+
+Vascularized subdomains represented by vtk\+Polydata. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/domain/Intersection\+Vascularized\+Domain.\+h\item 
+structures/domain/Intersection\+Vascularized\+Domain.\+cpp\end{DoxyCompactItemize}

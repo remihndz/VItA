@@ -1,0 +1,442 @@
+\hypertarget{class_abstract_domain}{}\doxysection{Abstract\+Domain Class Reference}
+\label{class_abstract_domain}\index{AbstractDomain@{AbstractDomain}}
+
+
+{\ttfamily \#include $<$Abstract\+Domain.\+h$>$}
+
+Inheritance diagram for Abstract\+Domain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.857380cm]{d2/d71/class_abstract_domain}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_domain_a18f82b7d0acdb24b3dcdf633510b200c}{Abstract\+Domain}} (\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}})
+\item 
+\mbox{\hyperlink{class_abstract_domain_a145d5a70483d38c157934422da9d99b4}{Abstract\+Domain}} (\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}}, vector$<$ int $>$ \mbox{\hyperlink{class_abstract_domain_a765dfd145f6559fc26cc0a36f1bf034a}{growing\+Stages}})
+\item 
+virtual \mbox{\hyperlink{class_abstract_domain_abad047cac0d8ac7c409864a4e051c67f}{$\sim$\+Abstract\+Domain}} ()
+\item 
+virtual int \mbox{\hyperlink{class_abstract_domain_a8544eef21fb6700ecc02e9cd50884efd}{is\+Segment\+Inside}} (\mbox{\hyperlink{structpoint}{point}} xs, \mbox{\hyperlink{structpoint}{point}} xf)=0
+\item 
+virtual int \mbox{\hyperlink{class_abstract_domain_aa151f29002e590832be02829772d38e1}{is\+Valid\+Element}} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$element)
+\item 
+virtual double \mbox{\hyperlink{class_abstract_domain_a434417bad2396a2ee600932d1d2ded89}{get\+Min\+Bifurcation\+Angle}} ()
+\item 
+virtual void \mbox{\hyperlink{class_abstract_domain_a0b133239d168c9b70b4997b58d87cca7}{set\+Min\+Bifurcation\+Angle}} (double \mbox{\hyperlink{class_abstract_domain_afa74f9bbc9eb00511fa714ece659e24c}{min\+Angle}})
+\item 
+virtual double \mbox{\hyperlink{class_abstract_domain_a90ca3dff64bab2428da8ced24e16f4c3}{get\+Characteristic\+Length}} ()=0
+\item 
+virtual double \mbox{\hyperlink{class_abstract_domain_ac9f39c12182608eb704c051e5d1cbc55}{get\+DLim}} (long long int n\+Vessels, double factor)=0
+\item 
+virtual double $\ast$ \mbox{\hyperlink{class_abstract_domain_a7db31e8e114d789e39df59ee99307a84}{get\+Local\+Neighborhood}} (\mbox{\hyperlink{structpoint}{point}} p, long long int n\+Vessels)=0
+\item 
+virtual double \mbox{\hyperlink{class_abstract_domain_a049564d82f2c177c39834dfc8da143dc}{get\+Size}} ()=0
+\item 
+virtual \mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{class_abstract_domain_ae31a5b26d1dc628abe24da7a4d375415}{get\+Random\+Point}} ()=0
+\item 
+virtual deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \& \mbox{\hyperlink{class_abstract_domain_a5cbf88a698f26ddc05ed66fffa95a394}{get\+Random\+Inner\+Points}} ()=0
+\item 
+virtual vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \& \mbox{\hyperlink{class_abstract_domain_a392d9e31079a2dc5b39b9f34caa15875}{get\+Vtk\+Geometry}} ()=0
+\item 
+long long int \mbox{\hyperlink{class_abstract_domain_ae42ac237f727453ceed1ed3958a9bc65}{get\+Point\+Counter}} () const
+\item 
+bool \mbox{\hyperlink{class_abstract_domain_ad4da72600cea430c70c9231338f3822a}{is\+Is\+Convex\+Domain}} () const
+\item 
+void \mbox{\hyperlink{class_abstract_domain_a58af16f2954ae8c978c604bf18b99880}{set\+Is\+Convex\+Domain}} (bool \mbox{\hyperlink{class_abstract_domain_acaa76f4d7e102e66b64d10cd652167c9}{is\+Convex\+Domain}})
+\item 
+\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$ \mbox{\hyperlink{class_abstract_domain_ad21236a7e37d5dc7763dd0a90d0233ce}{get\+Instance\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_domain_a6607101a2ed91199d0675c3d33a029f7}{set\+Instance\+Data}} (\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$\mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}})
+\item 
+virtual vtk\+Smart\+Pointer$<$ vtk\+Select\+Enclosed\+Points $>$ \mbox{\hyperlink{class_abstract_domain_a30a18859536cb5e15de537b9b38b6e19}{get\+Enclosed\+Points}} ()=0
+\item 
+\mbox{\Hypertarget{class_abstract_domain_a41117aac6e80a80c766aeb262341dde3}\label{class_abstract_domain_a41117aac6e80a80c766aeb262341dde3}} 
+virtual void {\bfseries log\+Domain\+Files} (FILE $\ast$fp)=0
+\item 
+\mbox{\Hypertarget{class_abstract_domain_a15b16b966e935fd9ab630fab04868e3d}\label{class_abstract_domain_a15b16b966e935fd9ab630fab04868e3d}} 
+const vector$<$ int $>$ \& {\bfseries get\+Growing\+Stages} () const
+\item 
+\mbox{\Hypertarget{class_abstract_domain_ac2687216bb6c1cbceacb02b5b3265df8}\label{class_abstract_domain_ac2687216bb6c1cbceacb02b5b3265df8}} 
+void {\bfseries set\+Growing\+Stages} (const vector$<$ int $>$ \&\mbox{\hyperlink{class_abstract_domain_a765dfd145f6559fc26cc0a36f1bf034a}{growing\+Stages}})
+\item 
+\mbox{\Hypertarget{class_abstract_domain_ace9e3bcb893538550667e4735475f30a}\label{class_abstract_domain_ace9e3bcb893538550667e4735475f30a}} 
+bool {\bfseries is\+Is\+Bif\+Plane\+Contrained} () const
+\item 
+\mbox{\Hypertarget{class_abstract_domain_ae75192c5000f51e1c6ce53078dd17e03}\label{class_abstract_domain_ae75192c5000f51e1c6ce53078dd17e03}} 
+void {\bfseries set\+Is\+Bif\+Plane\+Contrained} (bool \mbox{\hyperlink{class_abstract_domain_a1b9397f6ac56e1a973d812498153be95}{is\+Bif\+Plane\+Contrained}})
+\item 
+\mbox{\Hypertarget{class_abstract_domain_a464979f1f4d9c8445adefdfe3c09c511}\label{class_abstract_domain_a464979f1f4d9c8445adefdfe3c09c511}} 
+double {\bfseries get\+Min\+Plane\+Angle} ()
+\item 
+\mbox{\Hypertarget{class_abstract_domain_a4a92188160489f4799f00955ae1ff523}\label{class_abstract_domain_a4a92188160489f4799f00955ae1ff523}} 
+void {\bfseries set\+Min\+Plane\+Angle} (double \mbox{\hyperlink{class_abstract_domain_abf41d751c56a23ba910dd8860d302872}{min\+Plane\+Angle}})
+\item 
+virtual int \mbox{\hyperlink{class_abstract_domain_aff206558e5aa84caf544c634dd488542}{get\+Draw}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_abstract_domain_a269c94dbf35359209b7c5b542d8c18c9}{get\+Seed}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_abstract_domain_a765dfd145f6559fc26cc0a36f1bf034a}{growing\+Stages}}
+\item 
+\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$ \mbox{\hyperlink{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}{instance\+Data}}
+\item 
+long long int \mbox{\hyperlink{class_abstract_domain_af6ca325d56ec51a792d2c0c049e424b0}{point\+Counter}}
+\item 
+bool \mbox{\hyperlink{class_abstract_domain_acaa76f4d7e102e66b64d10cd652167c9}{is\+Convex\+Domain}}
+\item 
+double \mbox{\hyperlink{class_abstract_domain_a1cd2c4a6df09d717a7c77c82066f8060}{volume}}
+\item 
+double \mbox{\hyperlink{class_abstract_domain_afa74f9bbc9eb00511fa714ece659e24c}{min\+Angle}}
+\item 
+bool \mbox{\hyperlink{class_abstract_domain_a1b9397f6ac56e1a973d812498153be95}{is\+Bif\+Plane\+Contrained}}
+\item 
+double \mbox{\hyperlink{class_abstract_domain_abf41d751c56a23ba910dd8860d302872}{min\+Plane\+Angle}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract domain class. Several domain methods guarantee the eficiency during the CCO generation, e.\+g., get\+Local\+Neighborhood and get\+DLim, which models the perfusion area of certain terminal in order to establish the minimum length criterion for the new vessel and the local set of vessels where it can be attached to the tree. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract_domain_a18f82b7d0acdb24b3dcdf633510b200c}\label{class_abstract_domain_a18f82b7d0acdb24b3dcdf633510b200c}} 
+\index{AbstractDomain@{AbstractDomain}!AbstractDomain@{AbstractDomain}}
+\index{AbstractDomain@{AbstractDomain}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{AbstractDomain()}{AbstractDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Abstract\+Domain\+::\+Abstract\+Domain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em instance\+Data} & Wrapper with parameters associated to a tree generation process. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_domain_a145d5a70483d38c157934422da9d99b4}\label{class_abstract_domain_a145d5a70483d38c157934422da9d99b4}} 
+\index{AbstractDomain@{AbstractDomain}!AbstractDomain@{AbstractDomain}}
+\index{AbstractDomain@{AbstractDomain}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{AbstractDomain()}{AbstractDomain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Abstract\+Domain\+::\+Abstract\+Domain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data,  }\item[{vector$<$ int $>$}]{growing\+Stages }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em instance\+Data} & Wrapper with parameters associated to a tree generation process. \\
+\hline
+{\em growing\+Stages} & Stages allowed to grow. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_domain_abad047cac0d8ac7c409864a4e051c67f}\label{class_abstract_domain_abad047cac0d8ac7c409864a4e051c67f}} 
+\index{AbstractDomain@{AbstractDomain}!````~AbstractDomain@{$\sim$AbstractDomain}}
+\index{````~AbstractDomain@{$\sim$AbstractDomain}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstractDomain()}{~AbstractDomain()}}
+{\footnotesize\ttfamily Abstract\+Domain\+::$\sim$\+Abstract\+Domain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_domain_a90ca3dff64bab2428da8ced24e16f4c3}\label{class_abstract_domain_a90ca3dff64bab2428da8ced24e16f4c3}} 
+\index{AbstractDomain@{AbstractDomain}!getCharacteristicLength@{getCharacteristicLength}}
+\index{getCharacteristicLength@{getCharacteristicLength}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getCharacteristicLength()}{getCharacteristicLength()}}
+{\footnotesize\ttfamily virtual double Abstract\+Domain\+::get\+Characteristic\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Estimates a characteristic length for the current domain. This length is useful to estimate the perfusion volume of the domain. \begin{DoxyReturn}{Returns}
+Chracteristic length. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a590ea752ce83767038de90138faf8a21}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_a6ded581a637a098d2ddfec6ae6801132}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_a1ec0827e05801a1a3219cbd4e87ac64c}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_a2a7e2919f633368b85aa3e9cfd0e57ab}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_a5bf4df64fe80dae1e394b2f2c73c3d05}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_aec389e04bcd549140b29dbc9c56cf29b}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_ac9f39c12182608eb704c051e5d1cbc55}\label{class_abstract_domain_ac9f39c12182608eb704c051e5d1cbc55}} 
+\index{AbstractDomain@{AbstractDomain}!getDLim@{getDLim}}
+\index{getDLim@{getDLim}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getDLim()}{getDLim()}}
+{\footnotesize\ttfamily virtual double Abstract\+Domain\+::get\+DLim (\begin{DoxyParamCaption}\item[{long long int}]{n\+Vessels,  }\item[{double}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Minimum distance between a new vessel terminal and the tree based on the current terminal perfusion. This is lower bound criteria for the vessel length and also aids toward a spatially homogeneous terminal distribution. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Vessels} & Quantity of terminals in the current tree. \\
+\hline
+{\em factor} & Factor used to scale a perfusion measure in order to estimate the DLim value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+DLim value. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a5e67e5367a9f22ab0243e06d92abccab}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_a24e31c45b099a27ea3d13b1923ea5340}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_a7cfa7a304d236b933311f8ac5149662e}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_a413c188add5702b18bb838283b68bcbe}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_a60dbee1351f604d7ee61121d923de823}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_a4bb50d4e92dc81e0c87aa0b4190138b3}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_aff206558e5aa84caf544c634dd488542}\label{class_abstract_domain_aff206558e5aa84caf544c634dd488542}} 
+\index{AbstractDomain@{AbstractDomain}!getDraw@{getDraw}}
+\index{getDraw@{getDraw}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getDraw()}{getDraw()}}
+{\footnotesize\ttfamily virtual int Abstract\+Domain\+::get\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a3fead46c8720529bc3faaae5b817ccb7}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_a451cea01fadfed6f9a1118755c36f16b}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_aefb222fe10e4691e965b3a2035e0b119}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_a25b8e92e59ae6ec5b5a463caf4d19882}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_a15b519453137710f0c8897a4eda7c25d}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_afd6c145c3563f8a22f02860e2605c5ec}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_a30a18859536cb5e15de537b9b38b6e19}\label{class_abstract_domain_a30a18859536cb5e15de537b9b38b6e19}} 
+\index{AbstractDomain@{AbstractDomain}!getEnclosedPoints@{getEnclosedPoints}}
+\index{getEnclosedPoints@{getEnclosedPoints}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getEnclosedPoints()}{getEnclosedPoints()}}
+{\footnotesize\ttfamily virtual vtk\+Smart\+Pointer$<$ vtk\+Select\+Enclosed\+Points $>$ Abstract\+Domain\+::get\+Enclosed\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual method to be used by \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_logger}{Staged\+FRROTree\+Generator\+Logger}}. 
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a1534f6ce52bda9e1f96405ab196e18d1}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_ad9fb0eb04e488d76e1f8b04975fc50d4}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_a43f1bb492bfe6496084ca52dc290a74d}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_aec278e1ec6ea493813f60376e129eafc}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_af849a9f3b1b9b172c256b0f82adb75c5}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_aee3e54af7d0cb0933c24d971dfdfc797}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_ad21236a7e37d5dc7763dd0a90d0233ce}\label{class_abstract_domain_ad21236a7e37d5dc7763dd0a90d0233ce}} 
+\index{AbstractDomain@{AbstractDomain}!getInstanceData@{getInstanceData}}
+\index{getInstanceData@{getInstanceData}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getInstanceData()}{getInstanceData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$ Abstract\+Domain\+::get\+Instance\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default getter of {\ttfamily instance\+Data}. \begin{DoxyReturn}{Returns}
+{\ttfamily instance\+Data} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_domain_a7db31e8e114d789e39df59ee99307a84}\label{class_abstract_domain_a7db31e8e114d789e39df59ee99307a84}} 
+\index{AbstractDomain@{AbstractDomain}!getLocalNeighborhood@{getLocalNeighborhood}}
+\index{getLocalNeighborhood@{getLocalNeighborhood}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getLocalNeighborhood()}{getLocalNeighborhood()}}
+{\footnotesize\ttfamily virtual double $\ast$ Abstract\+Domain\+::get\+Local\+Neighborhood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{long long int}]{n\+Vessels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the local neighbors to the {\ttfamily p} point locus. The amount of neighbors is estimated based on the current terminal perfusion. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Central point of the neighborhood. \\
+\hline
+{\em n\+Vessels} & Amount of terminals in the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of neighbor vessels. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a5d97b6894250d8034c5e0679266f9fb1}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_a4b35793edb3ec9847e8be75d81dfbd9d}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_a379893eff3b1612932f4689a478e73ee}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_a0491a8bc37f8e27031f2b67b79eaf45e}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_a5c7eaa0e32e25950149c4735bd02c671}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_ad8107b681fcba3794ea4cd9b1a5a2edd}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_a434417bad2396a2ee600932d1d2ded89}\label{class_abstract_domain_a434417bad2396a2ee600932d1d2ded89}} 
+\index{AbstractDomain@{AbstractDomain}!getMinBifurcationAngle@{getMinBifurcationAngle}}
+\index{getMinBifurcationAngle@{getMinBifurcationAngle}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getMinBifurcationAngle()}{getMinBifurcationAngle()}}
+{\footnotesize\ttfamily double Abstract\+Domain\+::get\+Min\+Bifurcation\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the maximum opening angle that the hosted tree can generate. \begin{DoxyReturn}{Returns}
+Maximum bifurcation angle for vessels generated inside this domain. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_staged_domain_a139146506055f007980898b55fc894e0}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_ae42ac237f727453ceed1ed3958a9bc65}\label{class_abstract_domain_ae42ac237f727453ceed1ed3958a9bc65}} 
+\index{AbstractDomain@{AbstractDomain}!getPointCounter@{getPointCounter}}
+\index{getPointCounter@{getPointCounter}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getPointCounter()}{getPointCounter()}}
+{\footnotesize\ttfamily long long int Abstract\+Domain\+::get\+Point\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the quantity of points that have been consumed. \begin{DoxyReturn}{Returns}
+Quantity of points consumed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_domain_a5cbf88a698f26ddc05ed66fffa95a394}\label{class_abstract_domain_a5cbf88a698f26ddc05ed66fffa95a394}} 
+\index{AbstractDomain@{AbstractDomain}!getRandomInnerPoints@{getRandomInnerPoints}}
+\index{getRandomInnerPoints@{getRandomInnerPoints}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getRandomInnerPoints()}{getRandomInnerPoints()}}
+{\footnotesize\ttfamily virtual deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \& Abstract\+Domain\+::get\+Random\+Inner\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return a set of inner domain points. \begin{DoxyReturn}{Returns}
+Set of inner domain points. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a2b303bccf9a1db72e3bae866d7947f2d}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_afa0103c0c3ed989e1b67e50d14684321}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_abbfb8f486b00e62117b564874a454395}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_acfe3e4aeaea246579b6102707d050bf0}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_a08eddf131c1ed43cf7cc34e347fd372f}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_a5a5398712e064cbd706f701c8294bbad}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_ae31a5b26d1dc628abe24da7a4d375415}\label{class_abstract_domain_ae31a5b26d1dc628abe24da7a4d375415}} 
+\index{AbstractDomain@{AbstractDomain}!getRandomPoint@{getRandomPoint}}
+\index{getRandomPoint@{getRandomPoint}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getRandomPoint()}{getRandomPoint()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structpoint}{point}} Abstract\+Domain\+::get\+Random\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return a random point inside the domain. \begin{DoxyReturn}{Returns}
+Point inside the domain. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a88c76433bc3e8a1c1d60d4e7643f46d0}{Domain\+NVR}}, \mbox{\hyperlink{class_dummy_domain_a72074e5e3e53028ec4b73bffee1ba229}{Dummy\+Domain}}, \mbox{\hyperlink{class_intersection_vascularized_domain_a39e0fd3443fed3fecf4ecc799e39baa2}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_a817dcd8122892b14ed112135aa4a1fe0}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_afcf98b009584217d8ab03e0dbfa86839}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_a8b19e2fa69a0f13813b0296f270f11e9}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_a90178baeab98fe08850977e7924c2780}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_a269c94dbf35359209b7c5b542d8c18c9}\label{class_abstract_domain_a269c94dbf35359209b7c5b542d8c18c9}} 
+\index{AbstractDomain@{AbstractDomain}!getSeed@{getSeed}}
+\index{getSeed@{getSeed}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getSeed()}{getSeed()}}
+{\footnotesize\ttfamily virtual int Abstract\+Domain\+::get\+Seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a2dfc8b99e3f99c6e9985ac1bc30296fe}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_ac5be919284b7c826f8ca69626e0049ed}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_a4191ad6aeef644d930dd9e53ad842ca9}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_afd2f97627d99ed9b7053fa10346019af}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_aa7d2ab9f366bf239ff286c9ca63efaf1}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_acd1904241867798b25c8bf2b9bce3ea8}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_a049564d82f2c177c39834dfc8da143dc}\label{class_abstract_domain_a049564d82f2c177c39834dfc8da143dc}} 
+\index{AbstractDomain@{AbstractDomain}!getSize@{getSize}}
+\index{getSize@{getSize}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily virtual double Abstract\+Domain\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Computes the size of the domain. \begin{DoxyReturn}{Returns}
+Size of the domain. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_aae7b6782c1caab8cf5246c802be410cc}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_a4c4dc6ce4711752e7d082346499d70b5}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_a88c04b73a8ffd9e8ddbc4a1c118a1795}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_a0a05345c81234a3e616447a16e9150c0}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_ad5e1ba1529fd8088f64af603cc5c18a3}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_a807d7b1c56b5a6ccce593513baebf3b1}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_a392d9e31079a2dc5b39b9f34caa15875}\label{class_abstract_domain_a392d9e31079a2dc5b39b9f34caa15875}} 
+\index{AbstractDomain@{AbstractDomain}!getVtkGeometry@{getVtkGeometry}}
+\index{getVtkGeometry@{getVtkGeometry}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{getVtkGeometry()}{getVtkGeometry()}}
+{\footnotesize\ttfamily virtual vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \& Abstract\+Domain\+::get\+Vtk\+Geometry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the vtk\+Polydata with the domain representation. \begin{DoxyReturn}{Returns}
+vtk\+Polydata with the domain representation. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a50591c2d4b9e055821cc53416bf4263c}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_aacdc4a4263423e8c8dd992ba4f00f826}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_aa2acdedb98eb9cd168b9ab4cfa38c485}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_a13f9ab047e641a022648ca6468651f9f}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_a0c4505e70d9530586bcb0ab943bb9a9a}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_a69530fd545f217410433367a7e219fbf}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_ad4da72600cea430c70c9231338f3822a}\label{class_abstract_domain_ad4da72600cea430c70c9231338f3822a}} 
+\index{AbstractDomain@{AbstractDomain}!isIsConvexDomain@{isIsConvexDomain}}
+\index{isIsConvexDomain@{isIsConvexDomain}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{isIsConvexDomain()}{isIsConvexDomain()}}
+{\footnotesize\ttfamily bool Abstract\+Domain\+::is\+Is\+Convex\+Domain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for {\ttfamily is\+Convex\+Domain} variable. \begin{DoxyReturn}{Returns}
+Returns if the domain is setted as convex. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_abstract_domain_a8544eef21fb6700ecc02e9cd50884efd}\label{class_abstract_domain_a8544eef21fb6700ecc02e9cd50884efd}} 
+\index{AbstractDomain@{AbstractDomain}!isSegmentInside@{isSegmentInside}}
+\index{isSegmentInside@{isSegmentInside}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{isSegmentInside()}{isSegmentInside()}}
+{\footnotesize\ttfamily virtual int Abstract\+Domain\+::is\+Segment\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{xs,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{xf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns if the segment defined by the vertexes {\ttfamily xs} and {\ttfamily xf} is inside the current domain. 
+\begin{DoxyParams}{Parameters}
+{\em xs} & Start point of the segment. \\
+\hline
+{\em xf} & End point of the segment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the segment defined by the vertexes {\ttfamily xs} and {\ttfamily xf} is inside the current domain otherwise 0. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_domain_n_v_r_a46b7a56ffdb8f8e0cfcd2a5761571394}{Domain\+NVR}}, \mbox{\hyperlink{class_intersection_vascularized_domain_accd160eb77fede65322d67293177e54f}{Intersection\+Vascularized\+Domain}}, \mbox{\hyperlink{class_partially_vascularized_domain_a485e0e573369f76ef59477fc5ac8ea9b}{Partially\+Vascularized\+Domain}}, \mbox{\hyperlink{class_simple_domain_ab1e60afe4302149098b11631d20aebb7}{Simple\+Domain}}, \mbox{\hyperlink{class_simple_domain2_d_a18706cdbe4f61a71eceb7257fd4ec6dd}{Simple\+Domain2D}}, and \mbox{\hyperlink{class_staged_domain_a2f13523c9e014efd270df926aabdbc76}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_aa151f29002e590832be02829772d38e1}\label{class_abstract_domain_aa151f29002e590832be02829772d38e1}} 
+\index{AbstractDomain@{AbstractDomain}!isValidElement@{isValidElement}}
+\index{isValidElement@{isValidElement}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{isValidElement()}{isValidElement()}}
+{\footnotesize\ttfamily int Abstract\+Domain\+::is\+Valid\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns if the vascular element is eligible to be a parent vessel. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Vascular element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if it is eligible. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_staged_domain_a083dae621ca3d910b23f5cd85ba23d65}{Staged\+Domain}}.
+
+\mbox{\Hypertarget{class_abstract_domain_a6607101a2ed91199d0675c3d33a029f7}\label{class_abstract_domain_a6607101a2ed91199d0675c3d33a029f7}} 
+\index{AbstractDomain@{AbstractDomain}!setInstanceData@{setInstanceData}}
+\index{setInstanceData@{setInstanceData}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{setInstanceData()}{setInstanceData()}}
+{\footnotesize\ttfamily void Abstract\+Domain\+::set\+Instance\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$}]{instance\+Data }\end{DoxyParamCaption})}
+
+Default setter of {\ttfamily instance\+Data}. 
+\begin{DoxyParams}{Parameters}
+{\em instance\+Data} & Instance for {\ttfamily instance\+Data}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_domain_a58af16f2954ae8c978c604bf18b99880}\label{class_abstract_domain_a58af16f2954ae8c978c604bf18b99880}} 
+\index{AbstractDomain@{AbstractDomain}!setIsConvexDomain@{setIsConvexDomain}}
+\index{setIsConvexDomain@{setIsConvexDomain}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{setIsConvexDomain()}{setIsConvexDomain()}}
+{\footnotesize\ttfamily void Abstract\+Domain\+::set\+Is\+Convex\+Domain (\begin{DoxyParamCaption}\item[{bool}]{is\+Convex\+Domain }\end{DoxyParamCaption})}
+
+Setter for {\ttfamily is\+Convex\+Domain} variable. 
+\begin{DoxyParams}{Parameters}
+{\em is\+Convex\+Domain} & Sets the domain as convex or non-\/convex. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_abstract_domain_a0b133239d168c9b70b4997b58d87cca7}\label{class_abstract_domain_a0b133239d168c9b70b4997b58d87cca7}} 
+\index{AbstractDomain@{AbstractDomain}!setMinBifurcationAngle@{setMinBifurcationAngle}}
+\index{setMinBifurcationAngle@{setMinBifurcationAngle}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{setMinBifurcationAngle()}{setMinBifurcationAngle()}}
+{\footnotesize\ttfamily void Abstract\+Domain\+::set\+Min\+Bifurcation\+Angle (\begin{DoxyParamCaption}\item[{double}]{min\+Angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the maximum opening angle that the hosted tree can generate. 
+\begin{DoxyParams}{Parameters}
+{\em min\+Angle} & Maximum bifurcation angle for vessels generated inside this domain. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_abstract_domain_a765dfd145f6559fc26cc0a36f1bf034a}\label{class_abstract_domain_a765dfd145f6559fc26cc0a36f1bf034a}} 
+\index{AbstractDomain@{AbstractDomain}!growingStages@{growingStages}}
+\index{growingStages@{growingStages}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{growingStages}{growingStages}}
+{\footnotesize\ttfamily vector$<$int$>$ Abstract\+Domain\+::growing\+Stages\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vessels with stages contained in such list are allowed to grow. If empty, all vessels are allowed to grow. \mbox{\Hypertarget{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}\label{class_abstract_domain_aa37fbabc2bfa92c574f7db7544016b53}} 
+\index{AbstractDomain@{AbstractDomain}!instanceData@{instanceData}}
+\index{instanceData@{instanceData}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{instanceData}{instanceData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_generator_data}{Generator\+Data}}$\ast$ Abstract\+Domain\+::instance\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrapper with parameters associated to a tree generation process. \mbox{\Hypertarget{class_abstract_domain_a1b9397f6ac56e1a973d812498153be95}\label{class_abstract_domain_a1b9397f6ac56e1a973d812498153be95}} 
+\index{AbstractDomain@{AbstractDomain}!isBifPlaneContrained@{isBifPlaneContrained}}
+\index{isBifPlaneContrained@{isBifPlaneContrained}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{isBifPlaneContrained}{isBifPlaneContrained}}
+{\footnotesize\ttfamily bool Abstract\+Domain\+::is\+Bif\+Plane\+Contrained\hspace{0.3cm}{\ttfamily [protected]}}
+
+Boolean value that models if the domain present any restriction regarding the opening angle between the bifurcation plane and a new daughter vessel. \mbox{\Hypertarget{class_abstract_domain_acaa76f4d7e102e66b64d10cd652167c9}\label{class_abstract_domain_acaa76f4d7e102e66b64d10cd652167c9}} 
+\index{AbstractDomain@{AbstractDomain}!isConvexDomain@{isConvexDomain}}
+\index{isConvexDomain@{isConvexDomain}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{isConvexDomain}{isConvexDomain}}
+{\footnotesize\ttfamily bool Abstract\+Domain\+::is\+Convex\+Domain\hspace{0.3cm}{\ttfamily [protected]}}
+
+Boolean value that models if the domain is convex or not. For convex domain some optimizations are applied. \mbox{\Hypertarget{class_abstract_domain_afa74f9bbc9eb00511fa714ece659e24c}\label{class_abstract_domain_afa74f9bbc9eb00511fa714ece659e24c}} 
+\index{AbstractDomain@{AbstractDomain}!minAngle@{minAngle}}
+\index{minAngle@{minAngle}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{minAngle}{minAngle}}
+{\footnotesize\ttfamily double Abstract\+Domain\+::min\+Angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+Minimum bifurcation angle for vessels generated inside this domain \mbox{\Hypertarget{class_abstract_domain_abf41d751c56a23ba910dd8860d302872}\label{class_abstract_domain_abf41d751c56a23ba910dd8860d302872}} 
+\index{AbstractDomain@{AbstractDomain}!minPlaneAngle@{minPlaneAngle}}
+\index{minPlaneAngle@{minPlaneAngle}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{minPlaneAngle}{minPlaneAngle}}
+{\footnotesize\ttfamily double Abstract\+Domain\+::min\+Plane\+Angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+Minimum angle between the bifurcation plane and a new daughter vessel. \mbox{\Hypertarget{class_abstract_domain_af6ca325d56ec51a792d2c0c049e424b0}\label{class_abstract_domain_af6ca325d56ec51a792d2c0c049e424b0}} 
+\index{AbstractDomain@{AbstractDomain}!pointCounter@{pointCounter}}
+\index{pointCounter@{pointCounter}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{pointCounter}{pointCounter}}
+{\footnotesize\ttfamily long long int Abstract\+Domain\+::point\+Counter\hspace{0.3cm}{\ttfamily [protected]}}
+
+Quantity of points that have been consumed. \mbox{\Hypertarget{class_abstract_domain_a1cd2c4a6df09d717a7c77c82066f8060}\label{class_abstract_domain_a1cd2c4a6df09d717a7c77c82066f8060}} 
+\index{AbstractDomain@{AbstractDomain}!volume@{volume}}
+\index{volume@{volume}!AbstractDomain@{AbstractDomain}}
+\doxysubsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily double Abstract\+Domain\+::volume\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vascular volume. ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/domain/Abstract\+Domain.\+h\item 
+structures/domain/Abstract\+Domain.\+cpp\end{DoxyCompactItemize}

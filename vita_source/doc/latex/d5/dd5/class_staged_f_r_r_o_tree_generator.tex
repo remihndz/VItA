@@ -1,0 +1,545 @@
+\hypertarget{class_staged_f_r_r_o_tree_generator}{}\doxysection{Staged\+FRROTree\+Generator Class Reference}
+\label{class_staged_f_r_r_o_tree_generator}\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+
+
+{\ttfamily \#include $<$Staged\+FRROTree\+Generator.\+h$>$}
+
+Inheritance diagram for Staged\+FRROTree\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/dd5/class_staged_f_r_r_o_tree_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a13c2f745f4b352663f8aa9e8908fe8ee}{Staged\+FRROTree\+Generator}} (\mbox{\hyperlink{class_staged_domain}{Staged\+Domain}} $\ast$\mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a2f8616a24551a7a414b51b805309894a}{domain}}, \mbox{\hyperlink{structpoint}{point}} xi, double root\+Radii, double qi, long long int n\+Term, vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$gam, vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$eps\+Lim, vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$nu, double ref\+Pressure, double viscosity\+Tolerance)
+\item 
+\mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a3dc2c3e1959e0df5d1a46c696acdcf0a}{Staged\+FRROTree\+Generator}} (\mbox{\hyperlink{class_staged_domain}{Staged\+Domain}} $\ast$\mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a2f8616a24551a7a414b51b805309894a}{domain}}, \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$\mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a3d7a0b0194b93d4c2706a21908ad9f09}{tree}}, long long int n\+Term, vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$gam, vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$eps\+Lim, vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$nu)
+\item 
+\mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ace0cc12588d7ca428520e5e08dfd5e83}{$\sim$\+Staged\+FRROTree\+Generator}} ()
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ad119cb329ca876b0bcd87ac5c7393d6a}{generate}} (long long int save\+Interval, string temp\+Directory)
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ac7e665c88ecc8fbae365bc9f74cfdb45}{resume}} (long long int save\+Interval, string temp\+Directory)
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a98d396aa0d98b7c1a8a3a371fbaf1516}{generate\+Experimental}} (long long int save\+Interval, string temp\+Directory, int max\+Num\+Of\+Trials)
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a69f8c54af16124f44da22128d525aa41}{resume\+Experimental}} (long long int save\+Interval, string temp\+Directory, int max\+Num\+Of\+Trials)
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ad2fbecda3eee775d8a017b7cc4d629df}{resume\+Save\+Points}} (long long int save\+Interval, string temp\+Directory, FILE $\ast$fp)
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_aa350cf0213eacecc3a815acd0af3a29b}\label{class_staged_f_r_r_o_tree_generator_aa350cf0213eacecc3a815acd0af3a29b}} 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ {\bfseries resume\+Save\+Points\+Mid\+Point} (long long int save\+Interval, string temp\+Directory, FILE $\ast$fp)
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_adac14b11b09b21df02d635ed124216a7}\label{class_staged_f_r_r_o_tree_generator_adac14b11b09b21df02d635ed124216a7}} 
+\mbox{\hyperlink{class_staged_domain}{Staged\+Domain}} $\ast$ {\bfseries get\+Domain} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ $>$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a3aeb9dd5215d1103fe2c686c86967f54}{get\+Trees}} ()
+\item 
+void \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a878038a908e5a3ac9433f570ebd8b4ae}{enable\+Configuration\+File}} (string filename)
+\item 
+void \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a01a80f2720de4fe42b47dd9eb98a25bd}{observable\+Modified}} (\mbox{\hyperlink{class_i_domain_observable}{IDomain\+Observable}} $\ast$observable\+Instance)
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$\& \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a2332bdf2a9edb5f4739e7379536eb632}{get\+Tree}} ()
+\item 
+void \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_abfdedad4fd436cd56ecbe4d134ee93a8}{save\+Status}} (long long int terminals)
+\item 
+void \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_abbbee9a209eec78d5631b1842a3e50fc}{set\+Saving\+Tasks}} (const vector$<$ \mbox{\hyperlink{class_abstract_saving_task}{Abstract\+Saving\+Task}} $\ast$ $>$ \&\mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a8e44b058bac0e695c3956dee14ca36c2}{saving\+Tasks}})
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ae0bc21c59ff3c96fd3e0413d09e72894}{get\+Gams}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_abb72ffaf01ea60b89b7f57549c04c1c4}{get\+Eps\+Lims}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ac131561c6a32fb1a8e9174aaf3b6f6db}{get\+Nus}} ()
+\item 
+double \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a23656844a016de5ac2884b5803dccd09}{get\+DLim}} ()
+\item 
+void \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_adea8b31b20de5f194ac4bfde86bb7c3c}{set\+DLim}} (double new\+DLim)
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a8f7090164e5bb56d4c05ffe12e01a997}\label{class_staged_f_r_r_o_tree_generator_a8f7090164e5bb56d4c05ffe12e01a997}} 
+time\+\_\+t {\bfseries get\+Begin\+Time} ()
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_af4e61442717758509d21496f57ec00f1}\label{class_staged_f_r_r_o_tree_generator_af4e61442717758509d21496f57ec00f1}} 
+time\+\_\+t {\bfseries get\+End\+Time} ()
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_aa8026007a11b5d3bbca585a7aa3de7a9}\label{class_staged_f_r_r_o_tree_generator_aa8026007a11b5d3bbca585a7aa3de7a9}} 
+double {\bfseries get\+DLim\+Initial} ()
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_abe8a45eb4e4d0cf7bb8e5ee9f5bf1688}\label{class_staged_f_r_r_o_tree_generator_abe8a45eb4e4d0cf7bb8e5ee9f5bf1688}} 
+double {\bfseries get\+DLim\+Last} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_aa9672ad3756b4c4bddc91d8e59481f38}{is\+Valid\+Root\+Segment}} (\mbox{\hyperlink{structpoint}{point}} x\+New, int i\+Try)
+\item 
+int \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ae357cc09a7e74d802d3155f096cbb21f}{is\+Valid\+Segment}} (\mbox{\hyperlink{structpoint}{point}} x\+New, int i\+Try)
+\item 
+void \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a7ed8117f7d652c426e28d0444b87378c}{generates\+Configuration\+File}} (ios\+::openmode mode)
+\item 
+void \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ad3f04c8a35843fed669191118d4498d6}{mark\+Timestamp\+On\+Configuration\+File}} (string label)
+\item 
+void \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ab431406dedabb57e0ea6274797aa7dd7}{close\+Configuration\+File}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ofstream \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a0f8c6801bbbd5968719911f799d66223}{conf\+File}}
+\item 
+chrono\+::steady\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_abe0c3ffd62ab2f9915a6e09c9c31733b}{beginning\+Time}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+time\+\_\+t \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_aacec55ba58ee73893a89cddec5d926d3}{begin\+Time}}
+\item 
+time\+\_\+t \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a1d01aea6f999bde7ecc4b3b25a573644}{end\+Time}}
+\item 
+\mbox{\hyperlink{class_generator_data}{Generator\+Data}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_aa5d549a1ae7bfce749e418301ba92a2f}{instance\+Data}}
+\item 
+\mbox{\hyperlink{class_generator_data_monitor}{Generator\+Data\+Monitor}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ad8b06f3c348ba21d7a2eead895fa19c2}{data\+Monitor}}
+\item 
+\mbox{\hyperlink{class_memory_monitor}{Memory\+Monitor}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a7f6c92a9f21e8e654dec6a592dbea5d4}{monitor}}
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_saving_task}{Abstract\+Saving\+Task}} $\ast$ $>$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a8e44b058bac0e695c3956dee14ca36c2}{saving\+Tasks}}
+\item 
+long long int \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a4b9c21f516630824f8057aae16f38918}{n\+Terminals}}
+\item 
+double \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a7f36129068076eb3a54f051aa12cda40}{d\+Lim}}
+\item 
+double \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_ae1629c6642333e9388278540bc4b3335}{d\+Lim\+Initial}}
+\item 
+double \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_adc9151a8613df88fffd0fbde0b620fe0}{d\+Lim\+Last}}
+\item 
+\mbox{\hyperlink{class_staged_domain}{Staged\+Domain}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a2f8616a24551a7a414b51b805309894a}{domain}}
+\item 
+\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a3d7a0b0194b93d4c2706a21908ad9f09}{tree}}
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a81551e7195317a26d1a12936590031ce}\label{class_staged_f_r_r_o_tree_generator_a81551e7195317a26d1a12936590031ce}} 
+vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ {\bfseries gams}
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a1267c3bf746b17812daf41cd7e89b7e6}\label{class_staged_f_r_r_o_tree_generator_a1267c3bf746b17812daf41cd7e89b7e6}} 
+vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ {\bfseries eps\+Lims}
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a48c89ee980293fc8c5188bbfd8bcbb08}\label{class_staged_f_r_r_o_tree_generator_a48c89ee980293fc8c5188bbfd8bcbb08}} 
+vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ {\bfseries nus}
+\item 
+int \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a9410e8bb105a69fc8636e718e7ac9dfc}{stage}}
+\item 
+int \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a0b79edc4a184c376ab11260603004932}{is\+Generating\+Conf\+File}}
+\item 
+string \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_a244b1c195aa8395242deeeadb3ecf657}{conf\+Filename}}
+\item 
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a1d61cff3800e5865ee213757bf0861f6}\label{class_staged_f_r_r_o_tree_generator_a1d61cff3800e5865ee213757bf0861f6}} 
+bool {\bfseries did\+Allocate\+Tree}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generator for a single fixed perfusion tree with many stages. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a13c2f745f4b352663f8aa9e8908fe8ee}\label{class_staged_f_r_r_o_tree_generator_a13c2f745f4b352663f8aa9e8908fe8ee}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{StagedFRROTreeGenerator()}{StagedFRROTreeGenerator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Staged\+FRROTree\+Generator\+::\+Staged\+FRROTree\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_staged_domain}{Staged\+Domain}} $\ast$}]{domain,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{xi,  }\item[{double}]{root\+Radii,  }\item[{double}]{qi,  }\item[{long long int}]{n\+Term,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$}]{gam,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$}]{eps\+Lim,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$}]{nu,  }\item[{double}]{ref\+Pressure,  }\item[{double}]{viscosity\+Tolerance }\end{DoxyParamCaption})}
+
+Constructor for tree with Fahraeus-\/\+Lindquist viscosity model. 
+\begin{DoxyParams}{Parameters}
+{\em domain} & Perfusion domain. \\
+\hline
+{\em xi} & Root proximal position. \\
+\hline
+{\em root\+Radii} & Root radius. \\
+\hline
+{\em qi} & Inflow for the perfusion domain. \\
+\hline
+{\em n\+Term} & Total number of tree terminals. \\
+\hline
+{\em gam} & Murray\textquotesingle{}s power law function. \\
+\hline
+{\em eps\+Lim} & Symmetry constraint function. \\
+\hline
+{\em nu} & Viscosity function. \\
+\hline
+{\em min\+Angle} & Minimum allowed bifurcation angle. \\
+\hline
+{\em viscosity\+Tolerance} & Convergence tolerance for the absolute beta variation in the viscosity iterative scheme. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a3dc2c3e1959e0df5d1a46c696acdcf0a}\label{class_staged_f_r_r_o_tree_generator_a3dc2c3e1959e0df5d1a46c696acdcf0a}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{StagedFRROTreeGenerator()}{StagedFRROTreeGenerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Staged\+FRROTree\+Generator\+::\+Staged\+FRROTree\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_staged_domain}{Staged\+Domain}} $\ast$}]{domain,  }\item[{\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$}]{tree,  }\item[{long long int}]{n\+Term,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$}]{gam,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$}]{eps\+Lim,  }\item[{vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$}]{nu }\end{DoxyParamCaption})}
+
+Constructor to resume from a pre-\/existent tree. 
+\begin{DoxyParams}{Parameters}
+{\em domain} & Perfusion domain. \\
+\hline
+{\em tree} & Pre-\/existent tree. \\
+\hline
+{\em n\+Term} & Total number of tree terminals. \\
+\hline
+{\em gam} & Murray\textquotesingle{}s power law function. \\
+\hline
+{\em eps\+Lim} & Symmetry constraint function. \\
+\hline
+{\em nu} & Viscosity function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ace0cc12588d7ca428520e5e08dfd5e83}\label{class_staged_f_r_r_o_tree_generator_ace0cc12588d7ca428520e5e08dfd5e83}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!````~StagedFRROTreeGenerator@{$\sim$StagedFRROTreeGenerator}}
+\index{````~StagedFRROTreeGenerator@{$\sim$StagedFRROTreeGenerator}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{$\sim$StagedFRROTreeGenerator()}{~StagedFRROTreeGenerator()}}
+{\footnotesize\ttfamily Staged\+FRROTree\+Generator\+::$\sim$\+Staged\+FRROTree\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Common destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ab431406dedabb57e0ea6274797aa7dd7}\label{class_staged_f_r_r_o_tree_generator_ab431406dedabb57e0ea6274797aa7dd7}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!closeConfigurationFile@{closeConfigurationFile}}
+\index{closeConfigurationFile@{closeConfigurationFile}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{closeConfigurationFile()}{closeConfigurationFile()}}
+{\footnotesize\ttfamily void Staged\+FRROTree\+Generator\+::close\+Configuration\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Closes the configuration file for the current tree generation. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a878038a908e5a3ac9433f570ebd8b4ae}\label{class_staged_f_r_r_o_tree_generator_a878038a908e5a3ac9433f570ebd8b4ae}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!enableConfigurationFile@{enableConfigurationFile}}
+\index{enableConfigurationFile@{enableConfigurationFile}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{enableConfigurationFile()}{enableConfigurationFile()}}
+{\footnotesize\ttfamily void Staged\+FRROTree\+Generator\+::enable\+Configuration\+File (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+Enables the configuration file generation capabilities. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & File name where the generator stores the configuration data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ad119cb329ca876b0bcd87ac5c7393d6a}\label{class_staged_f_r_r_o_tree_generator_ad119cb329ca876b0bcd87ac5c7393d6a}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!generate@{generate}}
+\index{generate@{generate}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ Staged\+FRROTree\+Generator\+::generate (\begin{DoxyParamCaption}\item[{long long int}]{save\+Interval,  }\item[{string}]{temp\+Directory }\end{DoxyParamCaption})}
+
+Generates the specified tree. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Interval} & Number of iterations performed between saved steps. \\
+\hline
+{\em temp\+Directory} & Directory where intermediate solutions are saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Perfusion tree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a98d396aa0d98b7c1a8a3a371fbaf1516}\label{class_staged_f_r_r_o_tree_generator_a98d396aa0d98b7c1a8a3a371fbaf1516}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!generateExperimental@{generateExperimental}}
+\index{generateExperimental@{generateExperimental}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{generateExperimental()}{generateExperimental()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ Staged\+FRROTree\+Generator\+::generate\+Experimental (\begin{DoxyParamCaption}\item[{long long int}]{save\+Interval,  }\item[{string}]{temp\+Directory,  }\item[{int}]{max\+Num\+Of\+Trials }\end{DoxyParamCaption})}
+
+Generates the specified tree with a failsafe for bad configuration. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Interval} & Number of iterations performed between saved steps. \\
+\hline
+{\em temp\+Directory} & Directory where intermediate solutions are saved. \\
+\hline
+{\em max\+Num\+Of\+Trials} & Maximum number of trials before generator fails and exits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Perfusion tree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a7ed8117f7d652c426e28d0444b87378c}\label{class_staged_f_r_r_o_tree_generator_a7ed8117f7d652c426e28d0444b87378c}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!generatesConfigurationFile@{generatesConfigurationFile}}
+\index{generatesConfigurationFile@{generatesConfigurationFile}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{generatesConfigurationFile()}{generatesConfigurationFile()}}
+{\footnotesize\ttfamily void Staged\+FRROTree\+Generator\+::generates\+Configuration\+File (\begin{DoxyParamCaption}\item[{ios\+::openmode}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates the configuration file for the current tree generation. 
+\begin{DoxyParams}{Parameters}
+{\em mode} & Is the openmode used for the generated file (ios\+::out for generation, ios\+::app for resume). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a23656844a016de5ac2884b5803dccd09}\label{class_staged_f_r_r_o_tree_generator_a23656844a016de5ac2884b5803dccd09}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!getDLim@{getDLim}}
+\index{getDLim@{getDLim}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{getDLim()}{getDLim()}}
+{\footnotesize\ttfamily double Staged\+FRROTree\+Generator\+::get\+DLim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current DLim value. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_abb72ffaf01ea60b89b7f57549c04c1c4}\label{class_staged_f_r_r_o_tree_generator_abb72ffaf01ea60b89b7f57549c04c1c4}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!getEpsLims@{getEpsLims}}
+\index{getEpsLims@{getEpsLims}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{getEpsLims()}{getEpsLims()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ $\ast$ Staged\+FRROTree\+Generator\+::get\+Eps\+Lims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a pointer to the vector of eps\+\_\+lims. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ae0bc21c59ff3c96fd3e0413d09e72894}\label{class_staged_f_r_r_o_tree_generator_ae0bc21c59ff3c96fd3e0413d09e72894}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!getGams@{getGams}}
+\index{getGams@{getGams}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{getGams()}{getGams()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ $\ast$ Staged\+FRROTree\+Generator\+::get\+Gams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a pointer to the vector of gams. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ac131561c6a32fb1a8e9174aaf3b6f6db}\label{class_staged_f_r_r_o_tree_generator_ac131561c6a32fb1a8e9174aaf3b6f6db}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!getNus@{getNus}}
+\index{getNus@{getNus}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{getNus()}{getNus()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_abstract_constraint_function}{Abstract\+Constraint\+Function}}$<$ double, int $>$ $\ast$ $>$ $\ast$ Staged\+FRROTree\+Generator\+::get\+Nus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a pointer to the vector of nus. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a2332bdf2a9edb5f4739e7379536eb632}\label{class_staged_f_r_r_o_tree_generator_a2332bdf2a9edb5f4739e7379536eb632}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!getTree@{getTree}}
+\index{getTree@{getTree}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{getTree()}{getTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$\& Staged\+FRROTree\+Generator\+::get\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the currently generated {\ttfamily tree} \begin{DoxyReturn}{Returns}
+Generated tree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a3aeb9dd5215d1103fe2c686c86967f54}\label{class_staged_f_r_r_o_tree_generator_a3aeb9dd5215d1103fe2c686c86967f54}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!getTrees@{getTrees}}
+\index{getTrees@{getTrees}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{getTrees()}{getTrees()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ $>$ Staged\+FRROTree\+Generator\+::get\+Trees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the generated tree. \begin{DoxyReturn}{Returns}
+Generated tree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_aa9672ad3756b4c4bddc91d8e59481f38}\label{class_staged_f_r_r_o_tree_generator_aa9672ad3756b4c4bddc91d8e59481f38}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!isValidRootSegment@{isValidRootSegment}}
+\index{isValidRootSegment@{isValidRootSegment}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{isValidRootSegment()}{isValidRootSegment()}}
+{\footnotesize\ttfamily int Staged\+FRROTree\+Generator\+::is\+Valid\+Root\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{int}]{i\+Try }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns if the length of the segment defined by x\+Prox and x\+New is higher than d\+Lim (distance criterion). 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Proposed distal point. \\
+\hline
+{\em i\+Try} & Number of trial. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the root segment is valid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ae357cc09a7e74d802d3155f096cbb21f}\label{class_staged_f_r_r_o_tree_generator_ae357cc09a7e74d802d3155f096cbb21f}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!isValidSegment@{isValidSegment}}
+\index{isValidSegment@{isValidSegment}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{isValidSegment()}{isValidSegment()}}
+{\footnotesize\ttfamily int Staged\+FRROTree\+Generator\+::is\+Valid\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{x\+New,  }\item[{int}]{i\+Try }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns if the closest point to the whole try is greater than d\+Lim (distance criterion for a new segment). 
+\begin{DoxyParams}{Parameters}
+{\em x\+New} & Proposed distal point. \\
+\hline
+{\em i\+Try} & Number of trial. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the segment is valid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ad3f04c8a35843fed669191118d4498d6}\label{class_staged_f_r_r_o_tree_generator_ad3f04c8a35843fed669191118d4498d6}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!markTimestampOnConfigurationFile@{markTimestampOnConfigurationFile}}
+\index{markTimestampOnConfigurationFile@{markTimestampOnConfigurationFile}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{markTimestampOnConfigurationFile()}{markTimestampOnConfigurationFile()}}
+{\footnotesize\ttfamily void Staged\+FRROTree\+Generator\+::mark\+Timestamp\+On\+Configuration\+File (\begin{DoxyParamCaption}\item[{string}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Saves the timestamp for event {\ttfamily label}. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a01a80f2720de4fe42b47dd9eb98a25bd}\label{class_staged_f_r_r_o_tree_generator_a01a80f2720de4fe42b47dd9eb98a25bd}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!observableModified@{observableModified}}
+\index{observableModified@{observableModified}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{observableModified()}{observableModified()}}
+{\footnotesize\ttfamily void Staged\+FRROTree\+Generator\+::observable\+Modified (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_domain_observable}{IDomain\+Observable}} $\ast$}]{observable\+Instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates internal data from this instance after the domain has been modified. 
+\begin{DoxyParams}{Parameters}
+{\em observable\+Instance} & Domain instance modified. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_domain_observer_aee18640c20a6feaa16e4bf3bdde887a3}{IDomain\+Observer}}.
+
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ac7e665c88ecc8fbae365bc9f74cfdb45}\label{class_staged_f_r_r_o_tree_generator_ac7e665c88ecc8fbae365bc9f74cfdb45}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!resume@{resume}}
+\index{resume@{resume}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ Staged\+FRROTree\+Generator\+::resume (\begin{DoxyParamCaption}\item[{long long int}]{save\+Interval,  }\item[{string}]{temp\+Directory }\end{DoxyParamCaption})}
+
+Resumes the tree generation. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Interval} & Number of iterations performed between saved steps. \\
+\hline
+{\em temp\+Directory} & Directory where intermediate solutions are saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Perfusion tree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a69f8c54af16124f44da22128d525aa41}\label{class_staged_f_r_r_o_tree_generator_a69f8c54af16124f44da22128d525aa41}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!resumeExperimental@{resumeExperimental}}
+\index{resumeExperimental@{resumeExperimental}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{resumeExperimental()}{resumeExperimental()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ Staged\+FRROTree\+Generator\+::resume\+Experimental (\begin{DoxyParamCaption}\item[{long long int}]{save\+Interval,  }\item[{string}]{temp\+Directory,  }\item[{int}]{max\+Num\+Of\+Trials }\end{DoxyParamCaption})}
+
+Resumes the tree generation. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Interval} & Number of iterations performed between saved steps. \\
+\hline
+{\em temp\+Directory} & Directory where intermediate solutions are saved. \\
+\hline
+{\em max\+Num\+Of\+Trials} & Maximum number of trials before generator fails and exits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Perfusion tree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ad2fbecda3eee775d8a017b7cc4d629df}\label{class_staged_f_r_r_o_tree_generator_ad2fbecda3eee775d8a017b7cc4d629df}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!resumeSavePoints@{resumeSavePoints}}
+\index{resumeSavePoints@{resumeSavePoints}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{resumeSavePoints()}{resumeSavePoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$ Staged\+FRROTree\+Generator\+::resume\+Save\+Points (\begin{DoxyParamCaption}\item[{long long int}]{save\+Interval,  }\item[{string}]{temp\+Directory,  }\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+Returns the perfusion domain. \begin{DoxyReturn}{Returns}
+Perfusion domain. Resumes the tree generation process and saves the optimal x\+New and x\+Bif in
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em fp.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_abfdedad4fd436cd56ecbe4d134ee93a8}\label{class_staged_f_r_r_o_tree_generator_abfdedad4fd436cd56ecbe4d134ee93a8}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!saveStatus@{saveStatus}}
+\index{saveStatus@{saveStatus}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{saveStatus()}{saveStatus()}}
+{\footnotesize\ttfamily void Staged\+FRROTree\+Generator\+::save\+Status (\begin{DoxyParamCaption}\item[{long long int}]{terminals }\end{DoxyParamCaption})}
+
+Saves the current generation status using the {\ttfamily saving\+Tasks} and the memory monitor. 
+\begin{DoxyParams}{Parameters}
+{\em terminals} & Current iteration number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_adea8b31b20de5f194ac4bfde86bb7c3c}\label{class_staged_f_r_r_o_tree_generator_adea8b31b20de5f194ac4bfde86bb7c3c}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!setDLim@{setDLim}}
+\index{setDLim@{setDLim}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{setDLim()}{setDLim()}}
+{\footnotesize\ttfamily void Staged\+FRROTree\+Generator\+::set\+DLim (\begin{DoxyParamCaption}\item[{double}]{new\+DLim }\end{DoxyParamCaption})}
+
+Set the DLim value. Use this only to resume process from a previous generation. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_abbbee9a209eec78d5631b1842a3e50fc}\label{class_staged_f_r_r_o_tree_generator_abbbee9a209eec78d5631b1842a3e50fc}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!setSavingTasks@{setSavingTasks}}
+\index{setSavingTasks@{setSavingTasks}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{setSavingTasks()}{setSavingTasks()}}
+{\footnotesize\ttfamily void Staged\+FRROTree\+Generator\+::set\+Saving\+Tasks (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_abstract_saving_task}{Abstract\+Saving\+Task}} $\ast$ $>$ \&}]{saving\+Tasks }\end{DoxyParamCaption})}
+
+Sets a set of saving tasks to be produced each time the generation process saves. 
+\begin{DoxyParams}{Parameters}
+{\em saving\+Tasks} & Set of tasks to be performed each time that the tree is saved. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_abe0c3ffd62ab2f9915a6e09c9c31733b}\label{class_staged_f_r_r_o_tree_generator_abe0c3ffd62ab2f9915a6e09c9c31733b}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!beginningTime@{beginningTime}}
+\index{beginningTime@{beginningTime}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{beginningTime}{beginningTime}}
+{\footnotesize\ttfamily chrono\+::steady\+\_\+clock\+::time\+\_\+point Staged\+FRROTree\+Generator\+::beginning\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initial timestamp of the generation process. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_aacec55ba58ee73893a89cddec5d926d3}\label{class_staged_f_r_r_o_tree_generator_aacec55ba58ee73893a89cddec5d926d3}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!beginTime@{beginTime}}
+\index{beginTime@{beginTime}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{beginTime}{beginTime}}
+{\footnotesize\ttfamily time\+\_\+t Staged\+FRROTree\+Generator\+::begin\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+Time of the beggining of the tree generation process \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a0f8c6801bbbd5968719911f799d66223}\label{class_staged_f_r_r_o_tree_generator_a0f8c6801bbbd5968719911f799d66223}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!confFile@{confFile}}
+\index{confFile@{confFile}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{confFile}{confFile}}
+{\footnotesize\ttfamily ofstream Staged\+FRROTree\+Generator\+::conf\+File\hspace{0.3cm}{\ttfamily [protected]}}
+
+Configuration file stream. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a244b1c195aa8395242deeeadb3ecf657}\label{class_staged_f_r_r_o_tree_generator_a244b1c195aa8395242deeeadb3ecf657}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!confFilename@{confFilename}}
+\index{confFilename@{confFilename}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{confFilename}{confFilename}}
+{\footnotesize\ttfamily string Staged\+FRROTree\+Generator\+::conf\+Filename\hspace{0.3cm}{\ttfamily [private]}}
+
+File name for the configuration file. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ad8b06f3c348ba21d7a2eead895fa19c2}\label{class_staged_f_r_r_o_tree_generator_ad8b06f3c348ba21d7a2eead895fa19c2}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!dataMonitor@{dataMonitor}}
+\index{dataMonitor@{dataMonitor}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{dataMonitor}{dataMonitor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_generator_data_monitor}{Generator\+Data\+Monitor}}$\ast$ Staged\+FRROTree\+Generator\+::data\+Monitor\hspace{0.3cm}{\ttfamily [private]}}
+
+Monitor of the {\ttfamily instance\+Data} . \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a7f36129068076eb3a54f051aa12cda40}\label{class_staged_f_r_r_o_tree_generator_a7f36129068076eb3a54f051aa12cda40}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!dLim@{dLim}}
+\index{dLim@{dLim}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{dLim}{dLim}}
+{\footnotesize\ttfamily double Staged\+FRROTree\+Generator\+::d\+Lim\hspace{0.3cm}{\ttfamily [private]}}
+
+Perfusion volume. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_ae1629c6642333e9388278540bc4b3335}\label{class_staged_f_r_r_o_tree_generator_ae1629c6642333e9388278540bc4b3335}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!dLimInitial@{dLimInitial}}
+\index{dLimInitial@{dLimInitial}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{dLimInitial}{dLimInitial}}
+{\footnotesize\ttfamily double Staged\+FRROTree\+Generator\+::d\+Lim\+Initial\hspace{0.3cm}{\ttfamily [private]}}
+
+Initial d\+Lim value \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_adc9151a8613df88fffd0fbde0b620fe0}\label{class_staged_f_r_r_o_tree_generator_adc9151a8613df88fffd0fbde0b620fe0}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!dLimLast@{dLimLast}}
+\index{dLimLast@{dLimLast}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{dLimLast}{dLimLast}}
+{\footnotesize\ttfamily double Staged\+FRROTree\+Generator\+::d\+Lim\+Last\hspace{0.3cm}{\ttfamily [private]}}
+
+Final d\+Lim value \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a2f8616a24551a7a414b51b805309894a}\label{class_staged_f_r_r_o_tree_generator_a2f8616a24551a7a414b51b805309894a}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!domain@{domain}}
+\index{domain@{domain}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{domain}{domain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_staged_domain}{Staged\+Domain}}$\ast$ Staged\+FRROTree\+Generator\+::domain\hspace{0.3cm}{\ttfamily [private]}}
+
+Perfusion domain. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a1d01aea6f999bde7ecc4b3b25a573644}\label{class_staged_f_r_r_o_tree_generator_a1d01aea6f999bde7ecc4b3b25a573644}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!endTime@{endTime}}
+\index{endTime@{endTime}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{endTime}{endTime}}
+{\footnotesize\ttfamily time\+\_\+t Staged\+FRROTree\+Generator\+::end\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+Time of the end of the tree generation process \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_aa5d549a1ae7bfce749e418301ba92a2f}\label{class_staged_f_r_r_o_tree_generator_aa5d549a1ae7bfce749e418301ba92a2f}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!instanceData@{instanceData}}
+\index{instanceData@{instanceData}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{instanceData}{instanceData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_generator_data}{Generator\+Data}}$\ast$ Staged\+FRROTree\+Generator\+::instance\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+Wrapper with parameters associated to a tree generation process. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a0b79edc4a184c376ab11260603004932}\label{class_staged_f_r_r_o_tree_generator_a0b79edc4a184c376ab11260603004932}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!isGeneratingConfFile@{isGeneratingConfFile}}
+\index{isGeneratingConfFile@{isGeneratingConfFile}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{isGeneratingConfFile}{isGeneratingConfFile}}
+{\footnotesize\ttfamily int Staged\+FRROTree\+Generator\+::is\+Generating\+Conf\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+If the current generation saves the configuration used. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a7f6c92a9f21e8e654dec6a592dbea5d4}\label{class_staged_f_r_r_o_tree_generator_a7f6c92a9f21e8e654dec6a592dbea5d4}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!monitor@{monitor}}
+\index{monitor@{monitor}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{monitor}{monitor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_memory_monitor}{Memory\+Monitor}}$\ast$ Staged\+FRROTree\+Generator\+::monitor\hspace{0.3cm}{\ttfamily [private]}}
+
+Monitors the memory usage. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a4b9c21f516630824f8057aae16f38918}\label{class_staged_f_r_r_o_tree_generator_a4b9c21f516630824f8057aae16f38918}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!nTerminals@{nTerminals}}
+\index{nTerminals@{nTerminals}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{nTerminals}{nTerminals}}
+{\footnotesize\ttfamily long long int Staged\+FRROTree\+Generator\+::n\+Terminals\hspace{0.3cm}{\ttfamily [private]}}
+
+Amount of terminals in the trees. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a8e44b058bac0e695c3956dee14ca36c2}\label{class_staged_f_r_r_o_tree_generator_a8e44b058bac0e695c3956dee14ca36c2}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!savingTasks@{savingTasks}}
+\index{savingTasks@{savingTasks}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{savingTasks}{savingTasks}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_abstract_saving_task}{Abstract\+Saving\+Task}} $\ast$$>$ Staged\+FRROTree\+Generator\+::saving\+Tasks\hspace{0.3cm}{\ttfamily [private]}}
+
+Action executed at each save interval during generate and resume methods \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a9410e8bb105a69fc8636e718e7ac9dfc}\label{class_staged_f_r_r_o_tree_generator_a9410e8bb105a69fc8636e718e7ac9dfc}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!stage@{stage}}
+\index{stage@{stage}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{stage}{stage}}
+{\footnotesize\ttfamily int Staged\+FRROTree\+Generator\+::stage\hspace{0.3cm}{\ttfamily [private]}}
+
+Current stage of generation. \mbox{\Hypertarget{class_staged_f_r_r_o_tree_generator_a3d7a0b0194b93d4c2706a21908ad9f09}\label{class_staged_f_r_r_o_tree_generator_a3d7a0b0194b93d4c2706a21908ad9f09}} 
+\index{StagedFRROTreeGenerator@{StagedFRROTreeGenerator}!tree@{tree}}
+\index{tree@{tree}!StagedFRROTreeGenerator@{StagedFRROTreeGenerator}}
+\doxysubsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}}$\ast$ Staged\+FRROTree\+Generator\+::tree\hspace{0.3cm}{\ttfamily [private]}}
+
+Generated trees. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/Staged\+FRROTree\+Generator.\+h\item 
+core/Staged\+FRROTree\+Generator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{class_structured_tree_stats_manager}{}\doxysection{Structured\+Tree\+Stats\+Manager Class Reference}
+\label{class_structured_tree_stats_manager}\index{StructuredTreeStatsManager@{StructuredTreeStatsManager}}
+
+
+{\ttfamily \#include $<$Structured\+Tree\+Stats\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_structured_tree_stats_manager_ab1d9505a6172123c882506b31c187d04}\label{class_structured_tree_stats_manager_ab1d9505a6172123c882506b31c187d04}} 
+{\bfseries Structured\+Tree\+Stats\+Manager} (\mbox{\hyperlink{class_abstract_structured_c_c_o_tree}{Abstract\+Structured\+CCOTree}} $\ast$\mbox{\hyperlink{class_structured_tree_stats_manager_a947b27b9bcc69d711bff8326ca3b7888}{tree}})
+\item 
+void \mbox{\hyperlink{class_structured_tree_stats_manager_aa9b95796d28d255283b58051ece3716f}{get\+Mean\+Per\+Level}} (vector$<$ double $>$ $\ast$levels, vector$<$ double $>$ $\ast$means, vector$<$ double $>$ $\ast$stds, \mbox{\hyperlink{class_vessel_struct_handler_a0fe4c17d06f21728cf3a4ce40a7f9042}{Vessel\+Struct\+Handler\+::\+ATTRIBUTE}} att)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_structured_c_c_o_tree}{Abstract\+Structured\+CCOTree}} $\ast$ \mbox{\hyperlink{class_structured_tree_stats_manager_a947b27b9bcc69d711bff8326ca3b7888}{tree}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Facade class used to access to all statistical analysis services implemented. The class aims to return vectors with the statistical results and no plots or any other outputs. Outputs are expected to be generated in the CCORendering library to decouple GUI from data and model components. The last is key to support the CCO library in clusters or environments with no GUI capabilities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_structured_tree_stats_manager_aa9b95796d28d255283b58051ece3716f}\label{class_structured_tree_stats_manager_aa9b95796d28d255283b58051ece3716f}} 
+\index{StructuredTreeStatsManager@{StructuredTreeStatsManager}!getMeanPerLevel@{getMeanPerLevel}}
+\index{getMeanPerLevel@{getMeanPerLevel}!StructuredTreeStatsManager@{StructuredTreeStatsManager}}
+\doxysubsubsection{\texorpdfstring{getMeanPerLevel()}{getMeanPerLevel()}}
+{\footnotesize\ttfamily void Structured\+Tree\+Stats\+Manager\+::get\+Mean\+Per\+Level (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ $\ast$}]{levels,  }\item[{vector$<$ double $>$ $\ast$}]{means,  }\item[{vector$<$ double $>$ $\ast$}]{stds,  }\item[{\mbox{\hyperlink{class_vessel_struct_handler_a0fe4c17d06f21728cf3a4ce40a7f9042}{Vessel\+Struct\+Handler\+::\+ATTRIBUTE}}}]{att }\end{DoxyParamCaption})}
+
+Load the vector {\ttfamily levels}, {\ttfamily means} and {\ttfamily stds} with the number of bifurcation level and mean and standard deviation of a vessel field across that levels. 
+\begin{DoxyParams}{Parameters}
+{\em levels} & Levels of bifurcation (0,..., N-\/1). \\
+\hline
+{\em means} & Mean for each level. \\
+\hline
+{\em stds} & Standard deviation for each level. \\
+\hline
+{\em att} & Field over which the mean and std is computed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_structured_tree_stats_manager_a947b27b9bcc69d711bff8326ca3b7888}\label{class_structured_tree_stats_manager_a947b27b9bcc69d711bff8326ca3b7888}} 
+\index{StructuredTreeStatsManager@{StructuredTreeStatsManager}!tree@{tree}}
+\index{tree@{tree}!StructuredTreeStatsManager@{StructuredTreeStatsManager}}
+\doxysubsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_structured_c_c_o_tree}{Abstract\+Structured\+CCOTree}}$\ast$ Structured\+Tree\+Stats\+Manager\+::tree\hspace{0.3cm}{\ttfamily [private]}}
+
+Tree that undergo through statistical analysis. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stats/Structured\+Tree\+Stats\+Manager.\+h\item 
+stats/Structured\+Tree\+Stats\+Manager.\+cpp\end{DoxyCompactItemize}

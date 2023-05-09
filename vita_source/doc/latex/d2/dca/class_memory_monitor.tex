@@ -1,0 +1,94 @@
+\hypertarget{class_memory_monitor}{}\doxysection{Memory\+Monitor Class Reference}
+\label{class_memory_monitor}\index{MemoryMonitor@{MemoryMonitor}}
+
+
+{\ttfamily \#include $<$Memory\+Monitor.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_memory_monitor_aab7a81fc67c4acdf0d3c4ffefe3ef740}{UNITS}} \{ {\bfseries BYTE}
+, {\bfseries KILOBYTE}
+, {\bfseries MEGABYTE}
+, {\bfseries GIGABYTE}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_memory_monitor_a03d307d8b56faf99571de9836a74fecf}{Memory\+Monitor}} (\mbox{\hyperlink{class_memory_monitor_aab7a81fc67c4acdf0d3c4ffefe3ef740}{UNITS}} unit)
+\item 
+long long \mbox{\hyperlink{class_memory_monitor_ad5661e725b77131a188fb766987321a1}{get\+Process\+Memory\+Consumption}} ()
+\item 
+long long \mbox{\hyperlink{class_memory_monitor_a2b9ef8cb8113acdded0d6c3170e47cd2}{get\+System\+Memory\+Consumption}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_memory_monitor_a3ed92d5612089f555f11e6a49e6f0e7c}\label{class_memory_monitor_a3ed92d5612089f555f11e6a49e6f0e7c}} 
+int {\bfseries parse\+Line} (char $\ast$line)
+\item 
+\mbox{\Hypertarget{class_memory_monitor_a3311171846147b7c2d4bf2e2253b6db9}\label{class_memory_monitor_a3311171846147b7c2d4bf2e2253b6db9}} 
+long long {\bfseries get\+Value} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_memory_monitor_af9a6afbcc1408ffacbe85747ae9cea48}{unit\+Factor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that report system memory usage. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_memory_monitor_aab7a81fc67c4acdf0d3c4ffefe3ef740}\label{class_memory_monitor_aab7a81fc67c4acdf0d3c4ffefe3ef740}} 
+\index{MemoryMonitor@{MemoryMonitor}!UNITS@{UNITS}}
+\index{UNITS@{UNITS}!MemoryMonitor@{MemoryMonitor}}
+\doxysubsubsection{\texorpdfstring{UNITS}{UNITS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_memory_monitor_aab7a81fc67c4acdf0d3c4ffefe3ef740}{Memory\+Monitor\+::\+UNITS}}}
+
+Unit used as output. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_memory_monitor_a03d307d8b56faf99571de9836a74fecf}\label{class_memory_monitor_a03d307d8b56faf99571de9836a74fecf}} 
+\index{MemoryMonitor@{MemoryMonitor}!MemoryMonitor@{MemoryMonitor}}
+\index{MemoryMonitor@{MemoryMonitor}!MemoryMonitor@{MemoryMonitor}}
+\doxysubsubsection{\texorpdfstring{MemoryMonitor()}{MemoryMonitor()}}
+{\footnotesize\ttfamily Memory\+Monitor\+::\+Memory\+Monitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_memory_monitor_aab7a81fc67c4acdf0d3c4ffefe3ef740}{UNITS}}}]{unit }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em unit} & Unit used as output. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_memory_monitor_ad5661e725b77131a188fb766987321a1}\label{class_memory_monitor_ad5661e725b77131a188fb766987321a1}} 
+\index{MemoryMonitor@{MemoryMonitor}!getProcessMemoryConsumption@{getProcessMemoryConsumption}}
+\index{getProcessMemoryConsumption@{getProcessMemoryConsumption}!MemoryMonitor@{MemoryMonitor}}
+\doxysubsubsection{\texorpdfstring{getProcessMemoryConsumption()}{getProcessMemoryConsumption()}}
+{\footnotesize\ttfamily long long Memory\+Monitor\+::get\+Process\+Memory\+Consumption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the RAM memory consumed by the current process. \mbox{\Hypertarget{class_memory_monitor_a2b9ef8cb8113acdded0d6c3170e47cd2}\label{class_memory_monitor_a2b9ef8cb8113acdded0d6c3170e47cd2}} 
+\index{MemoryMonitor@{MemoryMonitor}!getSystemMemoryConsumption@{getSystemMemoryConsumption}}
+\index{getSystemMemoryConsumption@{getSystemMemoryConsumption}!MemoryMonitor@{MemoryMonitor}}
+\doxysubsubsection{\texorpdfstring{getSystemMemoryConsumption()}{getSystemMemoryConsumption()}}
+{\footnotesize\ttfamily long long Memory\+Monitor\+::get\+System\+Memory\+Consumption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the RAM memory consumed by the whole system. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_memory_monitor_af9a6afbcc1408ffacbe85747ae9cea48}\label{class_memory_monitor_af9a6afbcc1408ffacbe85747ae9cea48}} 
+\index{MemoryMonitor@{MemoryMonitor}!unitFactor@{unitFactor}}
+\index{unitFactor@{unitFactor}!MemoryMonitor@{MemoryMonitor}}
+\doxysubsubsection{\texorpdfstring{unitFactor}{unitFactor}}
+{\footnotesize\ttfamily double Memory\+Monitor\+::unit\+Factor\hspace{0.3cm}{\ttfamily [private]}}
+
+Unit conversion factor. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+utils/Memory\+Monitor.\+h\item 
+utils/Memory\+Monitor.\+cpp\end{DoxyCompactItemize}

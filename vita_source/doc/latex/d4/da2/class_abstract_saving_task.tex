@@ -1,0 +1,39 @@
+\hypertarget{class_abstract_saving_task}{}\doxysection{Abstract\+Saving\+Task Class Reference}
+\label{class_abstract_saving_task}\index{AbstractSavingTask@{AbstractSavingTask}}
+
+
+{\ttfamily \#include $<$Abstract\+Saving\+Task.\+h$>$}
+
+Inheritance diagram for Abstract\+Saving\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/da2/class_abstract_saving_task}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_abstract_saving_task_a5f4a8c99f7c213201d2ccc005da5e195}{execute}} (long long int terminals, \mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$tree)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class part of an executer design pattern. Each time a tree is saved a set of executers will write the tree content. Different executers provide specific persistance of the tree, such as the generation of CCO files or VTK, depending if is a checkpoint for further tree generation or just a visualisation temporal file. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_saving_task_a5f4a8c99f7c213201d2ccc005da5e195}\label{class_abstract_saving_task_a5f4a8c99f7c213201d2ccc005da5e195}} 
+\index{AbstractSavingTask@{AbstractSavingTask}!execute@{execute}}
+\index{execute@{execute}!AbstractSavingTask@{AbstractSavingTask}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Abstract\+Saving\+Task\+::execute (\begin{DoxyParamCaption}\item[{long long int}]{terminals,  }\item[{\mbox{\hyperlink{class_abstract_object_c_c_o_tree}{Abstract\+Object\+CCOTree}} $\ast$}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_checkpoint_saving_task_a2de7e9e3d339826477b8ad611b3489fa}{Checkpoint\+Saving\+Task}}, and \mbox{\hyperlink{class_visualization_saving_task_ae844ab5f26ead0da852ee646aeee1f9a}{Visualization\+Saving\+Task}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+io/task/Abstract\+Saving\+Task.\+h\item 
+io/task/Abstract\+Saving\+Task.\+cpp\end{DoxyCompactItemize}

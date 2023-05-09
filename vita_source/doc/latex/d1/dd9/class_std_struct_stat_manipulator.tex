@@ -1,0 +1,73 @@
+\hypertarget{class_std_struct_stat_manipulator}{}\doxysection{Std\+Struct\+Stat\+Manipulator Class Reference}
+\label{class_std_struct_stat_manipulator}\index{StdStructStatManipulator@{StdStructStatManipulator}}
+
+
+{\ttfamily \#include $<$Std\+Struct\+Stat\+Manipulator.\+h$>$}
+
+Inheritance diagram for Std\+Struct\+Stat\+Manipulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/dd9/class_std_struct_stat_manipulator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_std_struct_stat_manipulator_a254ae5406e1744aeed61a8295be5db25}{Std\+Struct\+Stat\+Manipulator}} ()
+\item 
+double \mbox{\hyperlink{class_std_struct_stat_manipulator_abe72fb07afd60d4db4c19f813dd842c4}{compute}} (vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ vessels, \mbox{\hyperlink{class_vessel_struct_handler_a0fe4c17d06f21728cf3a4ce40a7f9042}{Vessel\+Struct\+Handler\+::\+ATTRIBUTE}} att)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mean_struct_stat_manipulator}{Mean\+Struct\+Stat\+Manipulator}} $\ast$ \mbox{\hyperlink{class_std_struct_stat_manipulator_ab2064fcb073799f8eb895d1fb4d2726b}{mean\+Manipulator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Computes the standard deviation value of a specific attribute for an array of vessels. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_std_struct_stat_manipulator_a254ae5406e1744aeed61a8295be5db25}\label{class_std_struct_stat_manipulator_a254ae5406e1744aeed61a8295be5db25}} 
+\index{StdStructStatManipulator@{StdStructStatManipulator}!StdStructStatManipulator@{StdStructStatManipulator}}
+\index{StdStructStatManipulator@{StdStructStatManipulator}!StdStructStatManipulator@{StdStructStatManipulator}}
+\doxysubsubsection{\texorpdfstring{StdStructStatManipulator()}{StdStructStatManipulator()}}
+{\footnotesize\ttfamily Std\+Struct\+Stat\+Manipulator\+::\+Std\+Struct\+Stat\+Manipulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_std_struct_stat_manipulator_abe72fb07afd60d4db4c19f813dd842c4}\label{class_std_struct_stat_manipulator_abe72fb07afd60d4db4c19f813dd842c4}} 
+\index{StdStructStatManipulator@{StdStructStatManipulator}!compute@{compute}}
+\index{compute@{compute}!StdStructStatManipulator@{StdStructStatManipulator}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily double Std\+Struct\+Stat\+Manipulator\+::compute (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$}]{vessels,  }\item[{\mbox{\hyperlink{class_vessel_struct_handler_a0fe4c17d06f21728cf3a4ce40a7f9042}{Vessel\+Struct\+Handler\+::\+ATTRIBUTE}}}]{att }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Computes the standard deviation of the attribute of interest among all {\ttfamily vessels}. 
+\begin{DoxyParams}{Parameters}
+{\em vessels} & Array of vessels from which the statistical function is computed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Standard deviation value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_structured_stat_manipulator_ae5da6e08a1a57bd62381c0b055c7d47a}{Abstract\+Structured\+Stat\+Manipulator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_std_struct_stat_manipulator_ab2064fcb073799f8eb895d1fb4d2726b}\label{class_std_struct_stat_manipulator_ab2064fcb073799f8eb895d1fb4d2726b}} 
+\index{StdStructStatManipulator@{StdStructStatManipulator}!meanManipulator@{meanManipulator}}
+\index{meanManipulator@{meanManipulator}!StdStructStatManipulator@{StdStructStatManipulator}}
+\doxysubsubsection{\texorpdfstring{meanManipulator}{meanManipulator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mean_struct_stat_manipulator}{Mean\+Struct\+Stat\+Manipulator}}$\ast$ Std\+Struct\+Stat\+Manipulator\+::mean\+Manipulator\hspace{0.3cm}{\ttfamily [private]}}
+
+Mean statistical manipulator used to compute the mean internally. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stats/manipulators/Std\+Struct\+Stat\+Manipulator.\+h\item 
+stats/manipulators/Std\+Struct\+Stat\+Manipulator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{class_percentile_stat_manipulator}{}\doxysection{Percentile\+Stat\+Manipulator Class Reference}
+\label{class_percentile_stat_manipulator}\index{PercentileStatManipulator@{PercentileStatManipulator}}
+
+
+{\ttfamily \#include $<$Percentile\+Stat\+Manipulator.\+h$>$}
+
+Inheritance diagram for Percentile\+Stat\+Manipulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/df3/class_percentile_stat_manipulator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_percentile_stat_manipulator_abbf6cd7ebe4b1ac28ed5dd7251bd0a98}{Percentile\+Stat\+Manipulator}} (int \mbox{\hyperlink{class_percentile_stat_manipulator_a6a035c7f4cc7612c37486f81ef329093}{num\+Percentile}})
+\item 
+double \mbox{\hyperlink{class_percentile_stat_manipulator_a09d88cd72930c2b79f32d48ecfc3f4e0}{compute}} (vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ vessels, \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} att)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_percentile_stat_manipulator_a6a035c7f4cc7612c37486f81ef329093}{num\+Percentile}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Computes the N-\/th percentile value of a specific attribute for an array of vessels. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_percentile_stat_manipulator_abbf6cd7ebe4b1ac28ed5dd7251bd0a98}\label{class_percentile_stat_manipulator_abbf6cd7ebe4b1ac28ed5dd7251bd0a98}} 
+\index{PercentileStatManipulator@{PercentileStatManipulator}!PercentileStatManipulator@{PercentileStatManipulator}}
+\index{PercentileStatManipulator@{PercentileStatManipulator}!PercentileStatManipulator@{PercentileStatManipulator}}
+\doxysubsubsection{\texorpdfstring{PercentileStatManipulator()}{PercentileStatManipulator()}}
+{\footnotesize\ttfamily Percentile\+Stat\+Manipulator\+::\+Percentile\+Stat\+Manipulator (\begin{DoxyParamCaption}\item[{int}]{num\+Percentile }\end{DoxyParamCaption})}
+
+Constructor for the statistical manipulator 
+\begin{DoxyParams}{Parameters}
+{\em num\+Percentile} & Number of the percentile which the object will compute. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_percentile_stat_manipulator_a09d88cd72930c2b79f32d48ecfc3f4e0}\label{class_percentile_stat_manipulator_a09d88cd72930c2b79f32d48ecfc3f4e0}} 
+\index{PercentileStatManipulator@{PercentileStatManipulator}!compute@{compute}}
+\index{compute@{compute}!PercentileStatManipulator@{PercentileStatManipulator}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily double Percentile\+Stat\+Manipulator\+::compute (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$}]{vessels,  }\item[{\mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}}}]{att }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Computes the statistical value of interest. 
+\begin{DoxyParams}{Parameters}
+{\em vessels} & Array of vessels from which the statistical function is computed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value of the percentile. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract0_d_stat_manipulator_a7ad062fec0d6b29eda2341aac705c432}{Abstract0\+DStat\+Manipulator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_percentile_stat_manipulator_a6a035c7f4cc7612c37486f81ef329093}\label{class_percentile_stat_manipulator_a6a035c7f4cc7612c37486f81ef329093}} 
+\index{PercentileStatManipulator@{PercentileStatManipulator}!numPercentile@{numPercentile}}
+\index{numPercentile@{numPercentile}!PercentileStatManipulator@{PercentileStatManipulator}}
+\doxysubsubsection{\texorpdfstring{numPercentile}{numPercentile}}
+{\footnotesize\ttfamily int Percentile\+Stat\+Manipulator\+::num\+Percentile\hspace{0.3cm}{\ttfamily [private]}}
+
+Number of the percentile which the object computes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stats/manipulators/Percentile\+Stat\+Manipulator.\+h\item 
+stats/manipulators/Percentile\+Stat\+Manipulator.\+cpp\end{DoxyCompactItemize}

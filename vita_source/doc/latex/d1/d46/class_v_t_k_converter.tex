@@ -1,0 +1,55 @@
+\hypertarget{class_v_t_k_converter}{}\doxysection{VTKConverter Class Reference}
+\label{class_v_t_k_converter}\index{VTKConverter@{VTKConverter}}
+
+
+{\ttfamily \#include $<$VTKConverter.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_v_t_k_converter_aa3df2fb65ae80ec1ef476d9e00460cc6}{STL2\+VTKConverter}} (string stl\+File, string vtk\+File, int write\+ASCIIFormat)
+\item 
+static void \mbox{\hyperlink{class_v_t_k_converter_a060d99d6e878c421693ca47c73ecdcfc}{OBJ2\+VTKConverter}} (string obj\+File, string vtk\+File, int write\+ASCIIFormat)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Converts different mesh formats to VTK using VTK library. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_t_k_converter_a060d99d6e878c421693ca47c73ecdcfc}\label{class_v_t_k_converter_a060d99d6e878c421693ca47c73ecdcfc}} 
+\index{VTKConverter@{VTKConverter}!OBJ2VTKConverter@{OBJ2VTKConverter}}
+\index{OBJ2VTKConverter@{OBJ2VTKConverter}!VTKConverter@{VTKConverter}}
+\doxysubsubsection{\texorpdfstring{OBJ2VTKConverter()}{OBJ2VTKConverter()}}
+{\footnotesize\ttfamily void VTKConverter\+::\+OBJ2\+VTKConverter (\begin{DoxyParamCaption}\item[{string}]{obj\+File,  }\item[{string}]{vtk\+File,  }\item[{int}]{write\+ASCIIFormat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts a mesh in OBJ format to VTK format. 
+\begin{DoxyParams}{Parameters}
+{\em obj\+File} & Input OBJ file. \\
+\hline
+{\em vtk\+File} & Output VTK file. \\
+\hline
+{\em write\+ASCIIFormat} & True for ASCII VTK output, otherwise the output will be a binary VTK. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_v_t_k_converter_aa3df2fb65ae80ec1ef476d9e00460cc6}\label{class_v_t_k_converter_aa3df2fb65ae80ec1ef476d9e00460cc6}} 
+\index{VTKConverter@{VTKConverter}!STL2VTKConverter@{STL2VTKConverter}}
+\index{STL2VTKConverter@{STL2VTKConverter}!VTKConverter@{VTKConverter}}
+\doxysubsubsection{\texorpdfstring{STL2VTKConverter()}{STL2VTKConverter()}}
+{\footnotesize\ttfamily void VTKConverter\+::\+STL2\+VTKConverter (\begin{DoxyParamCaption}\item[{string}]{stl\+File,  }\item[{string}]{vtk\+File,  }\item[{int}]{write\+ASCIIFormat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts a mesh in STL format to VTK format. 
+\begin{DoxyParams}{Parameters}
+{\em stl\+File} & Input STL file. \\
+\hline
+{\em vtk\+File} & Output VTK file. \\
+\hline
+{\em write\+ASCIIFormat} & True for ASCII VTK output, otherwise the output will be a binary VTK. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+io/VTKConverter.\+h\item 
+io/VTKConverter.\+cpp\end{DoxyCompactItemize}

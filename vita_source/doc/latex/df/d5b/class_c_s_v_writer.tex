@@ -1,0 +1,125 @@
+\hypertarget{class_c_s_v_writer}{}\doxysection{CSVWriter Class Reference}
+\label{class_c_s_v_writer}\index{CSVWriter@{CSVWriter}}
+
+
+{\ttfamily \#include $<$CSVWriter.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s_v_writer_ac8162747bd0ac5ee25c8c40aa2653f89}{CSVWriter}} (string filename)
+\item 
+virtual \mbox{\hyperlink{class_c_s_v_writer_a89eb7d6fc39c503e57adefb14e99391b}{$\sim$\+CSVWriter}} ()
+\item 
+void \mbox{\hyperlink{class_c_s_v_writer_a91363f2925852d33f1f7d481949c6a12}{add\+Column}} (string header, vector$<$ double $>$ values)
+\item 
+void \mbox{\hyperlink{class_c_s_v_writer_aa3c7035e7a4a7513e7ac92a02f15417a}{add\+Column}} (string header, vector$<$ int $>$ values)
+\item 
+void \mbox{\hyperlink{class_c_s_v_writer_afb6f7a2ec629e4a3cd3b2a791162b082}{add\+Column}} (string header, vector$<$ long $>$ values)
+\item 
+void \mbox{\hyperlink{class_c_s_v_writer_a4b3b2ac5c8150ca0b15cdca47eb01d63}{add\+Column}} (string header, vector$<$ string $>$ values)
+\item 
+void \mbox{\hyperlink{class_c_s_v_writer_add3d03d3be4405765ff1a3d28156270c}{write}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_s_v_writer_ab13f097c1616296dec7309036d64307c}\label{class_c_s_v_writer_ab13f097c1616296dec7309036d64307c}} 
+string {\bfseries filename}
+\item 
+\mbox{\Hypertarget{class_c_s_v_writer_aea122bdc9eb335cda15d4dc69986a241}\label{class_c_s_v_writer_aea122bdc9eb335cda15d4dc69986a241}} 
+vector$<$ string $>$ {\bfseries headers}
+\item 
+\mbox{\Hypertarget{class_c_s_v_writer_ac1ceb21b3523250caf289c18effe1ab5}\label{class_c_s_v_writer_ac1ceb21b3523250caf289c18effe1ab5}} 
+vector$<$ vector$<$ string $>$ $>$ {\bfseries data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Writes a set of vectors of the same size as columns in a CVS file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_s_v_writer_ac8162747bd0ac5ee25c8c40aa2653f89}\label{class_c_s_v_writer_ac8162747bd0ac5ee25c8c40aa2653f89}} 
+\index{CSVWriter@{CSVWriter}!CSVWriter@{CSVWriter}}
+\index{CSVWriter@{CSVWriter}!CSVWriter@{CSVWriter}}
+\doxysubsubsection{\texorpdfstring{CSVWriter()}{CSVWriter()}}
+{\footnotesize\ttfamily CSVWriter\+::\+CSVWriter (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Output CSV filename. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_v_writer_a89eb7d6fc39c503e57adefb14e99391b}\label{class_c_s_v_writer_a89eb7d6fc39c503e57adefb14e99391b}} 
+\index{CSVWriter@{CSVWriter}!````~CSVWriter@{$\sim$CSVWriter}}
+\index{````~CSVWriter@{$\sim$CSVWriter}!CSVWriter@{CSVWriter}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSVWriter()}{~CSVWriter()}}
+{\footnotesize\ttfamily CSVWriter\+::$\sim$\+CSVWriter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_s_v_writer_a91363f2925852d33f1f7d481949c6a12}\label{class_c_s_v_writer_a91363f2925852d33f1f7d481949c6a12}} 
+\index{CSVWriter@{CSVWriter}!addColumn@{addColumn}}
+\index{addColumn@{addColumn}!CSVWriter@{CSVWriter}}
+\doxysubsubsection{\texorpdfstring{addColumn()}{addColumn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void CSVWriter\+::add\+Column (\begin{DoxyParamCaption}\item[{string}]{header,  }\item[{vector$<$ double $>$}]{values }\end{DoxyParamCaption})}
+
+Appends a new column to the current structure. 
+\begin{DoxyParams}{Parameters}
+{\em header} & Header of the new column. \\
+\hline
+{\em values} & Data for the new column. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_v_writer_aa3c7035e7a4a7513e7ac92a02f15417a}\label{class_c_s_v_writer_aa3c7035e7a4a7513e7ac92a02f15417a}} 
+\index{CSVWriter@{CSVWriter}!addColumn@{addColumn}}
+\index{addColumn@{addColumn}!CSVWriter@{CSVWriter}}
+\doxysubsubsection{\texorpdfstring{addColumn()}{addColumn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void CSVWriter\+::add\+Column (\begin{DoxyParamCaption}\item[{string}]{header,  }\item[{vector$<$ int $>$}]{values }\end{DoxyParamCaption})}
+
+Appends a new column to the current structure. 
+\begin{DoxyParams}{Parameters}
+{\em header} & Header of the new column. \\
+\hline
+{\em values} & Data for the new column. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_v_writer_afb6f7a2ec629e4a3cd3b2a791162b082}\label{class_c_s_v_writer_afb6f7a2ec629e4a3cd3b2a791162b082}} 
+\index{CSVWriter@{CSVWriter}!addColumn@{addColumn}}
+\index{addColumn@{addColumn}!CSVWriter@{CSVWriter}}
+\doxysubsubsection{\texorpdfstring{addColumn()}{addColumn()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void CSVWriter\+::add\+Column (\begin{DoxyParamCaption}\item[{string}]{header,  }\item[{vector$<$ long $>$}]{values }\end{DoxyParamCaption})}
+
+Appends a new column to the current structure. 
+\begin{DoxyParams}{Parameters}
+{\em header} & Header of the new column. \\
+\hline
+{\em values} & Data for the new column. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_v_writer_a4b3b2ac5c8150ca0b15cdca47eb01d63}\label{class_c_s_v_writer_a4b3b2ac5c8150ca0b15cdca47eb01d63}} 
+\index{CSVWriter@{CSVWriter}!addColumn@{addColumn}}
+\index{addColumn@{addColumn}!CSVWriter@{CSVWriter}}
+\doxysubsubsection{\texorpdfstring{addColumn()}{addColumn()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void CSVWriter\+::add\+Column (\begin{DoxyParamCaption}\item[{string}]{header,  }\item[{vector$<$ string $>$}]{values }\end{DoxyParamCaption})}
+
+Appends a new column to the current structure. 
+\begin{DoxyParams}{Parameters}
+{\em header} & Header of the new column. \\
+\hline
+{\em values} & Data for the new column. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_v_writer_add3d03d3be4405765ff1a3d28156270c}\label{class_c_s_v_writer_add3d03d3be4405765ff1a3d28156270c}} 
+\index{CSVWriter@{CSVWriter}!write@{write}}
+\index{write@{write}!CSVWriter@{CSVWriter}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void CSVWriter\+::write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Writes the CSV file. Execute this only after finalising of adding all columns. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+io/CSVWriter.\+h\item 
+io/CSVWriter.\+cpp\end{DoxyCompactItemize}

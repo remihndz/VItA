@@ -1,0 +1,422 @@
+\hypertarget{class_staged_domain}{}\doxysection{Staged\+Domain Class Reference}
+\label{class_staged_domain}\index{StagedDomain@{StagedDomain}}
+
+
+{\ttfamily \#include $<$Staged\+Domain.\+h$>$}
+
+Inheritance diagram for Staged\+Domain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d2/d7b/class_staged_domain}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_staged_domain_a48d3fc928f1c52c13adc66761fd45353}{Staged\+Domain}} ()
+\item 
+\mbox{\hyperlink{class_staged_domain_a44e916fe46c1723fa82f5a2748942b5e}{$\sim$\+Staged\+Domain}} ()
+\item 
+void \mbox{\hyperlink{class_staged_domain_a3b206c2ba98d6fca73dd2b76689f9742}{add\+Stage}} (long long int terminals, \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$domain)
+\item 
+void \mbox{\hyperlink{class_staged_domain_abacd2429b605ac8ae9c94701485f4df0}{update}} ()
+\item 
+long long int \mbox{\hyperlink{class_staged_domain_ac179c1e1d0a2aac78093bd71d083811f}{get\+Terminals\+After\+Generation}} ()
+\item 
+int \mbox{\hyperlink{class_staged_domain_a2f13523c9e014efd270df926aabdbc76}{is\+Segment\+Inside}} (\mbox{\hyperlink{structpoint}{point}} xs, \mbox{\hyperlink{structpoint}{point}} xf)
+\item 
+int \mbox{\hyperlink{class_staged_domain_a083dae621ca3d910b23f5cd85ba23d65}{is\+Valid\+Element}} (\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$element)
+\item 
+double \mbox{\hyperlink{class_staged_domain_aec389e04bcd549140b29dbc9c56cf29b}{get\+Characteristic\+Length}} ()
+\item 
+double \mbox{\hyperlink{class_staged_domain_a4bb50d4e92dc81e0c87aa0b4190138b3}{get\+DLim}} (long long int n\+Vessels, double factor)
+\item 
+double $\ast$ \mbox{\hyperlink{class_staged_domain_ad8107b681fcba3794ea4cd9b1a5a2edd}{get\+Local\+Neighborhood}} (\mbox{\hyperlink{structpoint}{point}} p, long long int n\+Vessels)
+\item 
+double \mbox{\hyperlink{class_staged_domain_a139146506055f007980898b55fc894e0}{get\+Min\+Bifurcation\+Angle}} ()
+\item 
+double \mbox{\hyperlink{class_staged_domain_a211adf0d69765f74dc13c3219a670c00}{get\+Min\+Plane\+Angle}} ()
+\item 
+double \mbox{\hyperlink{class_staged_domain_a807d7b1c56b5a6ccce593513baebf3b1}{get\+Size}} ()
+\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{class_staged_domain_a90178baeab98fe08850977e7924c2780}{get\+Random\+Point}} ()
+\item 
+deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \& \mbox{\hyperlink{class_staged_domain_a5a5398712e064cbd706f701c8294bbad}{get\+Random\+Inner\+Points}} ()
+\item 
+long long int \mbox{\hyperlink{class_staged_domain_af0105eb5d5e73e4aebce46db0982b869}{get\+Point\+Counter}} () const
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \& \mbox{\hyperlink{class_staged_domain_a69530fd545f217410433367a7e219fbf}{get\+Vtk\+Geometry}} ()
+\item 
+int \mbox{\hyperlink{class_staged_domain_a2e783f2b9160fd91c082417d9e6e5276}{get\+Current\+Stage}} () const
+\item 
+void \mbox{\hyperlink{class_staged_domain_a58e3ccb3449324920bc187bf8921b238}{set\+Initial\+Stage}} (int \mbox{\hyperlink{class_staged_domain_a0fc23a88dcfb07e4a2b5d3899811a2a6}{current\+Stage}})
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_staged_domain_a9236406b7a94226fc7a55a50ec648f2b}{get\+Domains}} ()
+\item 
+vector$<$ long long int $>$ $\ast$ \mbox{\hyperlink{class_staged_domain_a66259af41df05643af2a2e7866711c52}{get\+NTerminals}} ()
+\item 
+int \mbox{\hyperlink{class_staged_domain_afd6c145c3563f8a22f02860e2605c5ec}{get\+Draw}} ()
+\item 
+int \mbox{\hyperlink{class_staged_domain_acd1904241867798b25c8bf2b9bce3ea8}{get\+Seed}} ()
+\item 
+void \mbox{\hyperlink{class_staged_domain_a3895417ae9f89c4362585386c1243c72}{log\+Domain\+Files}} (FILE $\ast$fp)
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Select\+Enclosed\+Points $>$ \mbox{\hyperlink{class_staged_domain_aee3e54af7d0cb0933c24d971dfdfc797}{get\+Enclosed\+Points}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$ $>$ \mbox{\hyperlink{class_staged_domain_a3372c80d0c3bff5255c0d4a7bbce3647}{domain\+Stage}}
+\item 
+vector$<$ long long int $>$ \mbox{\hyperlink{class_staged_domain_a8ca1e0466a1ba6563cbe103ac4499364}{terminals\+Per\+Stage}}
+\item 
+long long int \mbox{\hyperlink{class_staged_domain_a8383f99269b421f85b89c3aa847f91ce}{current\+Terminals}}
+\item 
+long long int \mbox{\hyperlink{class_staged_domain_a94b7ffac4fc6e07fc14061cdf68475b7}{terminal\+At\+Prev\+Stage}}
+\item 
+int \mbox{\hyperlink{class_staged_domain_a0fc23a88dcfb07e4a2b5d3899811a2a6}{current\+Stage}}
+\item 
+\mbox{\Hypertarget{class_staged_domain_aeb7e7a081ce55e7d715e317bcd34fbf7}\label{class_staged_domain_aeb7e7a081ce55e7d715e317bcd34fbf7}} 
+int {\bfseries initial\+Stage}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Composite class that modify the domain depending in the amount of terminals that have been included. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_staged_domain_a48d3fc928f1c52c13adc66761fd45353}\label{class_staged_domain_a48d3fc928f1c52c13adc66761fd45353}} 
+\index{StagedDomain@{StagedDomain}!StagedDomain@{StagedDomain}}
+\index{StagedDomain@{StagedDomain}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{StagedDomain()}{StagedDomain()}}
+{\footnotesize\ttfamily Staged\+Domain\+::\+Staged\+Domain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\Hypertarget{class_staged_domain_a44e916fe46c1723fa82f5a2748942b5e}\label{class_staged_domain_a44e916fe46c1723fa82f5a2748942b5e}} 
+\index{StagedDomain@{StagedDomain}!````~StagedDomain@{$\sim$StagedDomain}}
+\index{````~StagedDomain@{$\sim$StagedDomain}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{$\sim$StagedDomain()}{~StagedDomain()}}
+{\footnotesize\ttfamily Staged\+Domain\+::$\sim$\+Staged\+Domain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Descturctor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_staged_domain_a3b206c2ba98d6fca73dd2b76689f9742}\label{class_staged_domain_a3b206c2ba98d6fca73dd2b76689f9742}} 
+\index{StagedDomain@{StagedDomain}!addStage@{addStage}}
+\index{addStage@{addStage}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{addStage()}{addStage()}}
+{\footnotesize\ttfamily void Staged\+Domain\+::add\+Stage (\begin{DoxyParamCaption}\item[{long long int}]{terminals,  }\item[{\mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$}]{domain }\end{DoxyParamCaption})}
+
+Add an additional stage to the domain. 
+\begin{DoxyParams}{Parameters}
+{\em terminals} & Amount of terminals for the added stage. \\
+\hline
+{\em domain} & Domain used for the added stage. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staged_domain_aec389e04bcd549140b29dbc9c56cf29b}\label{class_staged_domain_aec389e04bcd549140b29dbc9c56cf29b}} 
+\index{StagedDomain@{StagedDomain}!getCharacteristicLength@{getCharacteristicLength}}
+\index{getCharacteristicLength@{getCharacteristicLength}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getCharacteristicLength()}{getCharacteristicLength()}}
+{\footnotesize\ttfamily double Staged\+Domain\+::get\+Characteristic\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Estimates a characteristic length for the current domain. This length is useful to estimate the perfusion volume of the domain. \begin{DoxyReturn}{Returns}
+Chracteristic length. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a90ca3dff64bab2428da8ced24e16f4c3}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a2e783f2b9160fd91c082417d9e6e5276}\label{class_staged_domain_a2e783f2b9160fd91c082417d9e6e5276}} 
+\index{StagedDomain@{StagedDomain}!getCurrentStage@{getCurrentStage}}
+\index{getCurrentStage@{getCurrentStage}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getCurrentStage()}{getCurrentStage()}}
+{\footnotesize\ttfamily int Staged\+Domain\+::get\+Current\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the current stage. \begin{DoxyReturn}{Returns}
+Current stage number; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_domain_a4bb50d4e92dc81e0c87aa0b4190138b3}\label{class_staged_domain_a4bb50d4e92dc81e0c87aa0b4190138b3}} 
+\index{StagedDomain@{StagedDomain}!getDLim@{getDLim}}
+\index{getDLim@{getDLim}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getDLim()}{getDLim()}}
+{\footnotesize\ttfamily double Staged\+Domain\+::get\+DLim (\begin{DoxyParamCaption}\item[{long long int}]{n\+Vessels,  }\item[{double}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Minimum distance between a new vessel terminal and the tree based on the current terminal perfusion. This is lower bound criteria for the vessel length and also aids toward a spatially homogeneous terminal distribution. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Vessels} & Quantity of terminals in the current tree. \\
+\hline
+{\em factor} & Factor used to scale a perfusion measure in order to estimate the DLim value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+DLim value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_ac9f39c12182608eb704c051e5d1cbc55}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a9236406b7a94226fc7a55a50ec648f2b}\label{class_staged_domain_a9236406b7a94226fc7a55a50ec648f2b}} 
+\index{StagedDomain@{StagedDomain}!getDomains@{getDomains}}
+\index{getDomains@{getDomains}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getDomains()}{getDomains()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$ $>$ $\ast$ Staged\+Domain\+::get\+Domains (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the domains in the \mbox{\hyperlink{class_staged_domain}{Staged\+Domain}}. \begin{DoxyReturn}{Returns}
+vector$<$\+Abstract\+Domain $\ast$$>$ domains. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_domain_afd6c145c3563f8a22f02860e2605c5ec}\label{class_staged_domain_afd6c145c3563f8a22f02860e2605c5ec}} 
+\index{StagedDomain@{StagedDomain}!getDraw@{getDraw}}
+\index{getDraw@{getDraw}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getDraw()}{getDraw()}}
+{\footnotesize\ttfamily int Staged\+Domain\+::get\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function serves no purpose in \mbox{\hyperlink{class_staged_domain}{Staged\+Domain}}. 
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_aee3e54af7d0cb0933c24d971dfdfc797}\label{class_staged_domain_aee3e54af7d0cb0933c24d971dfdfc797}} 
+\index{StagedDomain@{StagedDomain}!getEnclosedPoints@{getEnclosedPoints}}
+\index{getEnclosedPoints@{getEnclosedPoints}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getEnclosedPoints()}{getEnclosedPoints()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+Select\+Enclosed\+Points $>$ Staged\+Domain\+::get\+Enclosed\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual method to be used by \mbox{\hyperlink{class_staged_f_r_r_o_tree_generator_logger}{Staged\+FRROTree\+Generator\+Logger}}. 
+
+Implements \mbox{\hyperlink{class_abstract_domain_a30a18859536cb5e15de537b9b38b6e19}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_ad8107b681fcba3794ea4cd9b1a5a2edd}\label{class_staged_domain_ad8107b681fcba3794ea4cd9b1a5a2edd}} 
+\index{StagedDomain@{StagedDomain}!getLocalNeighborhood@{getLocalNeighborhood}}
+\index{getLocalNeighborhood@{getLocalNeighborhood}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getLocalNeighborhood()}{getLocalNeighborhood()}}
+{\footnotesize\ttfamily double $\ast$ Staged\+Domain\+::get\+Local\+Neighborhood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{long long int}]{n\+Vessels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the local neighbors to the {\ttfamily p} point locus. The amount of neighbors is estimated based on the current terminal perfusion. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Central point of the neighborhood. \\
+\hline
+{\em n\+Vessels} & Amount of terminals in the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of neighbor vessels. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a7db31e8e114d789e39df59ee99307a84}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a139146506055f007980898b55fc894e0}\label{class_staged_domain_a139146506055f007980898b55fc894e0}} 
+\index{StagedDomain@{StagedDomain}!getMinBifurcationAngle@{getMinBifurcationAngle}}
+\index{getMinBifurcationAngle@{getMinBifurcationAngle}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getMinBifurcationAngle()}{getMinBifurcationAngle()}}
+{\footnotesize\ttfamily double Staged\+Domain\+::get\+Min\+Bifurcation\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the maximum angle that the hosted tree can generate. \begin{DoxyReturn}{Returns}
+Maximum bifurcation angle for vessels generated inside this domain. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_abstract_domain_a434417bad2396a2ee600932d1d2ded89}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a211adf0d69765f74dc13c3219a670c00}\label{class_staged_domain_a211adf0d69765f74dc13c3219a670c00}} 
+\index{StagedDomain@{StagedDomain}!getMinPlaneAngle@{getMinPlaneAngle}}
+\index{getMinPlaneAngle@{getMinPlaneAngle}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getMinPlaneAngle()}{getMinPlaneAngle()}}
+{\footnotesize\ttfamily double Staged\+Domain\+::get\+Min\+Plane\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the maximum opening angle that the hosted tree can generate. \begin{DoxyReturn}{Returns}
+Maximum opening angle for vessels generated inside this domain. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_domain_a66259af41df05643af2a2e7866711c52}\label{class_staged_domain_a66259af41df05643af2a2e7866711c52}} 
+\index{StagedDomain@{StagedDomain}!getNTerminals@{getNTerminals}}
+\index{getNTerminals@{getNTerminals}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getNTerminals()}{getNTerminals()}}
+{\footnotesize\ttfamily vector$<$ long long int $>$ $\ast$ Staged\+Domain\+::get\+NTerminals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of terminals in each stage. \begin{DoxyReturn}{Returns}
+vector$<$long long int$>$ n\+\_\+term. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_domain_af0105eb5d5e73e4aebce46db0982b869}\label{class_staged_domain_af0105eb5d5e73e4aebce46db0982b869}} 
+\index{StagedDomain@{StagedDomain}!getPointCounter@{getPointCounter}}
+\index{getPointCounter@{getPointCounter}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getPointCounter()}{getPointCounter()}}
+{\footnotesize\ttfamily long long int Staged\+Domain\+::get\+Point\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the quantity of points that have been consumed. \begin{DoxyReturn}{Returns}
+Quantity of points consumed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_domain_a5a5398712e064cbd706f701c8294bbad}\label{class_staged_domain_a5a5398712e064cbd706f701c8294bbad}} 
+\index{StagedDomain@{StagedDomain}!getRandomInnerPoints@{getRandomInnerPoints}}
+\index{getRandomInnerPoints@{getRandomInnerPoints}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getRandomInnerPoints()}{getRandomInnerPoints()}}
+{\footnotesize\ttfamily deque$<$ \mbox{\hyperlink{structpoint}{point}} $>$ \& Staged\+Domain\+::get\+Random\+Inner\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return a set of inner domain points. \begin{DoxyReturn}{Returns}
+Set of inner domain points. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a5cbf88a698f26ddc05ed66fffa95a394}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a90178baeab98fe08850977e7924c2780}\label{class_staged_domain_a90178baeab98fe08850977e7924c2780}} 
+\index{StagedDomain@{StagedDomain}!getRandomPoint@{getRandomPoint}}
+\index{getRandomPoint@{getRandomPoint}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getRandomPoint()}{getRandomPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} Staged\+Domain\+::get\+Random\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return a random point inside the domain. \begin{DoxyReturn}{Returns}
+Point inside the domain. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_ae31a5b26d1dc628abe24da7a4d375415}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_acd1904241867798b25c8bf2b9bce3ea8}\label{class_staged_domain_acd1904241867798b25c8bf2b9bce3ea8}} 
+\index{StagedDomain@{StagedDomain}!getSeed@{getSeed}}
+\index{getSeed@{getSeed}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getSeed()}{getSeed()}}
+{\footnotesize\ttfamily int Staged\+Domain\+::get\+Seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function serves no purpose in \mbox{\hyperlink{class_staged_domain}{Staged\+Domain}}. 
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a807d7b1c56b5a6ccce593513baebf3b1}\label{class_staged_domain_a807d7b1c56b5a6ccce593513baebf3b1}} 
+\index{StagedDomain@{StagedDomain}!getSize@{getSize}}
+\index{getSize@{getSize}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily double Staged\+Domain\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Computes the size of the domain. \begin{DoxyReturn}{Returns}
+Size of the domain. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a049564d82f2c177c39834dfc8da143dc}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_ac179c1e1d0a2aac78093bd71d083811f}\label{class_staged_domain_ac179c1e1d0a2aac78093bd71d083811f}} 
+\index{StagedDomain@{StagedDomain}!getTerminalsAfterGeneration@{getTerminalsAfterGeneration}}
+\index{getTerminalsAfterGeneration@{getTerminalsAfterGeneration}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getTerminalsAfterGeneration()}{getTerminalsAfterGeneration()}}
+{\footnotesize\ttfamily long long int Staged\+Domain\+::get\+Terminals\+After\+Generation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the total amount of terminals that will be generated along all stages. \begin{DoxyReturn}{Returns}
+Total amount of terminals generated along all stages. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_staged_domain_a69530fd545f217410433367a7e219fbf}\label{class_staged_domain_a69530fd545f217410433367a7e219fbf}} 
+\index{StagedDomain@{StagedDomain}!getVtkGeometry@{getVtkGeometry}}
+\index{getVtkGeometry@{getVtkGeometry}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{getVtkGeometry()}{getVtkGeometry()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \& Staged\+Domain\+::get\+Vtk\+Geometry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the vtk\+Polydata with the domain representation. \begin{DoxyReturn}{Returns}
+vtk\+Polydata with the domain representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a392d9e31079a2dc5b39b9f34caa15875}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a2f13523c9e014efd270df926aabdbc76}\label{class_staged_domain_a2f13523c9e014efd270df926aabdbc76}} 
+\index{StagedDomain@{StagedDomain}!isSegmentInside@{isSegmentInside}}
+\index{isSegmentInside@{isSegmentInside}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{isSegmentInside()}{isSegmentInside()}}
+{\footnotesize\ttfamily int Staged\+Domain\+::is\+Segment\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{xs,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{xf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns if the segment defined by the vertexes {\ttfamily xs} and {\ttfamily xf} is inside the current domain. 
+\begin{DoxyParams}{Parameters}
+{\em xs} & Start point of the segment. \\
+\hline
+{\em xf} & End point of the segment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the segment defined by the vertexes {\ttfamily xs} and {\ttfamily xf} is inside the current domain otherwise 0. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract_domain_a8544eef21fb6700ecc02e9cd50884efd}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a083dae621ca3d910b23f5cd85ba23d65}\label{class_staged_domain_a083dae621ca3d910b23f5cd85ba23d65}} 
+\index{StagedDomain@{StagedDomain}!isValidElement@{isValidElement}}
+\index{isValidElement@{isValidElement}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{isValidElement()}{isValidElement()}}
+{\footnotesize\ttfamily int Staged\+Domain\+::is\+Valid\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_vascular_element}{Abstract\+Vascular\+Element}} $\ast$}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns if the vascular element is eligible to be a parent vessel. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Vascular element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if it is eligible. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_abstract_domain_aa151f29002e590832be02829772d38e1}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a3895417ae9f89c4362585386c1243c72}\label{class_staged_domain_a3895417ae9f89c4362585386c1243c72}} 
+\index{StagedDomain@{StagedDomain}!logDomainFiles@{logDomainFiles}}
+\index{logDomainFiles@{logDomainFiles}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{logDomainFiles()}{logDomainFiles()}}
+{\footnotesize\ttfamily void Staged\+Domain\+::log\+Domain\+Files (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}}.
+
+\mbox{\Hypertarget{class_staged_domain_a58e3ccb3449324920bc187bf8921b238}\label{class_staged_domain_a58e3ccb3449324920bc187bf8921b238}} 
+\index{StagedDomain@{StagedDomain}!setInitialStage@{setInitialStage}}
+\index{setInitialStage@{setInitialStage}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{setInitialStage()}{setInitialStage()}}
+{\footnotesize\ttfamily void Staged\+Domain\+::set\+Initial\+Stage (\begin{DoxyParamCaption}\item[{int}]{current\+Stage }\end{DoxyParamCaption})}
+
+Sets the initial stage as {\ttfamily current\+Stage}. 
+\begin{DoxyParams}{Parameters}
+{\em current\+Stage} & Current stage. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staged_domain_abacd2429b605ac8ae9c94701485f4df0}\label{class_staged_domain_abacd2429b605ac8ae9c94701485f4df0}} 
+\index{StagedDomain@{StagedDomain}!update@{update}}
+\index{update@{update}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Staged\+Domain\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increase the amount of {\ttfamily current\+Terminals} by 1. It must be called after the addition of a new terminal to the tree. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_staged_domain_a0fc23a88dcfb07e4a2b5d3899811a2a6}\label{class_staged_domain_a0fc23a88dcfb07e4a2b5d3899811a2a6}} 
+\index{StagedDomain@{StagedDomain}!currentStage@{currentStage}}
+\index{currentStage@{currentStage}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{currentStage}{currentStage}}
+{\footnotesize\ttfamily int Staged\+Domain\+::current\+Stage\hspace{0.3cm}{\ttfamily [private]}}
+
+Index of the current stage. \mbox{\Hypertarget{class_staged_domain_a8383f99269b421f85b89c3aa847f91ce}\label{class_staged_domain_a8383f99269b421f85b89c3aa847f91ce}} 
+\index{StagedDomain@{StagedDomain}!currentTerminals@{currentTerminals}}
+\index{currentTerminals@{currentTerminals}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{currentTerminals}{currentTerminals}}
+{\footnotesize\ttfamily long long int Staged\+Domain\+::current\+Terminals\hspace{0.3cm}{\ttfamily [private]}}
+
+Terminals counter. \mbox{\Hypertarget{class_staged_domain_a3372c80d0c3bff5255c0d4a7bbce3647}\label{class_staged_domain_a3372c80d0c3bff5255c0d4a7bbce3647}} 
+\index{StagedDomain@{StagedDomain}!domainStage@{domainStage}}
+\index{domainStage@{domainStage}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{domainStage}{domainStage}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_abstract_domain}{Abstract\+Domain}} $\ast$$>$ Staged\+Domain\+::domain\+Stage\hspace{0.3cm}{\ttfamily [private]}}
+
+Domain at each stage. \mbox{\Hypertarget{class_staged_domain_a94b7ffac4fc6e07fc14061cdf68475b7}\label{class_staged_domain_a94b7ffac4fc6e07fc14061cdf68475b7}} 
+\index{StagedDomain@{StagedDomain}!terminalAtPrevStage@{terminalAtPrevStage}}
+\index{terminalAtPrevStage@{terminalAtPrevStage}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{terminalAtPrevStage}{terminalAtPrevStage}}
+{\footnotesize\ttfamily long long int Staged\+Domain\+::terminal\+At\+Prev\+Stage\hspace{0.3cm}{\ttfamily [private]}}
+
+Terminals at the end of the previous stage. \mbox{\Hypertarget{class_staged_domain_a8ca1e0466a1ba6563cbe103ac4499364}\label{class_staged_domain_a8ca1e0466a1ba6563cbe103ac4499364}} 
+\index{StagedDomain@{StagedDomain}!terminalsPerStage@{terminalsPerStage}}
+\index{terminalsPerStage@{terminalsPerStage}!StagedDomain@{StagedDomain}}
+\doxysubsubsection{\texorpdfstring{terminalsPerStage}{terminalsPerStage}}
+{\footnotesize\ttfamily vector$<$long long int$>$ Staged\+Domain\+::terminals\+Per\+Stage\hspace{0.3cm}{\ttfamily [private]}}
+
+Terminals generated at each stage. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/domain/Staged\+Domain.\+h\item 
+structures/domain/Staged\+Domain.\+cpp\end{DoxyCompactItemize}

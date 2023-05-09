@@ -1,0 +1,82 @@
+\hypertarget{class_abstract_structured_stat_manipulator}{}\doxysection{Abstract\+Structured\+Stat\+Manipulator Class Reference}
+\label{class_abstract_structured_stat_manipulator}\index{AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}}
+
+
+{\ttfamily \#include $<$Abstract\+Structured\+Stat\+Manipulator.\+h$>$}
+
+Inheritance diagram for Abstract\+Structured\+Stat\+Manipulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.744548cm]{d9/d20/class_abstract_structured_stat_manipulator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_structured_stat_manipulator_ac61592c0dc2539ad356efd59e07e0031}{Abstract\+Structured\+Stat\+Manipulator}} ()
+\item 
+\mbox{\hyperlink{class_abstract_structured_stat_manipulator_a3c25324d82a41dbdc0fcc30992a8234b}{$\sim$\+Abstract\+Structured\+Stat\+Manipulator}} ()
+\item 
+virtual double \mbox{\hyperlink{class_abstract_structured_stat_manipulator_ae5da6e08a1a57bd62381c0b055c7d47a}{compute}} (vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$ vessels, \mbox{\hyperlink{class_vessel_struct_handler_a0fe4c17d06f21728cf3a4ce40a7f9042}{Vessel\+Struct\+Handler\+::\+ATTRIBUTE}} att)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vessel_struct_handler}{Vessel\+Struct\+Handler}} $\ast$ \mbox{\hyperlink{class_abstract_structured_stat_manipulator_a05c21f150457712ba92e29b08a22bc70}{handler}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for the computation of statistical quantities of a specific attribute for an array of vessels. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract_structured_stat_manipulator_ac61592c0dc2539ad356efd59e07e0031}\label{class_abstract_structured_stat_manipulator_ac61592c0dc2539ad356efd59e07e0031}} 
+\index{AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}!AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}}
+\index{AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}!AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}}
+\doxysubsubsection{\texorpdfstring{AbstractStructuredStatManipulator()}{AbstractStructuredStatManipulator()}}
+{\footnotesize\ttfamily Abstract\+Structured\+Stat\+Manipulator\+::\+Abstract\+Structured\+Stat\+Manipulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\Hypertarget{class_abstract_structured_stat_manipulator_a3c25324d82a41dbdc0fcc30992a8234b}\label{class_abstract_structured_stat_manipulator_a3c25324d82a41dbdc0fcc30992a8234b}} 
+\index{AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}!````~AbstractStructuredStatManipulator@{$\sim$AbstractStructuredStatManipulator}}
+\index{````~AbstractStructuredStatManipulator@{$\sim$AbstractStructuredStatManipulator}!AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstractStructuredStatManipulator()}{~AbstractStructuredStatManipulator()}}
+{\footnotesize\ttfamily Abstract\+Structured\+Stat\+Manipulator\+::$\sim$\+Abstract\+Structured\+Stat\+Manipulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_structured_stat_manipulator_ae5da6e08a1a57bd62381c0b055c7d47a}\label{class_abstract_structured_stat_manipulator_ae5da6e08a1a57bd62381c0b055c7d47a}} 
+\index{AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}!compute@{compute}}
+\index{compute@{compute}!AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily virtual double Abstract\+Structured\+Stat\+Manipulator\+::compute (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structvessel}{vessel}} $\ast$ $>$}]{vessels,  }\item[{\mbox{\hyperlink{class_vessel_struct_handler_a0fe4c17d06f21728cf3a4ce40a7f9042}{Vessel\+Struct\+Handler\+::\+ATTRIBUTE}}}]{att }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Computes the statistical quantity of interest. 
+\begin{DoxyParams}{Parameters}
+{\em vessels} & Array of vessels processed to obtain the quantity of interest. \\
+\hline
+{\em att} & Attribute over which the quantity is computed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Statistical quantity of interest. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mean_struct_stat_manipulator_a7a0be91583a2505f1f45cb8f9eec5005}{Mean\+Struct\+Stat\+Manipulator}}, \mbox{\hyperlink{class_percentile_struct_stat_manipulator_a8ed363782c056a60a0241aabb4849e78}{Percentile\+Struct\+Stat\+Manipulator}}, and \mbox{\hyperlink{class_std_struct_stat_manipulator_abe72fb07afd60d4db4c19f813dd842c4}{Std\+Struct\+Stat\+Manipulator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_abstract_structured_stat_manipulator_a05c21f150457712ba92e29b08a22bc70}\label{class_abstract_structured_stat_manipulator_a05c21f150457712ba92e29b08a22bc70}} 
+\index{AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}!handler@{handler}}
+\index{handler@{handler}!AbstractStructuredStatManipulator@{AbstractStructuredStatManipulator}}
+\doxysubsubsection{\texorpdfstring{handler}{handler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vessel_struct_handler}{Vessel\+Struct\+Handler}}$\ast$ Abstract\+Structured\+Stat\+Manipulator\+::handler\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handler used to extract the vessel attributes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stats/manipulators/Abstract\+Structured\+Stat\+Manipulator.\+h\item 
+stats/manipulators/Abstract\+Structured\+Stat\+Manipulator.\+cpp\end{DoxyCompactItemize}

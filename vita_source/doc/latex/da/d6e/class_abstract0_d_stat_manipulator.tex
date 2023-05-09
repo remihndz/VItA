@@ -1,0 +1,82 @@
+\hypertarget{class_abstract0_d_stat_manipulator}{}\doxysection{Abstract0\+DStat\+Manipulator Class Reference}
+\label{class_abstract0_d_stat_manipulator}\index{Abstract0DStatManipulator@{Abstract0DStatManipulator}}
+
+
+{\ttfamily \#include $<$Abstract0\+DStat\+Manipulator.\+h$>$}
+
+Inheritance diagram for Abstract0\+DStat\+Manipulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d6e/class_abstract0_d_stat_manipulator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract0_d_stat_manipulator_aa7e78bdb4e3cdc7f25c4bf159b5ac988}{Abstract0\+DStat\+Manipulator}} ()
+\item 
+\mbox{\hyperlink{class_abstract0_d_stat_manipulator_ad6b9649c5bb2e101415b8b138eb00670}{$\sim$\+Abstract0\+DStat\+Manipulator}} ()
+\item 
+virtual double \mbox{\hyperlink{class_abstract0_d_stat_manipulator_a7ad062fec0d6b29eda2341aac705c432}{compute}} (vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$ vessels, \mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}} att)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vessel_object_handler}{Vessel\+Object\+Handler}} $\ast$ \mbox{\hyperlink{class_abstract0_d_stat_manipulator_a41b6f04a235cbd3defc07094a57f9916}{handler}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for the computation of statistical quantities of a specific attribute for an array of vessels. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract0_d_stat_manipulator_aa7e78bdb4e3cdc7f25c4bf159b5ac988}\label{class_abstract0_d_stat_manipulator_aa7e78bdb4e3cdc7f25c4bf159b5ac988}} 
+\index{Abstract0DStatManipulator@{Abstract0DStatManipulator}!Abstract0DStatManipulator@{Abstract0DStatManipulator}}
+\index{Abstract0DStatManipulator@{Abstract0DStatManipulator}!Abstract0DStatManipulator@{Abstract0DStatManipulator}}
+\doxysubsubsection{\texorpdfstring{Abstract0DStatManipulator()}{Abstract0DStatManipulator()}}
+{\footnotesize\ttfamily Abstract0\+DStat\+Manipulator\+::\+Abstract0\+DStat\+Manipulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\Hypertarget{class_abstract0_d_stat_manipulator_ad6b9649c5bb2e101415b8b138eb00670}\label{class_abstract0_d_stat_manipulator_ad6b9649c5bb2e101415b8b138eb00670}} 
+\index{Abstract0DStatManipulator@{Abstract0DStatManipulator}!````~Abstract0DStatManipulator@{$\sim$Abstract0DStatManipulator}}
+\index{````~Abstract0DStatManipulator@{$\sim$Abstract0DStatManipulator}!Abstract0DStatManipulator@{Abstract0DStatManipulator}}
+\doxysubsubsection{\texorpdfstring{$\sim$Abstract0DStatManipulator()}{~Abstract0DStatManipulator()}}
+{\footnotesize\ttfamily Abstract0\+DStat\+Manipulator\+::$\sim$\+Abstract0\+DStat\+Manipulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract0_d_stat_manipulator_a7ad062fec0d6b29eda2341aac705c432}\label{class_abstract0_d_stat_manipulator_a7ad062fec0d6b29eda2341aac705c432}} 
+\index{Abstract0DStatManipulator@{Abstract0DStatManipulator}!compute@{compute}}
+\index{compute@{compute}!Abstract0DStatManipulator@{Abstract0DStatManipulator}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily virtual double Abstract0\+DStat\+Manipulator\+::compute (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$ $>$}]{vessels,  }\item[{\mbox{\hyperlink{class_vessel_object_handler_a23d0cc8f640df16faa1efa6a41da9059}{Vessel\+Object\+Handler\+::\+ATTRIBUTE}}}]{att }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Computes the statistical quantity of interest. 
+\begin{DoxyParams}{Parameters}
+{\em vessels} & Array of vessels processed to obtain the quantity of interest. \\
+\hline
+{\em att} & Attribute over which the quantity is computed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Statistical quantity of interest. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mean_stat_manipulator_ae5a3c9e4936d3196c59ae83d599d0f37}{Mean\+Stat\+Manipulator}}, \mbox{\hyperlink{class_percentile_stat_manipulator_a09d88cd72930c2b79f32d48ecfc3f4e0}{Percentile\+Stat\+Manipulator}}, and \mbox{\hyperlink{class_std_stat_manipulator_a0d18a091f877e6207c5afd95a1fd7172}{Std\+Stat\+Manipulator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_abstract0_d_stat_manipulator_a41b6f04a235cbd3defc07094a57f9916}\label{class_abstract0_d_stat_manipulator_a41b6f04a235cbd3defc07094a57f9916}} 
+\index{Abstract0DStatManipulator@{Abstract0DStatManipulator}!handler@{handler}}
+\index{handler@{handler}!Abstract0DStatManipulator@{Abstract0DStatManipulator}}
+\doxysubsubsection{\texorpdfstring{handler}{handler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vessel_object_handler}{Vessel\+Object\+Handler}}$\ast$ Abstract0\+DStat\+Manipulator\+::handler\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handler used to extract the vessel attributes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stats/manipulators/Abstract0\+DStat\+Manipulator.\+h\item 
+stats/manipulators/Abstract0\+DStat\+Manipulator.\+cpp\end{DoxyCompactItemize}

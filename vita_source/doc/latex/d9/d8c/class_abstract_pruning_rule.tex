@@ -1,0 +1,47 @@
+\hypertarget{class_abstract_pruning_rule}{}\doxysection{Abstract\+Pruning\+Rule Class Reference}
+\label{class_abstract_pruning_rule}\index{AbstractPruningRule@{AbstractPruningRule}}
+
+
+{\ttfamily \#include $<$Abstract\+Pruning\+Rule.\+h$>$}
+
+Inheritance diagram for Abstract\+Pruning\+Rule\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/d8c/class_abstract_pruning_rule}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_abstract_pruning_rule_a064886df592c6cf77f69afdad571991b}{needs\+Pruning}} (\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$root)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class used in for the definition of rules to prune branches of a tree. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_pruning_rule_a064886df592c6cf77f69afdad571991b}\label{class_abstract_pruning_rule_a064886df592c6cf77f69afdad571991b}} 
+\index{AbstractPruningRule@{AbstractPruningRule}!needsPruning@{needsPruning}}
+\index{needsPruning@{needsPruning}!AbstractPruningRule@{AbstractPruningRule}}
+\doxysubsubsection{\texorpdfstring{needsPruning()}{needsPruning()}}
+{\footnotesize\ttfamily virtual bool Abstract\+Pruning\+Rule\+::needs\+Pruning (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_vessel}{Single\+Vessel}} $\ast$}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+If true the branch (root and all daughter vessels) are marked for puning. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root vessel where the pruning is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the branch has to be pruned. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_old_leaves_pruning_rule_a74dd177379fb889d492c547006b305ef}{Old\+Leaves\+Pruning\+Rule}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+structures/tree/pruning/Abstract\+Pruning\+Rule.\+h\item 
+structures/tree/pruning/Abstract\+Pruning\+Rule.\+cpp\end{DoxyCompactItemize}
