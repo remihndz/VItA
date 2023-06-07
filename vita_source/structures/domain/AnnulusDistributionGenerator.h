@@ -9,7 +9,7 @@
 #define DOMAIN_ANNULUSDISTRIBUTIONGENERATOR_H_
 
 #include "DistributionGenerator.h"
-#include <cmath>
+// #include <cmath>
 
 class AnnulusDistributionGenerator: public DistributionGenerator {
 	/**	Generator for theta component */

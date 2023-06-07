@@ -159,9 +159,9 @@ public:
 	 * Virtual method to be used by StagedFRROTreeGeneratorLogger.
 	 */
   
-  void setOpticDisc(point p);
-  /** Localize the optic disc */
-  point opticDisc {0.0,0.0,0.0};
+        void setOpticDisc(point p);
+        /** Localize the optic disc */
+        point opticDisc {0.0,0.0,0.0};
 
   
 	virtual vtkSmartPointer<vtkSelectEnclosedPoints> getEnclosedPoints() = 0;

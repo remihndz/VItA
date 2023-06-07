@@ -94,7 +94,7 @@ SingleVesselCCOOTree::SingleVesselCCOOTree(string filenameCCO, GeneratorData *in
 		SingleVessel *v = new SingleVessel();
 		v->qReservedFraction = 0.0;
 		treeFile >> v->vtkSegmentId;
-		cout << v->vtkSegmentId << endl;
+		// cout << v->vtkSegmentId << endl;
 		treeFile >> v->xProx.p[0];
 		treeFile >> v->xProx.p[1];
 		treeFile >> v->xProx.p[2];
@@ -144,11 +144,11 @@ SingleVesselCCOOTree::SingleVesselCCOOTree(string filenameCCO, GeneratorData *in
 		int vtkId, parentId, childId;
 
 		ss >> vtkId;
-		cout << "Vessel ID = " << vtkId;
+		// cout << "Vessel ID = " << vtkId;
 
 		//	Parent parsing
 		ss >> parentId;
-		cout << " - P = " << parentId;
+		// cout << " - P = " << parentId;
 		if (parentId == -1) {
 			elements[vtkId]->parent = NULL;
 			rootIndex = vtkId;
@@ -157,17 +157,19 @@ SingleVesselCCOOTree::SingleVesselCCOOTree(string filenameCCO, GeneratorData *in
 		}
 
 		//	Children parsing
-		cout << " - Children : ";
+		// cout << " - Children : ";
 		while (ss >> childId) {			
-			cout << childId << " " ;
+		  // cout << childId << " " ;
 			elements[vtkId]->addChild(elements[childId]);
 		}
-		cout << endl;
+		// cout << endl;
 	}
 
 	cout << "Assembling tree..." << endl;
 	//	Tree values
 	this->root = elements[rootIndex];
+	this->xPerf = ((SingleVessel *) root)->xProx;
+	this->rootRadius = ((SingleVessel *) root)->radius;
 	this->nTerms = this->getNTerminals();
 	this->nCommonTerminals = getNTerminals(AbstractVascularElement::TERMINAL_TYPE::COMMON);
 	cout << "Terminals " << nTerms << " - Common terminals " << getNTerminals(AbstractVascularElement::TERMINAL_TYPE::COMMON) << " - Reserved terminals " << getNTerminals(AbstractVascularElement::TERMINAL_TYPE::RESERVED) << endl;
@@ -176,7 +178,7 @@ SingleVesselCCOOTree::SingleVesselCCOOTree(string filenameCCO, GeneratorData *in
 	this->nu = nu;
 	this->gam = gam;
 	this->epsLim = epsLim;
-
+	
 	cout << "Tree successfully loaded" << endl;
 	cout << "Creating VTK structure..." << endl;
 
@@ -191,7 +193,7 @@ SingleVesselCCOOTree::SingleVesselCCOOTree(string filenameCCO, GeneratorData *in
 	vtkTreeLocator->SetDataSet(vtkTree);
 	vtkTreeLocator->BuildLocator();
 	vtkTreeLocator->Update();
-
+	
 	treeFile.close();
 }
 
@@ -225,7 +227,7 @@ SingleVesselCCOOTree::SingleVesselCCOOTree(string filenameCCO, GeneratorData* in
 		SingleVessel *v = new SingleVessel();
 		v->qReservedFraction = 0.0;
 		treeFile >> v->vtkSegmentId;
-		cout << v->vtkSegmentId << endl;
+		// cout << v->vtkSegmentId << endl;
 		treeFile >> v->xProx.p[0];
 		treeFile >> v->xProx.p[1];
 		treeFile >> v->xProx.p[2];
@@ -243,6 +245,7 @@ SingleVesselCCOOTree::SingleVesselCCOOTree(string filenameCCO, GeneratorData* in
 		}
 		treeFile >> branchingMode; 				//	Branching - 0:NO_BRANCHING, 1:RIGID_PARENT, 2:DEFORMABLE_PARENT, 3:DISTAL_BRANCHING, 4:ONLY_AT_PARENT_HOTSPOTS
 		v->branchingMode = static_cast<AbstractVascularElement::BRANCHING_MODE>(branchingMode);
+		cout << "BRANCHING MODE FOR VESSEL " << v->vtkSegmentId << " = " << v->branchingMode << endl;
 		treeFile >> v->radius;
 		treeFile >> token;						//	Resistance 1
 		treeFile >> token;						//	Resistance 2
@@ -1408,7 +1411,7 @@ int SingleVesselCCOOTree::testVessel(point xNew, AbstractVascularElement *parent
 						!isIntersectingVessels(pVessel->xDist, bif, pVessel, neighbors)) {
 					// Is distal
 					if(pVessel->branchingMode == AbstractVascularElement::BRANCHING_MODE::DISTAL_BRANCHING){
-						costs[i] = evaluate(xNew, pVessel, dLim);
+						costs[i] = evaluate(xNew, pVessel, dLim);					  
 					}
 					// Is rigid/deformable/no_branching
 					else{
@@ -1417,18 +1420,18 @@ int SingleVesselCCOOTree::testVessel(point xNew, AbstractVascularElement *parent
 					}
 				} else {
 				  costs[i] = INFINITY;
-				  // cout << "Intersection detected." << endl;
+				  //cout << "Intersection detected." << endl;
 				}
 			} else {
 				costs[i] = INFINITY;
-				// cout << "Cost for bifurcation outside the domain." << endl;
+				//	cout << "Cost for bifurcation outside the domain." << endl;
 			}
 		} else {
 			costs[i] = INFINITY;
-			// cout << "Small angle detected." << endl;
+			//	cout << "Small angle detected." << endl;
 		}
 //#pragma omp critical
-//			cout << "Cost of bifurcation at coordinates " << coordinates[majorIndex + j] << " is " << costs[majorIndex + j] << endl;
+		// cout << "Cost of bifurcation at coordinates " << coordinates[majorIndex + j] << " is " << costs[majorIndex + j] << endl;
 	}
 
 	*cost = INFINITY;
