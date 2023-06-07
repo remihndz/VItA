@@ -387,6 +387,8 @@ AbstractObjectCCOTree *StagedFRROTreeGenerator::resume(long long int saveInterva
 		int iTry = 0;
 		dLim = instanceData->dLimCorrectionFactor * domain->getDLim(i, instanceData->perfusionAreaFactor);
 
+		int dontPrintEveryIter = 0; // A variable added to limit the number of prints of "Trying segment #..."
+		
 		while (invalidTerminal) {
 
 			do {
@@ -395,7 +397,9 @@ AbstractObjectCCOTree *StagedFRROTreeGenerator::resume(long long int saveInterva
 			
 			int nNeighbors;
 			vector<AbstractVascularElement *> neighborVessels = tree->getCloseSegments(xNew, domain, &nNeighbors);
-			cout << "Trying segment #" << i << " at terminal point " << xNew << " with the " << nNeighbors << " closest neighbors (dLim = " << dLim << ")." << endl;
+			if (dontPrintEveryIter % 100 == 0)
+			  cout << "Trying segment #" << i << " for the " << dontPrintEveryIter+1 << "th time at terminal point " << xNew << " with the " << nNeighbors << " closest neighbors (dLim = " << dLim << ")." << endl;
+			dontPrintEveryIter++;
 
 			double minCost = INFINITY;
 			point minBif;
@@ -410,6 +414,7 @@ AbstractObjectCCOTree *StagedFRROTreeGenerator::resume(long long int saveInterva
 #pragma omp critical
 				{
 					if (cost < minCost) {
+					  // cout << "FOUND A LOWER COST: " << cost << endl;
 						minCost = cost;
 						minBif = xBif;
 						minParent = neighborVessels[j];
